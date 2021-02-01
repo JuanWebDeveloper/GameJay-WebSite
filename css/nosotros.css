@@ -1,0 +1,91 @@
+/*=====================================================
+|-Estilos De Nosotros                                 |
+=====================================================*/
+.containerNosotros{
+	position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 30px;
+}
+
+/*==============================
+|-Estiolos Descripcion    |
+===============================*/
+.containerNosotros .containerDescripcion{
+	display: flex;
+	width: 90%;
+	height: auto;
+	margin-left: 5%;
+	margin-bottom: 50px;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.containerNosotros .containerDescripcion .containerImg{
+	width: 45%;
+	height: 400px;
+	margin-top: 20px;
+}
+
+.containerNosotros .containerDescripcion  .containerTexto{
+	width: 45%;
+	margin-top: 20px;
+}
+
+.containerNosotros .containerDescripcion  .containerTexto h2{
+	font-size: 40px;
+	text-align: center;
+	color: #0077ff;
+	text-transform: capitalize;
+	letter-spacing: 2px;
+}
+
+.containerNosotros .containerDescripcion  .containerTexto p{
+	font-size: 20px;
+	padding-top: 10px;
+	text-align: justify;
+	color: #2c2c2c;
+}
+
+/*=============================================
+ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
+=============================================*/
+@media screen and (max-width:1199px){
+	.containerNosotros .containerDescripcion  .containerTexto h2{
+		font-size: 35px;
+	}
+	
+	.containerNosotros .containerDescripcion  .containerTexto p{
+		font-size: 17px;
+	}
+}
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media screen and (max-width: 980px){
+	.containerNosotros .containerDescripcion .containerImg{
+		width: 100%;
+		order: 1;
+	}
+	
+	.containerNosotros .containerDescripcion  .containerTexto{
+		width: 100%;
+	}
+
+	.containerNosotros .containerDescripcion  .containerTexto h2{
+		font-size: 50px;
+	}
+}
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media screen and (max-width: 600px){
+	.containerNosotros .containerDescripcion .containerImg{
+		height: 250px;
+	}
+
+	.containerNosotros .containerDescripcion  .containerTexto h2{
+		font-size: 22px;
+	}
+	
+}

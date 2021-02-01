@@ -1,0 +1,265 @@
+/*=====================================================
+|-Estilos Contacto                                    |
+=====================================================*/
+.contenedorContacto{
+    position: relative;
+	width: 100%;
+	height: auto;
+	margin-bottom: 100px;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto{
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+    min-height: 550px;
+    left: 5%;
+    z-index: 10;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto{
+    position: absolute;
+    display: flex;
+    top: 40px;
+    width: 350px;
+    height: calc(100% -80px);
+    background: rgb(0, 119, 255);
+    padding: 40px;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto h2{
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion{
+    position: relative;
+    margin: 20px 0;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li{
+    position: relative;
+    display: flex;
+    margin: 20px 0;
+    cursor: pointer;
+    align-items: flex-start;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li span:nth-child(1){
+    width: 30px;
+    min-width: 30px;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li span:nth-child(1) img{
+    max-width: 100%;
+    filter: invert(1);
+    opacity: 0.5;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li span:nth-child(2){
+    color: #fff;
+    margin-left: 10px;
+    font-weight: 300;
+    opacity: 0.5;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li:hover span:nth-child(1) img,
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li:hover span:nth-child(2){
+    opacity: 1;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li a{
+    cursor: pointer;
+    position: relative;
+    width: 100%;
+    padding: 10px 0;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 15px;
+    background: #fff;
+    color: #0077ff;
+    transition: .3s all ease-in-out;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li a::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #fff;
+    border-radius: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    transition: .3s all ease-in-out;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li a:hover{
+    transform: scale(1.1);
+    font-size: 16px;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .informacion li a:hover::before{
+    box-shadow: inset -4px -4px 20px 0 #fff,
+                inset 4px 4px 20px 0 rgba(0, 0, 0, .8);
+}
+
+.alertUbicacion{
+    font-size: 50px;
+    text-transform: capitalize;
+    color: #0077ff;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .redesSocialesContacto{
+    position: relative;
+    display: flex;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .redesSocialesContacto li{
+    margin-right: 25px;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .redesSocialesContacto li a{
+    font-size: 25px;
+    color: #fff;
+    opacity: .5;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto .redesSocialesContacto li:hover a{
+    opacity: 1;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto{
+    position: absolute;
+    padding: 70px 50px;
+    width: 90%;
+    height: 100%;
+    background: #f2f2f2;
+    box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+    margin-left: 100px;
+    padding-left: 300px;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto h2{
+    font-weight: 24px;
+    font-weight: 500;
+    color: rgb(0, 119, 255);
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding-top: 30px;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox{
+    position: relative;
+    margin: 0 0 35px 0;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox.w50{
+    width: 47%;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox.w100{
+    width: 100%;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox input,
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox textarea{
+    width: 100%;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    background: transparent;
+    resize: none;
+    color: #333033;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgb(0, 119, 255);
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox textarea{
+    min-height: 120px;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox span{
+    position: absolute;
+    left: 0;
+    padding: 5px 0;
+    font-size: 18px;
+    font-weight: 300;
+    color: #333;
+    transition: 0.5s;
+    pointer-events: none;
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox input:focus ~ span,
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox textarea:focus ~ span,
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox input:valid ~ span,
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox textarea:valid ~ span{
+    transform: translateY(-20px);
+    font-size: 12px;
+    font-weight: 400;
+    letter-spacing: 1px;
+    color: rgb(0, 119, 255);
+}
+
+.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox input[type="submit"]{
+    position: relative;
+    max-width: 30%;
+    background: rgb(0, 119, 255);
+    color: #fff;
+    padding: 10px 0;
+    border-radius: 15px;
+}
+
+/*=============================================
+ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
+=============================================*/
+@media screen and (max-width: 980px){
+    .contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto{
+        width: 100%;
+        height: calc(100% -80px);
+    }
+
+    .contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto{
+        width: 100%;
+        height: auto;
+        margin-left: 0;
+        padding-left: 50px;
+        z-index: 1;
+        top: 90%;
+    }
+    
+}
+
+/*=============================================
+MOVIL (XS revisamos en 320px)
+=============================================*/
+@media screen and (max-width: 600px){
+    .contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto .formBox .inputBox.w50{
+        width: 100%;
+    }
+
+    .contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto h2{
+        font-size: 18px;
+    }
+    
+    .contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto h2{
+        font-size: 18px;
+    }
+
+    .alertUbicacion{
+        font-size: 20px;
+    }
+}
