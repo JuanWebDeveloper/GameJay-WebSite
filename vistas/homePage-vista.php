@@ -119,29 +119,31 @@
 
 					<!-- Contenido De La Ventana -->
 					<div class="modal-body modalBody">
-						<form id="login" class="inputGroup">
+						<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="login" class="inputGroup">
 							<div class="modalLogo">
 								<img src="img/inicioDeSesion/login.svg" width="100%" height="100%" />
 								<p>Inicio de sesión seguro</p>
 							</div>
-							<input type="text" class="inputField" placeholder="Correo" />
-							<input type="password" class="inputField" placeholder="Contarseña" />
+							<input type="text" class="inputField" name="correo" placeholder="Correo" />
+							<input type="password" class="inputField" name="password" placeholder="Contarseña" />
 							<input type="checkbox" class="checkbox" /><label>Recordar contraseña.</label>
 							<a type="button" id="olvido">¿Olvido su contraseña?</a>
+							<input type="hidden" name="login" value="login">
 							<button type="submit" class="submitButton">Acceder</button>
 						</form>
 
-						<form id="registrar" class="inputGroup">
-							<input type="text" class="inputField" placeholder="Nombre Completo" />
-							<input type="text" class="inputField" placeholder="Correo" />
-							<input type="password" class="inputField" placeholder="Contarseña" />
-							<input type="password" class="inputField" placeholder="Repita la contarseña" />
-							<input type="checkbox" class="checkbox" /><label
+						<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="registrar" class="inputGroup">
+							<input type="text" class="inputField" name="nombre" placeholder="Nombre Completo" />
+							<input type="text" class="inputField" name="correo" placeholder="Correo" />
+							<input type="password" class="inputField" name="password" placeholder="Contarseña" />
+							<input type="password" class="inputField" name="password_two" placeholder="Repita la contarseña" />
+							<input type="checkbox" name="terminos" class="checkbox" /><label
 								><a href="#" style="color: #0077ff; font-size: 15px"
 									>Acepto los términos y condiciones.</a
 								></label
 							>
-							<button type="submit" class="submitButton">Registrarse</button>
+							<input type="hidden" name="registro" value="registro">
+							<button type="submit" class="submitButton" id="enviar">Registrarse</button>
 						</form>
 
 						<form id="recuperarContraseña" class="inputGroup">
@@ -157,6 +159,58 @@
 				</div>
 			</div>
 		</div>
+
+		<!-- Validar Si Hay Errores -->
+		<?php if(!empty($errores)): ?>
+			<!-- Habilitar Modal -->
+			<script>
+				$( document ).ready(function() {
+					$('#errores').modal('toggle')
+				});
+			</script>
+
+			<!-- Modal Donde Se Muestran Los Errores -->
+			<div class="modal fade" id="errores">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header modelHeaderErrore">
+							<h2>Surgio un error</h2>
+							<a class="close" data-dismiss="modal" aria-hidden="true"
+								><i class="fas fa-times-circle"></i>
+							</a>
+						</div>
+
+						<div class="modal-body modelBodyErrore">
+							<?php echo $errores; ?> 
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php endif; ?>
+
+		<!-- Validar Si Se Registro -->
+		<?php if(!empty($correcto)): ?>
+			<!-- Habilitar Modal -->
+			<script>
+				$( document ).ready(function() {
+					$('#correcto').modal('toggle')
+				});
+			</script>
+
+			<!-- Modal Donde Se Muestran Que Registro Correctamente -->
+			<div class="modal fade" id="correcto">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header modelHeaderCorrecto">
+							<h2><?php echo $correcto; ?> </h2>
+							<a class="close" data-dismiss="modal" aria-hidden="true"
+								><i class="fas fa-times-circle"></i>
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		<?php endif; ?>
 
 		<!--=====================================================
         |-Nosotros                                      |
@@ -356,7 +410,6 @@
 					<img src="img/productos/sfc/tablero.jpeg" />
 					<div class="overlay">
 						<h2>San Francisco city</h2>
-						<h3><a href="juego.html">Ver mas</a></h3>
 					</div>
 				</div>
 

@@ -34,7 +34,7 @@
 		<!--=====================================================
         |-Descripcion                                      |
         =======================================================-->
-		<div class="containerHeaderSF">
+		<div class="containerHeaderSF" id="inicio">
 			<div class="contenidoSF">
 				<h2>San Francisco city</h2>
 				<h3>"La calle de la delincuencia"</h3>
@@ -59,13 +59,13 @@
 
 			<nav id="navbar">
 				<ul>
-					<li><a href="index.html#inicio">Inicio</a></li>
-					<li><a href="index.html#nosotros">Nosotros</a></li>
-					<li><a href="index.html#servicios">Servicios</a></li>
-					<li><a href="index.html#productos">Productos</a></li>
-					<li><a href="index.html#contacto">Contacto</a></li>
+					<li><a href="#inicio">Inicio</a></li>
+					<li><a href="#problematica">Problematica</a></li>
+					<li><a href="#solucion">Solucion</a></li>
+					<li><a href="#juego">Juego</a></li>
+					<li><a href="#reglas">Reglas</a></li>
 					<li class="inicioResponsive">
-						<a href="#modalInicioSesion" data-toggle="modal">iniciar sesion</a>
+						<a href="cerrar.php">cerrar sesion</a>
 					</li>
 				</ul>
 			</nav>
@@ -75,82 +75,12 @@
 			</div>
 		</div>
 
-		<!--=====================================================
-        |-Ventana Modal De iniciar sesion y Registro            |
-        =======================================================-->
-		<div class="modal fade containerModalLR" id="modalInicioSesion">
-			<div class="modal-dialog">
-				<div class="modal-content containerContenido">
-					<!-- Header de la ventana -->
-					<div class="modal-header modalHeader">
-						<div id="elegir" class="elegir">
-							<div id="EL"></div>
-							<button type="button" id="acceder" class="toggle-btn">Iniciar sesión</button>
-							<button type="button" id="registro" class="toggle-btn">Registrar</button>
-							<a class="close" style="font-size: 45px; color: #0077ff" data-dismiss="modal" aria-hidden="true"
-								><i class="fas fa-times-circle"></i
-							></a>
-						</div>
-
-						<div class="containerRD">
-							<ul>
-								<li>
-									<a href="#"><i class="fab fa-facebook"></i></a>
-								</li>
-								<li>
-									<a href="#"><i class="fab fa-google-plus"></i></a>
-								</li>
-								<li>
-									<a href=""><i class="fab fa-github"></i></a>
-								</li>
-							</ul>
-						</div>
-					</div>
-
-					<!-- Contenido De La Ventana -->
-					<div class="modal-body modalBody">
-						<form id="login" class="inputGroup">
-							<div class="modalLogo">
-								<img src="img/inicioDeSesion/login.svg" width="100%" height="100%" />
-								<p>Inicio de sesión seguro</p>
-							</div>
-							<input type="text" class="inputField" placeholder="Correo" />
-							<input type="password" class="inputField" placeholder="Contarseña" />
-							<input type="checkbox" class="checkbox" /><label>Recordar contraseña.</label>
-							<a type="button" id="olvido">¿Olvido su contraseña?</a>
-							<button type="submit" class="submitButton">Acceder</button>
-						</form>
-
-						<form id="registrar" class="inputGroup">
-							<input type="text" class="inputField" placeholder="Nombre Completo" />
-							<input type="text" class="inputField" placeholder="Correo" />
-							<input type="password" class="inputField" placeholder="Contarseña" />
-							<input type="password" class="inputField" placeholder="Repita la contarseña" />
-							<input type="checkbox" class="checkbox" /><label
-								><a href="#" style="color: #0077ff; font-size: 15px"
-									>Acepto los términos y condiciones.</a
-								></label
-							>
-							<button type="submit" class="submitButton">Registrarse</button>
-						</form>
-
-						<form id="recuperarContraseña" class="inputGroup">
-							<div class="modalLogo" style="margin-bottom: 40px">
-								<img src="img/inicioDeSesion/recuperar.svg" width="100%" height="100%" />
-								<p style="font-size: 15px">Correo y la última contraseña que recuerdes</p>
-							</div>
-							<input type="text" class="inputField" placeholder="Correo" />
-							<input type="password" class="inputField" placeholder="Contarseña" />
-							<button type="submit" style="margin-top: 20px" class="submitButton">Continuar</button>
-						</form>
-					</div>
-				</div>
-			</div>
-		</div>
+		
 
 		<!--=====================================================
         |-Problematica                                      |
         =======================================================-->
+		<div class="guiaNavbar" id="problematica"></div>
 		<div class="problematicaYSolucion">
 			<h1 class="titulosPrincipales"><span>problematica</span></h1>
 
@@ -175,6 +105,7 @@
 		<!--=====================================================
         |-Solucion                                    |
         =======================================================-->
+		<div class="guiaNavbar" id="solucion"></div>
 		<div class="problematicaYSolucion">
 			<h1 class="titulosPrincipales"><span>Solucion</span></h1>
 
@@ -199,6 +130,7 @@
 		<!--=====================================================
         |-Partes Del Juego                                      |
         =======================================================-->
+		<div class="guiaNavbar" id="juego"></div>
 		<div class="contenedorDescripcionJuego">
 			<h1 class="titulosPrincipales"><span>San Francisco city</span></h1>
 
@@ -289,6 +221,7 @@
 		<!--=====================================================
         |-Reglas Del Juego                                      |
         =======================================================-->
+		<div class="guiaNavbar" id="reglas"></div>
 		<div class="contenedorReglasDelJuego">
 			<h1 class="titulosPrincipales"><span>Reglas del juego</span></h1>
 			<div class="contenedorDescripcionReglas">
@@ -487,6 +420,6 @@
 		<!--=====================================================
         |-Archivos De JavaScript                                |
         =======================================================-->
-		<script src="js/homePage.js"></script>
+		<script src="js/producto.js"></script>
 	</body>
 </html>

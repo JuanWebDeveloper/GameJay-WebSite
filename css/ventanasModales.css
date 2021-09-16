@@ -5,6 +5,7 @@
 	position: absolute;
 	overflow: hidden;
 }
+
 .containerModalLR .containerContenido {
 	position: fixed;
 	width: 40vw;
@@ -192,6 +193,71 @@
 }
 
 /*============================================================
+|-Estilos De Ventana Modal De Errores                        |
+==============================================================*/
+.modelHeaderErrore {
+	display: flex;
+	justify-content: center;
+}
+
+.modelHeaderErrore a {
+	position: absolute;
+	font-size: 30px;
+	right: 30px;
+	line-height: 40px;
+	color: #db4437;
+	opacity: 1;
+}
+
+.modelHeaderErrore a:hover {
+	color: #db4437;
+	opacity: 0.8;
+}
+
+.modelHeaderErrore h2 {
+	font-size: 30px;
+	color: #db4437;
+	line-height: 40px;
+	text-shadow: 0 0 10px #db443780, 0 0 10px #db443780;
+}
+
+.modelBodyErrore h5 {
+	font-size: 17px;
+	color: #2c2c2c;
+	text-align: center;
+	text-shadow: 0 0 10px #2c2c2c80, 0 0 10px #2c2c2c80;
+}
+
+/*============================================================
+|-Estilos De Ventana Modal De Registro Correcto              |
+==============================================================*/
+.modelHeaderCorrecto {
+	display: flex;
+	justify-content: center;
+}
+
+.modelHeaderCorrecto h2 {
+	font-size: 30px;
+	color: #04c92e;
+	line-height: 40px;
+	text-shadow: 0 0 10px #04c92e80, 0 0 10px #04c92e80;
+}
+
+.modelHeaderCorrecto a {
+	position: absolute;
+	font-size: 30px;
+	right: 30px;
+	line-height: 40px;
+	color: #04c92e;
+	opacity: 1;
+}
+
+.modelHeaderCorrecto a:hover {
+	color: #04c92e;
+	padding: 0.8;
+}
+
+/*============================================================
 |-Diseño Responsive Ventana Modal De iniciar sesion y Registro|
 ==============================================================*/
 /*=============================================
@@ -293,5 +359,13 @@ MOVIL (XS revisamos en 320px)
 		height: 95vh;
 		margin: 0;
 		left: 5%;
+	}
+
+	/*============================================================
+	|-Estilos De Ventana Modal De Errores                        |
+	==============================================================*/
+
+	.modelHeaderErrore h2 {
+		font-size: 25px;
 	}
 }
