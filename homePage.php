@@ -35,7 +35,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 		// Validar Que Se Acepten Los Terminos Y Condiciones
 		} elseif (empty($_POST["terminos"])) {
-			$errores .= "<h5>Debe aceptar los terminos y condiciones</h5>";
+			$errores .= "<h5>Debe aceptar los términos y condiciones</h5>";
 		
 		}  else {
 			// Obtener Los Datos Que Se Enviaron
@@ -53,7 +53,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 			$resultado = $query->fetch();
 
 			if ($resultado != false) {
-				$errores .= "<h5>El correo ya esta registado</h5>";
+				$errores .= "<h5>El correo ya esta registrado</h5>";
 			}
 
 			// Encriptar Las Contraseñas
@@ -72,7 +72,7 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
 			// Envio De Datos
 			$query->execute(array(":nombre" => $nombre, ":email" => $email, ":password" => $password, ":terminos" => $terminos));
-			$correcto = "Sea registrado Exictosamete";
+			$correcto = "Registro exitoso";
 		}
 	} 
 
@@ -113,8 +113,6 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 				$errores .= "<h5>Datos Incorrectos</h5>";
 			}
 		}
-
-		
 	}
 }
 
