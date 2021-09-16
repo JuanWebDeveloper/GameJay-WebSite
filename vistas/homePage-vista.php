@@ -174,7 +174,7 @@
 				<div class="modal-dialog">
 					<div class="modal-content">
 						<div class="modal-header modelHeaderErrore">
-							<h2>Surgio un error</h2>
+							<h2>Surgió Un Error</h2>
 							<a class="close" data-dismiss="modal" aria-hidden="true"
 								><i class="fas fa-times-circle"></i>
 							</a>
