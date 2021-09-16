@@ -1,67 +1,76 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    text-decoration: none;
-    list-style: none;
-    font-family: 'Roboto', sans-serif;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+	list-style: none;
+	font-family: "Poppins", sans-serif;
 }
 
-a:hover{
-    cursor: pointer;
-    text-decoration: none;
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
 }
 
-html{
-    scroll-behavior: smooth;
-    overflow-x: hidden;
+html {
+	scroll-behavior: smooth;
+	overflow-x: hidden;
 }
 
-.titulosPrincipales{
-    font-size: 50px;
-    color: #0077ff;
-    text-align: center;
-    font-weight: 700;
-    z-index: 2;
-    text-transform: capitalize;
-    padding-top: 20px;
+.titulosPrincipales {
+	font-size: 50px;
+	color: rgb(0, 119, 255);
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	font-weight: 500;
+	z-index: 2;
+	text-transform: capitalize;
+	padding-top: 20px;
 }
 
-.titulosPrincipales::after{
-    content: '';
-    display: inline-block;
-    height: 5px;
-    width: 90%;
-    background: #0077ff;
-    background-position: center;
-    position: relative;
-    top: -75px;
-    z-index: 1;
+.titulosPrincipales::after {
+	content: "";
+	display: inline-block;
+	height: 5px;
+	width: 90%;
+	background: #0077ff;
+	box-shadow: 0 3px 10px #2c2c2ce6;
+	background-position: center;
+	position: relative;
+	top: -75px;
+	opacity: 0.9;
+	z-index: 1;
 }
 
-.titulosPrincipales span{
-    background: #f2f2f2;
-    padding: 0 15px;
-    border-radius: 15px;
-    z-index: 5;
-    position: relative;
+.titulosPrincipales span {
+	background: #fff;
+	box-shadow: 0 3px 10px #2c2c2ce6;
+	padding: 0 15px;
+	border-radius: 15px;
+	z-index: 5;
+	position: relative;
 }
 
-.guiaNavbar{
-    width: 100%;
-    height: 70px;
+.guiaNavbar {
+	width: 100%;
+	height: 70px;
 }
 
+/*=====================================================
+|-Diseño Responsive                                    |
+=====================================================*/
 /*=============================================
 MOVIL (XS revisamos en 320px)
 =============================================*/
-@media screen and (max-width: 600px){
-    .titulosPrincipales{
-        font-size: 23px;
-        padding-top: 20px;
-    }
-    
-    .titulosPrincipales::after{
-        top: -35px;
-    }
+@media screen and (max-width: 600px) {
+	.titulosPrincipales {
+		font-size: 23px;
+		padding-top: 20px;
+	}
+
+	.titulosPrincipales::after {
+		top: -35px;
+	}
 }

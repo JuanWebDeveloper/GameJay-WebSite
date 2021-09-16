@@ -1,257 +1,297 @@
 /*=====================================================
 |-Estilos De Ventana Modal De iniciar sesion y Registro|
 =====================================================*/
-.containerModalLR{
-    position: absolute;
-    overflow: hidden;
+.containerModalLR {
+	position: absolute;
+	overflow: hidden;
 }
-.containerModalLR .containerContenido{
-    position: fixed;
-    width: 40vw;
-    height: 95vh;
-    margin: 0 auto;
-    top: 20px;
-    padding: 5px;
-    border-radius: 10px;
-    overflow: hidden;
+.containerModalLR .containerContenido {
+	position: fixed;
+	width: 40vw;
+	height: 95vh;
+	margin: 0 auto;
+	top: 20px;
+	padding: 5px;
+	border-radius: 10px;
+	overflow: hidden;
 }
 
 /*=====================================================
 |-Estilos Header Modal                                |
 =====================================================*/
-.containerModalLR .containerContenido .modalHeader{
-    height: 20%;
+.containerModalLR .containerContenido .modalHeader {
+	position: relative;
+	display: flex;
+	width: 90%;
+	height: 120px;
+	flex-direction: column;
+	left: 50%;
+	transform: translateX(-50%);
 }
 
-.containerModalLR .elegir{
-    position: relative;
-    width: 400px;
-    box-shadow: 0 0 10px 3px rgb(0, 119, 255);
-    margin: 0 auto;
-    border-radius: 30px;
-    text-align: center;
+.containerModalLR .elegir {
+	display: flex;
+	position: relative;
+	width: 100%;
+	box-shadow: 0 0 10px 3px rgb(0, 119, 255);
+	border-radius: 30px;
+	text-align: center;
 }
 
-.containerModalLR .elegir .toggle-btn{
-    width: 190px;
-    position: relative;
-    padding: 10px 0px;
-    cursor: pointer;
-    border-radius: 30px;
-    border: 0;
-    background: transparent;
-    color: #fff;
-    outline: none;
-    transition: .8s all linear;
+.containerModalLR .elegir .toggle-btn {
+	width: 40%;
+	position: relative;
+	padding: 10px 0px;
+	cursor: pointer;
+	border-radius: 30px;
+	border: 0;
+	background: transparent;
+	color: #fff;
+	text-align: center;
+	outline: none;
+	transition: 0.8s all linear;
 }
 
-.containerModalLR .elegir #EL{
-    position: absolute;
-    width: 200px;
-    height: 100%;
-    border-radius: 30px;
-    background: rgb(0, 119, 255);
-    transition: .8s all linear;
+.containerModalLR .elegir #EL {
+	position: absolute;
+	width: 40%;
+	height: 100%;
+	border-radius: 30px;
+	background: rgb(0, 119, 255);
+	transition: 0.8s all linear;
 }
 
-.containerModalLR .containerRD{
-    position: absolute;
-    width: 50%;
-    height: 30px;
-    left: 20%;
-    margin-top: 50px;
-    text-align: center;
+.containerModalLR .containerRD {
+	position: relative;
+	width: 100%;
+	height: 30px;
+	margin: 10px 0;
+	text-align: center;
 }
 
-.containerModalLR .containerRD ul li{
-    display: inline;
-    padding: 0 20px;
+.containerModalLR .containerRD ul li {
+	display: inline;
+	padding: 0 20px;
 }
 
-.containerModalLR .containerRD ul li a{
-    font-size: 35px;
+.containerModalLR .containerRD ul li a {
+	font-size: 35px;
 }
 
-.containerModalLR .containerRD ul li:nth-child(1) a{
-    color: #3b5998;
+.containerModalLR .containerRD ul li:nth-child(1) a {
+	color: #3b5998;
 }
 
-.containerModalLR .containerRD ul li:nth-child(2) a{
-    color: #db4437;
+.containerModalLR .containerRD ul li:nth-child(2) a {
+	color: #db4437;
 }
 
-.containerModalLR .containerRD ul li:nth-child(3) a{
-    color: #211F1F;
+.containerModalLR .containerRD ul li:nth-child(3) a {
+	color: #211f1f;
 }
 
 /*=====================================================
 |-Estilos Body Modal                                  |
 =====================================================*/
-.containerModalLR .containerContenido .modalBody{
-    position: relative;
-    height: auto;
-    left: 10%;
+.containerModalLR .containerContenido .modalBody {
+	position: relative;
+	width: 100%;
 }
 
-.containerModalLR .containerContenido .inputGroup{
-    position: absolute;
-    width: 70%;
-    top: 20px;
-    left: 5%;
-    transition: .8s all linear;
+.containerModalLR .containerContenido .inputGroup {
+	position: relative;
+	width: 70%;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.8s all linear;
 }
 
-.containerModalLR .containerContenido .inputGroup .modalLogo{
-    position: relative;
-    width: 500px;
-    height: 120px;
-    right: 55px;
-    margin-bottom: 50px;
-    text-align: center;
+.mostrar-iniciar {
+	height: auto;
+	top: 0%;
+	opacity: 1;
 }
 
-.containerModalLR .containerContenido .inputGroup .modalLogo p{
-    font-size: 25px;
-    color: rgb(0, 119, 255);
+.ocultar-iniciar {
+	height: 0;
+	top: -150%;
+	opacity: 0;
 }
 
-.containerModalLR .containerContenido .inputGroup .inputField{
-    width: 100%;
-    padding: 10px 0;
-    margin: 5px 0;
-    border: 0;
-    border-bottom: 2px solid rgb(0, 119, 255);
-    outline: none;
-    background: transparent;
+.mostrar-registro {
+	height: auto;
+	opacity: 1;
 }
 
-.containerModalLR .containerContenido .inputGroup .checkbox{
-    margin: 30px 10px 20px 0;
+.ocultar-registro {
+	height: 0;
+	opacity: 0;
 }
 
-.containerModalLR .containerContenido .inputGroup a{
-    display: block;
-    font-size: 17px;
-    margin-bottom: 10px;
-    color: rgb(0, 119, 255);
+.mostrar-recuperar {
+	height: auto;
+	top: 0%;
+	opacity: 1;
 }
 
+.ocultar-recuperar {
+	height: 0;
+	top: 110%;
+	opacity: 0;
+}
 
-.containerModalLR .containerContenido .inputGroup  .submitButton{
-    width: 85%;
-    padding: 10px 30px;
-    cursor: pointer;
-    display: block;
-    margin: auto;
-    background: rgb(0, 119, 255);
-    color: #fff;
-    border: 0;
-    outline: none;
-    border-radius: 30px;
+.containerModalLR .containerContenido .inputGroup .modalLogo {
+	position: relative;
+	width: 500px;
+	height: 90px;
+	left: 50%;
+	transform: translateX(-50%);
+	margin-bottom: 30px;
+	text-align: center;
+}
+
+.containerModalLR .containerContenido .inputGroup .modalLogo p {
+	font-size: 20px;
+	padding-top: 10px;
+	color: rgb(0, 119, 255);
+}
+
+.containerModalLR .containerContenido .inputGroup .inputField {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: 2px solid rgb(0, 119, 255);
+	outline: none;
+	background: transparent;
+}
+
+.containerModalLR .containerContenido .inputGroup .checkbox {
+	margin: 30px 10px 20px 0;
+}
+
+.containerModalLR .containerContenido .inputGroup a {
+	display: block;
+	font-size: 17px;
+	margin-bottom: 10px;
+	color: rgb(0, 119, 255);
+}
+
+.containerModalLR .containerContenido .inputGroup .submitButton {
+	width: 85%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto;
+	background: rgb(0, 119, 255);
+	color: #fff;
+	border: 0;
+	outline: none;
+	border-radius: 30px;
 }
 
 /*============================================================
 |-Diseño Responsive Ventana Modal De iniciar sesion y Registro|
 ==============================================================*/
 /*=============================================
+Ipad o Ipad Pro
+=============================================*/
+@media screen and (min-height: 900px) {
+	.containerModalLR .containerContenido .inputGroup .modalLogo {
+		position: relative;
+		width: 500px;
+		height: 200px;
+	}
+}
+/*=============================================
 ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 =============================================*/
-@media screen and (max-width:1199px){
-    /*=====================================================
+@media screen and (max-width: 1199px) {
+	/*=====================================================
     |-Estilos De Ventana Modal De iniciar sesion y Registro|
     =====================================================*/
-    .containerModalLR .containerContenido{
-        height: 90vh;
-    }
-    /*=====================================================
-    |-Estilos Header Modal                                |
-    =====================================================*/
-    .containerModalLR .elegir{
-        width: 100%;
-        top: 10px;
-        left: 0;
-    }
+	.containerModalLR .containerContenido {
+		height: 90vh;
+	}
 
-    .containerModalLR .elegir .toggle-btn{
-        width: 45%;
-        padding: 10px 10px;
-        font-size: 10px;
-    }
-
-    .containerModalLR .elegir #EL{
-        width: 50%;
-    }
-
-    .containerModalLR .containerRD{
-        width: 100%;
-        left: 0;
-    }
-
-    /*=====================================================
+	/*=====================================================
     |-Estilos Body Modal                                  |
     =====================================================*/
-    .containerModalLR .containerContenido .inputGroup .modalLogo{
-        width: 100%;
-        right: 0;
-    }
+	.containerModalLR .containerContenido .inputGroup {
+		width: 90%;
+	}
+
+	.containerModalLR .containerContenido .inputGroup .modalLogo {
+		width: 100%;
+	}
 }
 
 /*=============================================
 ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 =============================================*/
-@media screen and (max-width: 980px){
-    /*=====================================================
+@media screen and (max-width: 980px) {
+	/*=====================================================
     |-Estilos De Ventana Modal De iniciar sesion y Registro|
     =====================================================*/
-    .containerModalLR .containerContenido{
-        width: 70vw;
-    }
+	.containerModalLR .containerContenido {
+		width: 70vw;
+	}
 
-    /*=====================================================
+	/*=====================================================
     |-Estilos Body Modal                                  |
     =====================================================*/
-    .containerModalLR .containerContenido .modalBody{
-        height: auto;
-        left: 0%;
-    }
+	.containerModalLR .containerContenido .modalBody {
+		left: 0%;
+	}
 
-    .containerModalLR .containerContenido .inputGroup{
-        width: 90%;
-    }
+	.containerModalLR .containerContenido .inputGroup {
+		width: 90%;
+	}
 
-    .containerModalLR .containerContenido .inputGroup .modalLogo{
-        width: 100%;
-        right: 0;
-    }
+	.containerModalLR .containerContenido .inputGroup .modalLogo {
+		width: 100%;
+		right: 0;
+	}
 
-    .containerModalLR .containerContenido .inputGroup .modalLogo p{
-        font-size: 20px;
-    }
+	.containerModalLR .containerContenido .inputGroup .modalLogo p {
+		font-size: 20px;
+	}
 
-    .containerModalLR .containerContenido .inputGroup:nth-child(3) .modalLogo p{
-        font-size: 15px !important;
-    }
+	.containerModalLR .containerContenido .inputGroup:nth-child(3) .modalLogo p {
+		font-size: 13px !important;
+	}
 
-    .containerModalLR .containerContenido .inputGroup .checkbox{
-        margin: 10px 5px 5px 0;
-    }
+	.containerModalLR .containerContenido .inputGroup .checkbox {
+		margin: 10px 5px 5px 0;
+	}
 
-    .containerModalLR .containerContenido .inputGroup:nth-child(2) a{
-        font-size: 13px;
-    }
+	.containerModalLR .containerContenido .inputGroup:nth-child(2) a {
+		font-size: 13px;
+	}
 }
 /*=============================================
 MOVIL (XS revisamos en 320px)
 =============================================*/
-@media screen and (max-width: 600px){
-    /*=====================================================
+@media screen and (max-width: 600px) {
+	/*=====================================================
     |-Estilos De Ventana Modal De iniciar sesion y Registro|
     =====================================================*/
-    .containerModalLR .containerContenido{
-        width: 90vw;
-        height: 95vh;
-        margin: 0;
-        left: 5%;
-    }
-    
+	/*=====================================================
+    |-Estilos Header Modal                                |
+    =====================================================*/
+	.containerModalLR .containerRD ul li {
+		padding: 0 10px;
+	}
+
+	.containerModalLR .elegir .toggle-btn {
+		font-size: 10px;
+	}
+
+	.containerModalLR .containerContenido {
+		width: 90vw;
+		height: 95vh;
+		margin: 0;
+		left: 5%;
+	}
 }
