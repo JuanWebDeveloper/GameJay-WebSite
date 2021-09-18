@@ -7,5 +7,5 @@ session_destroy();
 $_SESSION = array();
 
 // Redirecconamo y matamos la pagina
-header("Location: index.php");
+header("Location: http://localhost/practices/GameJay/");
 die();

@@ -1,6 +1,3 @@
-/*--=====================================================
-|-Variables                                     |
-=======================================================--*/
 let activeEffectNavigation = $(".containerMenu nav ul li a");
 let containerMenu = document.getElementById("containerMenu");
 let bars = document.getElementById("bars");

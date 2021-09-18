@@ -1,6 +1,10 @@
 <?php
 
 class Conexion{
+
+	/*==============================================
+     Conexion Con La Base De Datos
+    /*=============================================*/
 	public static function conectar(){
 		$link = new PDO("mysql:host=localhost;dbname=game_jay",
 						"root",
@@ -11,4 +15,5 @@ class Conexion{
 
 		return $link;
 	}
+
 }

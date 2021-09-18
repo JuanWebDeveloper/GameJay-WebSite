@@ -19,7 +19,7 @@
 }
 
 .contenedorContacto .ContenedorPrincipalContacto .informacionDeContacto {
-	position: absolute;
+	position: relative;
 	display: flex;
 	top: 40px;
 	width: 350px;
@@ -272,6 +272,7 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 	}
 
 	.contenedorContacto .ContenedorPrincipalContacto .formularioDeContacto {
+		position: relative;
 		width: 100%;
 		height: auto;
 		margin-left: 0;

@@ -195,6 +195,18 @@
 /*============================================================
 |-Estilos De Ventana Modal De Errores                        |
 ==============================================================*/
+.containerModalErrores {
+	position: absolute;
+}
+
+.modalContentErrores {
+	position: relative;
+	width: 50vw;
+	left: 50%;
+	border-radius: 10px;
+	transform: translateX(-50%);
+}
+
 .modelHeaderErrore {
 	display: flex;
 	justify-content: center;
@@ -297,6 +309,13 @@ ESCRITORIO MEDIANO O TABLET HORIZONTAL (MD revisamos en 1024px)
 ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 =============================================*/
 @media screen and (max-width: 980px) {
+	/*============================================================
+	|-Estilos De Ventana Modal De Errores                        |
+	==============================================================*/
+	.modalContentErrores {
+		width: 70vw;
+	}
+
 	/*=====================================================
     |-Estilos De Ventana Modal De iniciar sesion y Registro|
     =====================================================*/
@@ -340,6 +359,12 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 MOVIL (XS revisamos en 320px)
 =============================================*/
 @media screen and (max-width: 600px) {
+	/*============================================================
+	|-Estilos De Ventana Modal De Errores                        |
+	==============================================================*/
+	.modalContentErrores {
+		width: 95vw;
+	}
 	/*=====================================================
     |-Estilos De Ventana Modal De iniciar sesion y Registro|
     =====================================================*/

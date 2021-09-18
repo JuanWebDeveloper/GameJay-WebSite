@@ -1,9 +1,16 @@
 <?php
 
-session_start();
+/*==============================================
+ Controladores
+/*=============================================*/
+require "./controladores/plantilla-controlador.php";
+require "./controladores/usuarios-controladores.php";
 
-if (isset($_SESSION["user"])) {
-	header("Location: producto.php");
-} else {
-	header("Location: homePage.php");
-}
+/*==============================================
+ Modelos
+/*=============================================*/
+require "./modelos/rutas.php";
+require "./modelos/usuarios-modelo.php";
+
+$plantilla = new ControladorPlantilla();
+$plantilla -> plantilla();

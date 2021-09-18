@@ -205,11 +205,6 @@ footer .bottom center a:hover {
 ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 =============================================*/
 @media screen and (max-width: 980px) {
-	footer {
-		position: relative;
-		top: 500px;
-	}
-
 	footer .main-content {
 		flex-wrap: wrap;
 		flex-direction: column;
@@ -217,13 +212,5 @@ ESCRITORIO PEQUEÑO O TABLET VERTICAL (SM revisamos en 768px)
 
 	footer .main-content .box {
 		margin: 5px 0;
-	}
-}
-/*=============================================
-MOVIL (XS revisamos en 320px)
-=============================================*/
-@media screen and (max-width: 600px) {
-	footer {
-		top: 650px;
 	}
 }
