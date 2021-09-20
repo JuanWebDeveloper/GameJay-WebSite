@@ -1,0 +1,62 @@
+/*=====================================================
+|-Estilos Inicio Como Administrador                   |
+=====================================================*/
+.adminLogin {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+.adminLogin .loginAdminContent {
+	position: relative;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.adminLogin .loginAdminContent .formAdmin {
+	position: relative;
+	width: 50%;
+	left: 50%;
+	top: 50%;
+	margin-top: 100px;
+	transform: translate(-50%, -50%);
+	transition: 0.8s all linear;
+}
+
+.adminLogin .loginAdminContent .formAdmin .inputField {
+	width: 100%;
+	padding: 10px 0;
+	margin: 5px 0;
+	border: 0;
+	border-bottom: 2px solid rgb(0, 119, 255);
+	outline: none;
+	background: transparent;
+}
+
+.adminLogin .loginAdminContent .formAdmin .submitButton {
+	width: 50%;
+	padding: 10px 30px;
+	cursor: pointer;
+	display: block;
+	margin: 10px auto;
+	background: rgb(0, 119, 255);
+	color: #fff;
+	border: 0;
+	outline: none;
+	border-radius: 5px;
+	transition: all 0.3s ease-in;
+}
+
+.adminLogin .loginAdminContent .formAdmin .submitButton:hover {
+	opacity: 0.8;
+}
+
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	.adminLogin .loginAdminContent .formAdmin {
+		width: 90%;
+	}
+}

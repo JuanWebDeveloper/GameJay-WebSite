@@ -189,7 +189,12 @@
 	color: #fff;
 	border: 0;
 	outline: none;
-	border-radius: 30px;
+	border-radius: 5px;
+	transition: all 0.3s ease-in;
+}
+
+.containerModalLR .containerContenido .inputGroup .submitButton:hover {
+	opacity: 0.8;
 }
 
 /*============================================================

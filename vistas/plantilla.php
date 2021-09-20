@@ -19,7 +19,7 @@
 		if (isset($_GET["route"])) {
 			$rutas = explode("/", $_GET["route"]);
 
-			if ($rutas[0] == "login-admin" || $rutas[0] == "panel") {
+			if ($rutas[0] == "login-admin") {
 				echo '<title>'.$rutas[0].'</title>';
 			} else {
 				echo '<title>!Error 404!</title>';
@@ -28,6 +28,10 @@
 		} else {
 			if (isset($_SESSION["user"])) {
 				echo '<title>San Francisco City</title>';
+				
+			} elseif (isset($_SESSION["admin"])) {
+				echo '<title>Panel Administrativo</title>';
+
 			} else {
 				echo '<title>GameJay</title>';
 			}
@@ -58,6 +62,7 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/footer.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/ventanasModales.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/sanFrancisco.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/loginAdmin.css">
 	
 	<!--=====================================================
 	|-Plugins De JavaScript                                 |
@@ -73,6 +78,9 @@
 		if (isset($_SESSION["user"])) {
 			require "modulos/san-francisco.php";
 			require "modulos/footer.php";
+
+		} elseif (isset($_SESSION["admin"])) {
+			require "modulos/panel-administrativo.php";
 
 		} elseif (isset($_GET["route"])) {
 			
