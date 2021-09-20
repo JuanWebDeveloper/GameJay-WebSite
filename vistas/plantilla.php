@@ -63,6 +63,7 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/ventanasModales.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/sanFrancisco.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/loginAdmin.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/error404.css">
 	
 	<!--=====================================================
 	|-Plugins De JavaScript                                 |
@@ -76,18 +77,36 @@
 	<?php 
 
 		if (isset($_SESSION["user"])) {
-			require "modulos/san-francisco.php";
-			require "modulos/footer.php";
+			if (isset($_GET["route"])) {
+				if ($rutas[0] != "login-admin") {
+					require "modulos/error404.php";
+					
+				} else {
+					header("Location: http://localhost/practices/GameJay/");
+				}
+			} else {
+				require "modulos/san-francisco.php";
+				require "modulos/footer.php";
+			}
 
 		} elseif (isset($_SESSION["admin"])) {
-			require "modulos/panel-administrativo.php";
+			if (isset($_GET["route"])) {
+				if ($rutas[0] != "login-admin") {
+					require "modulos/error404.php";
+
+				} else {
+					header("Location: http://localhost/practices/GameJay/");
+				}
+			} else {
+				require "modulos/panel-administrativo.php";
+			}
 
 		} elseif (isset($_GET["route"])) {
 			
 			if ($rutas[0] == "login-admin") {
 				require "modulos/$rutas[0].php";
 			} else {
-				echo "Error 404";
+				require "modulos/error404.php";
 			}
 
 		} else {
