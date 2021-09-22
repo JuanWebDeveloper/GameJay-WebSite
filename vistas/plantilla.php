@@ -16,27 +16,56 @@
 		// Favicon
 		echo '<link rel="icon" type="image/png" href="'.$url.'complementos/img/logo.png" />';
 
+		if (isset($_SESSION["user"])) {
+			if (isset($_GET["route"])) {
+				$rutas = explode("/", $_GET["route"]);
+
+				if ($rutas[0] == "login-admin") {
+					header("Location: http://localhost/practices/GameJay/"); 
+					
+				} else {
+					echo '<title>!Error 404!</title>';
+				}
+			} else {
+				echo '<title>San Francisco City</title>';
+			}
+			
+		} 
+		
+		if (isset($_SESSION["admin"])) {
+			if (isset($_GET["route"])) {
+				$rutas = explode("/", $_GET["route"]);
+
+				if ($rutas[0] == "login-admin") {
+					header("Location: http://localhost/practices/GameJay/"); 
+					
+				} elseif ($rutas[0] == "crear-pregunta") {
+					echo '<title>Crear Pregunta</title>';
+
+				} elseif ($rutas[0] == "lista-preguntas") {
+					echo '<title>Lista De Preguntas</title>';
+
+				} else {
+					echo '<title>!Error 404!</title>';
+				}
+			} else {
+				echo '<title>Panel Administrativo</title>';
+			}
+		} 
+
 		if (isset($_GET["route"])) {
 			$rutas = explode("/", $_GET["route"]);
-
+			
 			if ($rutas[0] == "login-admin") {
-				echo '<title>'.$rutas[0].'</title>';
+				echo '<title>Iniciar Como Administrador</title>';
 			} else {
 				echo '<title>!Error 404!</title>';
 			}
 
 		} else {
-			if (isset($_SESSION["user"])) {
-				echo '<title>San Francisco City</title>';
-				
-			} elseif (isset($_SESSION["admin"])) {
-				echo '<title>Panel Administrativo</title>';
-
-			} else {
-				echo '<title>GameJay</title>';
-			}
+			echo '<title>GameJay</title>';
 		}
-
+		
 	?>
 
 	<!--=====================================================
@@ -91,18 +120,24 @@
 
 		} elseif (isset($_SESSION["admin"])) {
 			if (isset($_GET["route"])) {
-				if ($rutas[0] != "login-admin") {
+				if ($rutas[0] != "login-admin" && $rutas[0] != "crear-pregunta" && $rutas[0] != "lista-preguntas") {
 					require "modulos/error404.php";
 
 				} else {
-					header("Location: http://localhost/practices/GameJay/");
+
+					if ($rutas[0] == "login-admin") {
+						header("Location: http://localhost/practices/GameJay/"); 
+					} else {
+						require "modulos/menu-administrativo.php";
+						require "modulos/$rutas[0].php";
+					}
 				}
 			} else {
-				require "modulos/panel-administrativo.php";
+				require "modulos/menu-administrativo.php";
+				require "modulos/inicio-administrativo.php";
 			}
 
 		} elseif (isset($_GET["route"])) {
-			
 			if ($rutas[0] == "login-admin") {
 				require "modulos/$rutas[0].php";
 			} else {
@@ -114,7 +149,6 @@
 			require "modulos/footer.php";
 		}
 		
-
 	?>
 
 	<!--=====================================================
