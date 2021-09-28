@@ -20,8 +20,8 @@
 			if (isset($_GET["route"])) {
 				$rutas = explode("/", $_GET["route"]);
 
-				if ($rutas[0] == "login-admin") {
-					header("Location: http://localhost/practices/GameJay/"); 
+				if ($rutas[0] == "login-admin" || $rutas[0] == "crear-pregunta" || $rutas[0] == "lista-preguntas") {
+					header("Location: $url"); 
 					
 				} else {
 					echo '<title>!Error 404!</title>';
@@ -37,7 +37,7 @@
 				$rutas = explode("/", $_GET["route"]);
 
 				if ($rutas[0] == "login-admin") {
-					header("Location: http://localhost/practices/GameJay/"); 
+					header("Location: $url"); 
 					
 				} elseif ($rutas[0] == "crear-pregunta") {
 					echo '<title>Crear Pregunta</title>';
@@ -58,6 +58,10 @@
 			
 			if ($rutas[0] == "login-admin") {
 				echo '<title>Iniciar Como Administrador</title>';
+
+			} elseif ($rutas[0] == "crear-pregunta" && !isset($_SESSION["admin"]) || $rutas[0] == "lista-preguntas" && !isset($_SESSION["admin"])) {
+				header("Location: $url"); 
+
 			} else {
 				echo '<title>!Error 404!</title>';
 			}
@@ -111,7 +115,7 @@
 					require "modulos/error404.php";
 					
 				} else {
-					header("Location: http://localhost/practices/GameJay/");
+					header("Location: $url");
 				}
 			} else {
 				require "modulos/san-francisco.php";
@@ -126,7 +130,7 @@
 				} else {
 
 					if ($rutas[0] == "login-admin") {
-						header("Location: http://localhost/practices/GameJay/"); 
+						header("Location: $url"); 
 					} else {
 						require "modulos/menu-administrativo.php";
 						require "modulos/$rutas[0].php";
