@@ -96,6 +96,7 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/ventanasModales.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/sanFrancisco.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/loginAdmin.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/admin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>complementos/css/error404.css">
 	
 	<!--=====================================================
@@ -110,32 +111,30 @@
 	<?php 
 
 		if (isset($_SESSION["user"])) {
+			
 			if (isset($_GET["route"])) {
-				if ($rutas[0] != "login-admin") {
+
+				if ($rutas[0] != "login-admin" && $rutas[0] != "crear-pregunta" && $rutas[0] != "lista-preguntas") {
 					require "modulos/error404.php";
-					
-				} else {
-					header("Location: $url");
-				}
+				} 
+
 			} else {
 				require "modulos/san-francisco.php";
 				require "modulos/footer.php";
 			}
 
 		} elseif (isset($_SESSION["admin"])) {
+
 			if (isset($_GET["route"])) {
+
 				if ($rutas[0] != "login-admin" && $rutas[0] != "crear-pregunta" && $rutas[0] != "lista-preguntas") {
 					require "modulos/error404.php";
 
 				} else {
-
-					if ($rutas[0] == "login-admin") {
-						header("Location: $url"); 
-					} else {
-						require "modulos/menu-administrativo.php";
-						require "modulos/$rutas[0].php";
-					}
+					require "modulos/menu-administrativo.php";
+					require "modulos/$rutas[0].php";
 				}
+
 			} else {
 				require "modulos/menu-administrativo.php";
 				require "modulos/inicio-administrativo.php";

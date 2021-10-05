@@ -30,4 +30,31 @@ class ModeloAdministrador{
 		$statement = null;
 		die();
 	}
+
+	/*=============================================
+	 Inicio De Sesion
+	=============================================*/
+	public static function mdlCrearPregunta($tabla, $datos){
+		// Consulta Para Registrar Al Usuario
+		$query = Conexion::conectar()->prepare("INSERT INTO $tabla (pregunta, opcion_a, opcion_b, opcion_c, respuesta) VALUES (:pregunta, :opcionA, :opcionB, :opcionC, :respuesta)");
+
+		// Indicamos Los Valores Y Tipos De Datos Que Se Enviaran En La Consulta
+		$query->bindParam(":pregunta", $datos["pregunta"], PDO::PARAM_STR);
+		$query->bindParam(":opcionA", $datos["opcionA"], PDO::PARAM_STR);
+		$query->bindParam(":opcionB", $datos["opcionB"], PDO::PARAM_STR);
+		$query->bindParam(":opcionC", $datos["opcionC"], PDO::PARAM_STR);
+		$query->bindParam(":respuesta", $datos["respuesta"], PDO::PARAM_STR);
+
+		if ($query->execute()) {
+			return "Pregunta Creada";
+		} else {
+			return "No se pudo guardar la pregunta";
+		}
+
+		$query = null;
+
+		die();
+		
+		
+	}
 }

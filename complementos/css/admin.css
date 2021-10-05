@@ -1,0 +1,39 @@
+/*=====================================================
+|-Estilos Panel Administrativo                       |
+=====================================================*/
+.containerContentHomeA {
+	position: absolute;
+	width: 70vw;
+	left: 50%;
+	top: calc(50% + 25px);
+	padding: 50px;
+	border-radius: 5px;
+	text-align: center;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	transform: translate(-50%, -50%);
+}
+
+.containerContentHomeA h2 {
+	margin: 0;
+	text-transform: capitalize;
+}
+
+.containerContentHomeA h2 span {
+	color: #0077ff;
+}
+
+/*=====================================================
+|-Diseño Responsive                                    |
+=====================================================*/
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	.containerContentHomeA {
+		width: 90vw;
+	}
+
+	.containerContentHomeA h2 {
+		font-size: 20px;
+	}
+}
