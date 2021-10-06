@@ -38,7 +38,7 @@ class ControladorAdministrador{
 	}
 
 	/*=============================================
-	 Inicio De Sesion
+	 Crear Preguntas
 	=============================================*/
 	public static function ctrCrearPregunta(){
 
@@ -75,5 +75,15 @@ class ControladorAdministrador{
 			}
 		}
 		
+	}
+
+	/*=============================================
+	 Listar Preguntas
+	=============================================*/
+	public static function ctrListarPreguntas(){
+		$tabla = "preguntas";
+		$respuesta = ModeloAdministrador::mdlListarPregunta($tabla);
+
+		return $respuesta;
 	}
 }

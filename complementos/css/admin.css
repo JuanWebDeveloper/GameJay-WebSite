@@ -22,9 +22,132 @@
 	color: #0077ff;
 }
 
+.ListContainer {
+	position: absolute;
+	width: 100vw;
+	height: 100vh;
+}
+
+.listContent {
+	position: relative;
+	width: 95vw;
+	max-height: 500px;
+	top: calc(50% + 25px);
+	left: 50%;
+	padding: 15px;
+	border-radius: 5px;
+	overflow: hidden;
+	overflow-y: scroll;
+	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
+	transform: translate(-50%, -50%);
+}
+
+.listContent::-webkit-scrollbar {
+	width: 5px;
+}
+
+.listContent::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 5px;
+}
+
+.listContent:hover::-webkit-scrollbar-thumb {
+	background: #0077ff;
+}
+
+.listContent h2 {
+	margin: 0;
+	text-transform: capitalize;
+	text-align: center;
+	color: #0077ff;
+}
+
+.listContent table {
+	width: 100%;
+	border-collapse: collapse;
+	margin-top: 30px;
+}
+
+.listContent thead tr th {
+	display: table-cell;
+	padding: 0.75rem;
+	font-weight: 600;
+	text-transform: capitalize;
+	text-align: center;
+	border-left: 1px solid #ffffff;
+	color: #ffffff;
+	background: linear-gradient(to top, #60a5fa, #3b82f6, #1d4ed8);
+}
+
+.listContent tbody tr {
+	display: table-row;
+	width: 100%;
+	background: #fff;
+	transition: all 0.3s ease-out;
+}
+
+.listContent tbody tr:hover {
+	background-color: #0077ff70;
+}
+
+.listContent tbody tr td {
+	position: static;
+	display: table-cell;
+	padding: 0.75rem 0;
+	text-align: center;
+	color: rgba(31, 41, 55);
+	transition: all 0.3s ease-out;
+}
+
+.listContent tbody tr:hover td {
+	color: #fff;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
+}
+
+.listContent tbody tr td span {
+	display: none;
+	position: absolute;
+	width: 80px;
+	height: 100%;
+	font-size: 0.75rem;
+	line-height: 1rem;
+	font-weight: 700;
+	text-transform: uppercase;
+	align-items: center;
+	justify-content: center;
+	top: 0px;
+	left: 0px;
+	color: rgba(255, 255, 255);
+	background: linear-gradient(to top, #60a5fa, #3b82f6, #1d4ed8);
+}
+
 /*=====================================================
 |-Diseño Responsive                                    |
 =====================================================*/
+@media (max-width: 980px) {
+	.listContent thead tr th {
+		display: none;
+	}
+
+	.listContent tbody tr {
+		display: flex;
+		flex-wrap: wrap;
+		margin-bottom: 2.5rem;
+	}
+
+	.listContent tbody tr td {
+		display: block;
+		position: relative;
+		width: 100%;
+		border-bottom: 1px solid #0077ff;
+		padding-left: 5rem;
+	}
+
+	.listContent tbody tr td span {
+		display: flex;
+	}
+}
+
 /*=====================
 (XS we check in 320px)
 =====================*/

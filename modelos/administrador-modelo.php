@@ -32,7 +32,7 @@ class ModeloAdministrador{
 	}
 
 	/*=============================================
-	 Inicio De Sesion
+	 Crear Preguntas
 	=============================================*/
 	public static function mdlCrearPregunta($tabla, $datos){
 		// Consulta Para Registrar Al Usuario
@@ -52,9 +52,21 @@ class ModeloAdministrador{
 		}
 
 		$query = null;
-
 		die();
-		
-		
+	}
+
+	/*=============================================
+	 Listar Preguntas
+	=============================================*/
+	public static function mdlListarPregunta($tabla){
+		$statement = Conexion::conectar()->prepare("SELECT * FROM $tabla");
+		$statement->execute();
+
+		$resultado = $statement->fetchAll();
+
+		return $resultado;
+
+		$statement = null;
+		die();
 	}
 }
