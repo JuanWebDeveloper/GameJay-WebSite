@@ -96,4 +96,14 @@ class ControladorAdministrador{
 
 		return $respuesta;
 	}
+
+	/*=============================================
+	 Traer Datos De La Pregunta Que Se Editara
+	=============================================*/
+	public static function ctrTraerDatosParaEditar($id){
+		$tabla = "preguntas";
+		$respuesta = ModeloAdministrador::mdlTraerDatosParaEditar($tabla, $id);
+
+		return $respuesta;
+	}
 }

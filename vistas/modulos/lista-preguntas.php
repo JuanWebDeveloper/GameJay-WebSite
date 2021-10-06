@@ -43,11 +43,10 @@
                                     </td>
                                     <td class='d-flex justify-content-center'>
                                         <span>Acciones</span>
-                                        <form method='GET' class='mr-3'>
-                                            <input type='hidden' name='editar' value='$pregunta[0]' />
-                                            <input type='submit' value='Editar' class='btn btn-primary' />
-                                        </form>
-                                        <form method='POST'>
+                                        
+                                        <a href='editar-pregunta/$pregunta[0]' class='btn btn-primary'>Editar</a>
+
+                                        <form method='POST' class='ml-3'>
                                             <input type='hidden' name='eliminar' value='$pregunta[0]' />
                                             <input type='submit' value='Eliminar' class='btn btn-danger' />
                                         </form>

@@ -74,8 +74,10 @@ class ModeloAdministrador{
 	 Eliminar Preguntas
 	=============================================*/
 	public static function mdlEliminarPregunta($tabla, $id){
-		$statement = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE id = $id");
+		$statement = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE id = :id");
 		
+		$statement->bindParam(":id", $id, PDO::PARAM_INT);
+
 		$resultado = $statement->execute();
 
 		if ($resultado) {
@@ -83,6 +85,24 @@ class ModeloAdministrador{
 		} else {
 			return "Ocurrio un error al tratar de eliminar la pregunta";
 		}
+
+		$statement = null;
+		die();
+	}
+
+	/*=============================================
+	 Traer Datos De La Pregunta Que Se Editara
+	=============================================*/
+	public static function mdlTraerDatosParaEditar($tabla, $id){
+		$statement = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id = :id");
+		
+		$statement->bindParam(":id", $id, PDO::PARAM_INT);
+
+		$statement->execute();
+
+		$resultado = $statement->fetch();
+
+		return $resultado;
 
 		$statement = null;
 		die();

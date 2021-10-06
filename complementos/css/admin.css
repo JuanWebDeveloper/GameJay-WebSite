@@ -93,7 +93,7 @@
 .listContent tbody tr td {
 	position: static;
 	display: table-cell;
-	padding: 0.75rem 0;
+	padding: 0.75rem;
 	text-align: center;
 	color: rgba(31, 41, 55);
 	transition: all 0.3s ease-out;
@@ -150,7 +150,7 @@
 		position: relative;
 		width: 100%;
 		border-bottom: 1px solid #0077ff;
-		padding-left: 5rem;
+		padding-left: 5.75rem;
 	}
 
 	.listContent tbody tr td span {

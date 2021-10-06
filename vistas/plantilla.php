@@ -45,7 +45,14 @@
 				} elseif ($rutas[0] == "lista-preguntas") {
 					echo '<title>Lista De Preguntas</title>';
 
-				} else {
+				} elseif ($rutas[0] == "editar-pregunta") {
+					if (isset($rutas[1])) {
+						echo '<title>Editar Pregunta</title>';
+					} else {
+						header("Location: $url"); 
+					}
+				} 
+				else {
 					echo '<title>!Error 404!</title>';
 				}
 			} else {
@@ -127,7 +134,7 @@
 
 			if (isset($_GET["route"])) {
 
-				if ($rutas[0] != "login-admin" && $rutas[0] != "crear-pregunta" && $rutas[0] != "lista-preguntas") {
+				if ($rutas[0] != "login-admin" && $rutas[0] != "crear-pregunta" && $rutas[0] != "lista-preguntas" && $rutas[0] != "editar-pregunta") {
 					require "modulos/error404.php";
 
 				} else {
