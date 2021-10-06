@@ -86,4 +86,14 @@ class ControladorAdministrador{
 
 		return $respuesta;
 	}
+
+	/*=============================================
+	 Eliminar Preguntas
+	=============================================*/
+	public static function ctrEliminarPregunta($id){
+		$tabla = "preguntas";
+		$respuesta = ModeloAdministrador::mdlEliminarPregunta($tabla, $id);
+
+		return $respuesta;
+	}
 }

@@ -69,4 +69,22 @@ class ModeloAdministrador{
 		$statement = null;
 		die();
 	}
+
+	/*=============================================
+	 Eliminar Preguntas
+	=============================================*/
+	public static function mdlEliminarPregunta($tabla, $id){
+		$statement = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE id = $id");
+		
+		$resultado = $statement->execute();
+
+		if ($resultado) {
+			return "La pregunta se elimino";
+		} else {
+			return "Ocurrio un error al tratar de eliminar la pregunta";
+		}
+
+		$statement = null;
+		die();
+	}
 }
