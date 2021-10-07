@@ -35,23 +35,23 @@ class ModeloAdministrador{
 	 Crear Preguntas
 	=============================================*/
 	public static function mdlCrearPregunta($tabla, $datos){
-		// Consulta Para Registrar Al Usuario
-		$query = Conexion::conectar()->prepare("INSERT INTO $tabla (pregunta, opcion_a, opcion_b, opcion_c, respuesta) VALUES (:pregunta, :opcionA, :opcionB, :opcionC, :respuesta)");
+		// Consulta Para Registrar La Pregunta
+		$statement = Conexion::conectar()->prepare("INSERT INTO $tabla (pregunta, opcion_a, opcion_b, opcion_c, respuesta) VALUES (:pregunta, :opcionA, :opcionB, :opcionC, :respuesta)");
 
 		// Indicamos Los Valores Y Tipos De Datos Que Se Enviaran En La Consulta
-		$query->bindParam(":pregunta", $datos["pregunta"], PDO::PARAM_STR);
-		$query->bindParam(":opcionA", $datos["opcionA"], PDO::PARAM_STR);
-		$query->bindParam(":opcionB", $datos["opcionB"], PDO::PARAM_STR);
-		$query->bindParam(":opcionC", $datos["opcionC"], PDO::PARAM_STR);
-		$query->bindParam(":respuesta", $datos["respuesta"], PDO::PARAM_STR);
+		$statement->bindParam(":pregunta", $datos["pregunta"], PDO::PARAM_STR);
+		$statement->bindParam(":opcionA", $datos["opcionA"], PDO::PARAM_STR);
+		$statement->bindParam(":opcionB", $datos["opcionB"], PDO::PARAM_STR);
+		$statement->bindParam(":opcionC", $datos["opcionC"], PDO::PARAM_STR);
+		$statement->bindParam(":respuesta", $datos["respuesta"], PDO::PARAM_STR);
 
-		if ($query->execute()) {
+		if ($statement->execute()) {
 			return "Pregunta Creada";
 		} else {
 			return "No se pudo guardar la pregunta";
 		}
 
-		$query = null;
+		$statement = null;
 		die();
 	}
 
@@ -59,6 +59,7 @@ class ModeloAdministrador{
 	 Listar Preguntas
 	=============================================*/
 	public static function mdlListarPregunta($tabla){
+		// Consulta Para Traer Las Preguntas
 		$statement = Conexion::conectar()->prepare("SELECT * FROM $tabla");
 		$statement->execute();
 
@@ -74,6 +75,7 @@ class ModeloAdministrador{
 	 Eliminar Preguntas
 	=============================================*/
 	public static function mdlEliminarPregunta($tabla, $id){
+		// Consulta Para Eliminar La Preguntas
 		$statement = Conexion::conectar()->prepare("DELETE FROM $tabla WHERE id = :id");
 		
 		$statement->bindParam(":id", $id, PDO::PARAM_INT);
@@ -94,6 +96,7 @@ class ModeloAdministrador{
 	 Traer Datos De La Pregunta Que Se Editara
 	=============================================*/
 	public static function mdlTraerDatosParaEditar($tabla, $id){
+		// Consulta Para Traer Los Datos De La Pregunta Que Se Editara
 		$statement = Conexion::conectar()->prepare("SELECT * FROM $tabla WHERE id = :id");
 		
 		$statement->bindParam(":id", $id, PDO::PARAM_INT);
@@ -102,7 +105,42 @@ class ModeloAdministrador{
 
 		$resultado = $statement->fetch();
 
-		return $resultado;
+
+		if ($resultado !== false) {
+			return $resultado;
+		} else {
+			$url = Rutas::principal();
+			$redireccion = $url."lista-preguntas";
+			
+			header("Location: $redireccion");
+		}
+		
+
+		$statement = null;
+		die();
+	}
+
+	/*=============================================
+	 Editar La Pregunta 
+	=============================================*/
+	public static function mdlEditarPregunta($tabla, $datos){
+		// Indicamos Los Valores Y Tipos De Datos Que Se Enviaran En La Consulta-
+		$id = $datos["id"];
+		$pregunta = $datos["pregunta"];
+		$opcionA = $datos["opcionA"];
+		$opcionB = $datos["opcionB"];
+		$opcionC = $datos["opcionC"];
+		$respuesta = $datos["respuesta"];
+		
+		// Consulta Para Editar La Pregunta 
+		$statement = Conexion::conectar()->prepare("UPDATE $tabla SET pregunta='$pregunta', opcion_a='$opcionA', opcion_b='$opcionB', opcion_c='$opcionC', respuesta='$respuesta' WHERE id='$id'");
+		
+
+		if ($statement->execute()) {
+			return "Pregunta Editada";
+		} else {
+			return "No se pudo editar la pregunta";
+		}
 
 		$statement = null;
 		die();

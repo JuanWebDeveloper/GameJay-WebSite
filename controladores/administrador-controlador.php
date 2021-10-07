@@ -46,12 +46,12 @@ class ControladorAdministrador{
 			$errores = "";
 
 			// Validar Que Los Campos No Esten Vacios
-			if (empty($_POST["pregunta"]) || empty($_POST["opcionA"]) || empty($_POST["opcionB"]) || empty($_POST["respuesta"]) || empty($_POST["respuesta"])) {
+			if (empty($_POST["pregunta"]) || empty($_POST["opcionA"]) || empty($_POST["opcionB"]) || empty($_POST["opcionC"]) || empty($_POST["respuesta"])) {
 				$errores = "Por favor rellene todos los campos";
 
 				return $errores;
 
-			// Validar Que Se Envie Un Correo Valido
+			// Validar Que Se Envie Una Respuesta Valida
 			} elseif ($_POST["respuesta"] != "a" && $_POST["respuesta"] != "b" && $_POST["respuesta"] != "c" && $_POST["respuesta"] != "A" && $_POST["respuesta"] != "B" && $_POST["respuesta"] != "C") {
 				$errores = "El campo de opción correcta es inválido";
 
@@ -105,5 +105,42 @@ class ControladorAdministrador{
 		$respuesta = ModeloAdministrador::mdlTraerDatosParaEditar($tabla, $id);
 
 		return $respuesta;
+	}
+
+	/*=============================================
+	 Editar La Pregunta 
+	=============================================*/
+	public static function ctrEditarPregunta($id){
+		$errores = "";
+
+		// Validar Que Los Campos No Esten Vacios
+		if (empty($_POST["pregunta"]) || empty($_POST["opcionA"]) || empty($_POST["opcionB"]) || empty($_POST["opcionC"]) || empty($_POST["respuesta"])) {
+			$errores = "Por favor rellene todos los campos";
+
+			return $errores;
+
+		// Validar Que Se Envie Un Correo Valido
+		} elseif ($_POST["respuesta"] != "a" && $_POST["respuesta"] != "b" && $_POST["respuesta"] != "c" && $_POST["respuesta"] != "A" && $_POST["respuesta"] != "B" && $_POST["respuesta"] != "C") {
+			$errores = "El campo de opción correcta es inválido";
+
+			return $errores;
+
+		} else {
+			// Obtener Los Datos Que Se Enviaron
+			$tabla = "preguntas";
+			$datos = array(
+				"id" => $id,
+				"pregunta" => $_POST["pregunta"], 
+				"opcionA" => $_POST["opcionA"], 
+				"opcionB" => $_POST["opcionB"], 
+				"opcionC" => $_POST["opcionC"], 
+				"respuesta" => $_POST["respuesta"]
+			);
+
+			// Respuesta De La Consulta Al Modelo
+			$respuesta = ModeloAdministrador::mdlEditarPregunta($tabla, $datos);
+
+			return $respuesta;
+		}
 	}
 }
