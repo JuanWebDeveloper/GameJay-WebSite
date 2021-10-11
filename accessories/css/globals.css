@@ -1,0 +1,71 @@
+* {
+	box-sizing: border-box;
+	font-family: 'Poppins', sans-serif;
+	list-style: none;
+	text-decoration: none;
+	margin: 0;
+	padding: 0;
+}
+
+a:hover {
+	cursor: pointer;
+	text-decoration: none;
+}
+
+html {
+	overflow-x: hidden;
+	scroll-behavior: smooth;
+}
+
+.main-titles {
+	color: rgb(0, 119, 255);
+	font-size: 50px;
+	font-weight: 500;
+	padding-top: 20px;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	text-transform: capitalize;
+	z-index: 2;
+}
+
+.main-titles::after {
+	background: #0077ff;
+	box-shadow: 0 3px 10px #2c2c2ce6;
+	background-position: center;
+	display: inline-block;
+	content: '';
+	height: 5px;
+	opacity: 0.9;
+	position: relative;
+	top: -75px;
+	width: 90%;
+	z-index: 1;
+}
+
+.main-titles span {
+	background: #fff;
+	box-shadow: 0 3px 10px #2c2c2ce6;
+	border-radius: 15px;
+	position: relative;
+	padding: 0 15px;
+	z-index: 5;
+}
+
+.navbar-guide {
+	height: 70px;
+	width: 100%;
+}
+
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	.main-titles {
+		font-size: 23px;
+		padding-top: 20px;
+	}
+
+	.main-titles::after {
+		top: -35px;
+	}
+}

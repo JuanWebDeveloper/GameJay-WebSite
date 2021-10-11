@@ -1,0 +1,56 @@
+.error-404 {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 60%;
+}
+
+.image-error-404 {
+	width: 100%;
+}
+
+.image-error-404 img {
+	width: 100%;
+}
+
+.error-404 h2 {
+	font-size: 30px;
+	font-weight: 500;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.error-404 h2 span {
+	color: #0077ff;
+}
+
+.button-return {
+	background: #0077ff;
+	border-radius: 5px;
+	left: 2%;
+	position: absolute;
+	padding: 10px 20px;
+	top: 2%;
+	transition: all 0.3s ease-in;
+}
+
+.button-return:hover {
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+.button-return i {
+	color: #ffff;
+	background: transparent;
+	opacity: 1;
+}
+
+/*=====================
+(SM we check in 768px)
+=====================*/
+@media screen and (max-width: 980px) {
+	.error-404 {
+		width: 80%;
+	}
+}

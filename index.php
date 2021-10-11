@@ -1,18 +1,14 @@
 <?php
 
-/*==============================================
- Controladores
-/*=============================================*/
-require "./controladores/plantilla-controlador.php";
-require "./controladores/usuarios-controlador.php";
-require "./controladores/administrador-controlador.php";
+// Controllers
+require "./controllers/template-controller.php";
+require "./controllers/user-controller.php";
+require "./controllers/admin-controller.php";
 
-/*==============================================
- Modelos
-/*=============================================*/
-require "./modelos/rutas.php";
-require "./modelos/usuarios-modelo.php";
-require "./modelos/administrador-modelo.php";
+// Models
+require "./models/routes.php";
+require "./models/user-model.php";
+require "./models/admin-model.php";
 
-$plantilla = new ControladorPlantilla();
-$plantilla -> plantilla();
+$template = new TemplateController();
+$template -> template();

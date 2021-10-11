@@ -1,0 +1,348 @@
+/* San Francisco City  Styles  */
+.header-container_sf {
+	background: url(../img/products/sfc/board.jpeg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-position: center;
+	height: 70vh;
+	margin-bottom: 30px;
+	position: relative;
+	width: 100vw;
+	z-index: 1;
+}
+
+.header-container_sf::after {
+	background: rgba(0, 0, 0, 0.8);
+	content: '';
+	height: 100%;
+	position: absolute;
+	top: 0;
+	width: 100%;
+	z-index: -1;
+}
+
+center .btn-cd {
+	display: inline-block;
+	font-size: 24px;
+	letter-spacing: 4px;
+	overflow: hidden;
+	position: relative;
+	padding: 5px 30px;
+	transition: 0.2s;
+}
+
+center .btn-cd:hover {
+	background: rgb(0, 119, 255);
+	box-shadow: 0 0 10px rgb(0, 119, 255), 0 0 40px rgb(0, 119, 255), 0 0 80px rgb(0, 119, 255);
+	color: #fff !important;
+	transition-delay: 1s;
+}
+
+center .btn-cd span {
+	display: block;
+	position: absolute;
+}
+
+center .btn-cd #spanOne {
+	background: linear-gradient(90deg, transparent, rgb(0, 119, 255));
+	height: 2px;
+	left: -100%;
+	top: 0;
+	width: 100%;
+}
+
+center .btn-cd:hover #spanOne {
+	left: 100%;
+	transition: 1s;
+}
+
+center .btn-cd #spanTwo {
+	background: linear-gradient(180deg, transparent, rgb(0, 119, 255));
+	height: 100%;
+	top: -100%;
+	right: 0;
+	width: 2px;
+}
+
+center .btn-cd:hover #spanTwo {
+	top: 100%;
+	transition: 1s;
+	transition-delay: 0.25s;
+}
+
+center .btn-cd #spanThree {
+	background: linear-gradient(270deg, transparent, rgb(0, 119, 255));
+	bottom: 0;
+	height: 2px;
+	right: -100%;
+	width: 100%;
+}
+
+center .btn-cd:hover #spanThree {
+	right: 100%;
+	transition: 1s;
+	transition-delay: 0.5s;
+}
+
+center .btn-cd #spanFour {
+	background: linear-gradient(360deg, transparent, rgb(0, 119, 255));
+	bottom: -100%;
+	height: 100%;
+	left: 0;
+	width: 2px;
+}
+
+center .btn-cd:hover #spanFour {
+	bottom: 100%;
+	transition: 1s;
+	transition-delay: 0.75s;
+}
+
+/* Content Styles */
+.content-sf {
+	left: 50%;
+	position: absolute;
+	top: calc(50% + 50px);
+	transform: translate(-50%, -50%);
+	width: 90%;
+}
+
+.content-sf h2 {
+	color: #fff;
+	font-size: 50px;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.content-sf h3 {
+	color: #fff;
+	font-size: 40px;
+	padding-top: 20px;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Problematic And Solution Styles */
+.problem-and_solution {
+	height: auto;
+	margin-bottom: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.problem-and_solution-container {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: space-around;
+	margin-left: 5%;
+	margin-bottom: 50px;
+	width: 90%;
+}
+
+.container-problematic_image_and-solution {
+	height: 300px;
+	margin-top: 20px;
+	width: 45%;
+}
+
+.description-of_problem-and_solution {
+	margin-top: 20px;
+	width: 45%;
+}
+
+.description-of_problem-and_solution p {
+	color: #2c2c2c;
+	font-size: 20px;
+	padding-top: 10px;
+	text-align: justify;
+}
+
+/* Parts Game Styles */
+.game-description_container {
+	height: auto;
+	margin-bottom: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.parts-game_container {
+	display: flex;
+	flex-wrap: wrap;
+	height: auto;
+	justify-content: space-around;
+	margin-left: 5%;
+	margin-bottom: 80px;
+	width: 90%;
+}
+
+.image-container_sf {
+	height: 300px;
+	margin-top: 20px;
+	width: 45%;
+}
+
+.specifications-container {
+	height: 300px;
+	margin-top: 20px;
+	overflow: hidden;
+	overflow-y: scroll;
+	transition: 0.5s all ease-in-out;
+	width: 45%;
+}
+
+.specifications-container::-webkit-scrollbar {
+	transition: 0.5s all ease-in-out;
+	width: 5px;
+}
+
+.specifications-container::-webkit-scrollbar-thumb {
+	background: transparent;
+	border-radius: 15px;
+	transition: 0.5s all ease-in-out;
+}
+
+.specifications-container:hover::-webkit-scrollbar-thumb {
+	background: #0077ff;
+}
+
+.specifications-container h2 {
+	color: #0077ff;
+	font-size: 50px;
+	letter-spacing: 2px;
+	text-align: center;
+	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	text-transform: capitalize;
+}
+
+.specifications-container p {
+	color: #2c2c2c;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-right: 15px;
+	text-align: justify;
+}
+
+.specifications-container p span {
+	color: #0077ff;
+	text-transform: capitalize;
+}
+
+/* Rules Of The Game Styles */
+.rules-of_the-game_container {
+	margin-bottom: 30px;
+	position: relative;
+	width: 100%;
+}
+
+.container-description_rules {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	margin-left: 5%;
+	margin-bottom: 80px;
+	width: 90%;
+}
+
+.rules-container {
+	width: 45%;
+}
+
+.rules-container ul {
+	width: 100%;
+}
+
+.rules-container ul li {
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+.rules-container ul li i {
+	color: #0077ff;
+	background: transparent;
+	opacity: 1;
+	padding-right: 5px;
+	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+}
+
+.rules-container ul li i:hover {
+	background: transparent;
+}
+
+.rules-container ul li hr {
+	background: #0077ff;
+	height: 2px;
+}
+
+.rules-container ul li span {
+	color: #0077ff;
+}
+
+.rules-container ul li ul {
+	padding-left: 15%;
+}
+
+.rules-container ul li ul {
+	padding-top: 10px;
+}
+
+/*=====================
+(SM we check in 768px)
+=====================*/
+@media screen and (max-width: 980px) {
+	.container-problematic_image_and-solution {
+		margin-top: 20px;
+		width: 100%;
+	}
+
+	.description-of_problem-and_solution {
+		order: 2;
+		width: 100%;
+	}
+
+	.image-container_sf {
+		margin-top: 30px;
+		order: 2;
+		width: 100%;
+	}
+
+	.specifications-container {
+		margin-top: 10px;
+		width: 100%;
+	}
+
+	.rules-container {
+		width: 100%;
+	}
+
+	.footer {
+		position: relative;
+		top: 0px;
+	}
+}
+
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	.content-sf h2 {
+		font-size: 20px;
+	}
+
+	.content-sf h3 {
+		font-size: 17px;
+	}
+
+	.image-container_sf {
+		margin-top: 20px;
+		order: 2;
+		width: 100%;
+	}
+
+	.specifications-container {
+		height: auto;
+		margin-top: 10px;
+		overflow-y: none;
+		width: 100%;
+	}
+}

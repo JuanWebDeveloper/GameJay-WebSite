@@ -1,0 +1,265 @@
+/* Contact Styles */
+.contact-container {
+	height: auto;
+	margin-bottom: 100px;
+	position: relative;
+	width: 100%;
+}
+
+.contact-information_container {
+	display: flex;
+	flex-wrap: wrap;
+	left: 5%;
+	min-height: 550px;
+	position: relative;
+	width: 90%;
+	z-index: 10;
+}
+
+.contact-information {
+	background: rgb(0, 119, 255);
+	box-shadow: 0 20px 20px rgba(0, 0, 0, 0.5);
+	display: flex;
+	flex-direction: column;
+	height: calc(100% -80px);
+	justify-content: space-between;
+	position: relative;
+	padding: 40px;
+	top: 40px;
+	width: 350px;
+	z-index: 1;
+}
+
+.contact-information h2 {
+	color: #fff;
+	font-size: 24px;
+	font-weight: 500;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.information {
+	margin: 20px 0;
+	position: relative;
+}
+
+.information li {
+	align-items: flex-start;
+	cursor: pointer;
+	display: flex;
+	margin: 20px 0;
+	position: relative;
+}
+
+.information li span:nth-child(1) {
+	min-width: 30px;
+	width: 30px;
+}
+
+.information li span:nth-child(1) img {
+	filter: invert(1);
+	max-width: 100%;
+	opacity: 0.5;
+}
+
+.information li span:nth-child(2) {
+	color: #fff;
+	font-weight: 300;
+	margin-left: 10px;
+	opacity: 0.5;
+}
+
+.information li:hover span:nth-child(1) img,
+.information li:hover span:nth-child(2) {
+	opacity: 1;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.information li a {
+	background: #fff;
+	border-radius: 15px;
+	color: #0077ff;
+	cursor: pointer;
+	font-size: 18px;
+	position: relative;
+	padding: 10px 0;
+	text-align: center;
+	transition: 0.3s all ease-in-out;
+	width: 100%;
+}
+
+.information li a::before {
+	background: #fff;
+	border-radius: 15px;
+	content: '';
+	height: 100%;
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	transition: 0.3s all ease-in-out;
+	width: 100%;
+	z-index: -1;
+}
+
+.information li a:hover {
+	font-size: 16px;
+	transform: scale(1.1);
+}
+
+.information li a:hover::before {
+	box-shadow: inset -4px -4px 20px 0 #fff, inset 4px 4px 20px 0 rgba(0, 0, 0, 0.8);
+}
+
+.alert-location {
+	color: #0077ff;
+	font-size: 50px;
+	text-transform: capitalize;
+}
+
+.contact-social_networks {
+	display: flex;
+	position: relative;
+}
+
+.contact-social_networks li {
+	margin-right: 25px;
+}
+
+.contact-social_networks li a {
+	color: #fff;
+	font-size: 25px;
+	opacity: 0.5;
+}
+
+.contact-social_networks li:hover a {
+	opacity: 1;
+}
+
+.form-contact {
+	background: #f2f2f2;
+	box-shadow: 0 50px 50px rgba(0, 0, 0, 0.2);
+	height: 100%;
+	margin-left: 100px;
+	position: absolute;
+	padding: 70px 50px;
+	padding-left: 300px;
+	width: 90%;
+}
+
+.form-contact h2 {
+	color: rgb(0, 119, 255);
+	font-weight: 24px;
+	font-weight: 500;
+	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+}
+
+.form-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+	padding-top: 30px;
+}
+
+.input-box {
+	margin: 0 0 35px 0;
+	position: relative;
+}
+
+.input-box.width-50 {
+	width: 47%;
+}
+
+.input-box.width-100 {
+	width: 100%;
+}
+
+.input-box input,
+.input-box textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid rgb(0, 119, 255);
+	color: #333033;
+	font-size: 18px;
+	font-weight: 300;
+	outline: none;
+	padding: 5px 0;
+	resize: none;
+	width: 100%;
+}
+
+.input-box textarea {
+	min-height: 120px;
+}
+
+.input-box span {
+	color: #333;
+	font-size: 18px;
+	font-weight: 300;
+	left: 0;
+	position: absolute;
+	padding: 5px 0;
+	pointer-events: none;
+	transition: 0.5s;
+}
+
+.input-box input:focus ~ span,
+.input-box textarea:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:valid ~ span {
+	color: rgb(0, 119, 255);
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	transform: translateY(-20px);
+}
+
+.input-box input[type='submit'] {
+	background: rgb(0, 119, 255);
+	border-radius: 15px;
+	color: #fff;
+	max-width: 30%;
+	position: relative;
+	padding: 10px 0;
+}
+
+/*=====================
+(SM we check in 768px)
+=====================*/
+@media screen and (max-width: 980px) {
+	.contact-information {
+		height: calc(100% -80px);
+		width: 100%;
+	}
+
+	.form-contact {
+		height: auto;
+		margin-left: 0;
+		position: relative;
+		padding-left: 50px;
+		top: 90%;
+		width: 100%;
+		z-index: 1;
+	}
+}
+
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	.input-box.width-50 {
+		width: 100%;
+	}
+
+	.contact-information h2 {
+		font-size: 18px;
+	}
+
+	.form-contact h2 {
+		font-size: 18px;
+	}
+
+	.alert-location {
+		font-size: 20px;
+	}
+}
