@@ -1,6 +1,6 @@
 <?php
 
-require_once "../../models/routes.php";
+require_once "./routes.php";
 session_start();
 
 $url = Routes::mainRoute();

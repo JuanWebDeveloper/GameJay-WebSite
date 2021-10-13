@@ -203,7 +203,9 @@
 .modal-content.error-modal_content,
 .modal-content.acceptance-modal_content {
 	height: auto;
+	left: 20%;
 	padding: 0;
+	width: 60vw;
 }
 
 .modal-header_error {
@@ -271,6 +273,11 @@
 Ipad of Ipad Pro
 =====================*/
 @media screen and (min-height: 900px) {
+	.modal-input_group {
+		top: 15%;
+		transform: translate(-50%, 0%);
+	}
+
 	.modal-logo {
 		height: 200px;
 		position: relative;
@@ -341,8 +348,10 @@ Ipad of Ipad Pro
 (XS we check in 320px)
 =====================*/
 @media screen and (max-width: 600px) {
-	.error-modal_content {
-		width: 95vw;
+	.modal-content.error-modal_content,
+	.modal-content.acceptance-modal_content {
+		left: 5%;
+		width: 90vw;
 	}
 
 	.modal-social_networks ul li {

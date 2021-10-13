@@ -13,7 +13,7 @@
 			<li><a href="<?php echo $url; ?>list-questions">Lista De Preguntas</a></li>
 			<li class="login-responsive">
 				<?php 
-					echo "<a href='$url/views/modules/logout.php'>cerrar sesion</a>"
+					echo "<a href='$url/models/logout.php'>cerrar sesion</a>"
 				?>
 				
 			</li>

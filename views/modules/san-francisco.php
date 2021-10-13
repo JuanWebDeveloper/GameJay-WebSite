@@ -34,7 +34,7 @@
 			<li><a href="#rules">Reglas</a></li>
 			<li class="login-responsive">
 				<?php 
-					echo "<a href='$url/views/modules/logout.php'>cerrar sesion</a>"
+					echo "<a href='$url/models/logout.php'>cerrar sesion</a>"
 				?>
 				
 			</li>
