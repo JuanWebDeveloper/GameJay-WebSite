@@ -22,38 +22,11 @@
 				$errors = $admin;
 			}
 		}
+
+		// Validate If There Are Errors
+		if (!empty($errors)) {
+			errorOccurred($errors);
+		} 
 	?>
-	
-	<!-- Validate If There Are Errors -->
-	<?php if(!empty($errors)): ?>
-	<!-- Enable Modal -->
-	<script>
-		$( document ).ready(function() {
-			$('#errors').modal('toggle')
-		});
-	</script>
-
-	<!-- Modal Where Errors Are Displayed -->
-	<div class="modal error-modal_container" id="errors">
-		<div class="modal-dialog">
-			<div class="modal-content error-modal_content">
-				<div class="modal-header modal-header_error">
-					<div class="title-error"><h2 class="text-center">Surgió Un Error</h2></div>
-					<a class="close" data-dismiss="modal" aria-hidden="true"
-						><i class="fas fa-times-circle"></i>
-					</a>
-				</div>
-				
-				<div class="modal-body modal_body_error">
-					<?php 
-						echo "<h5>$errors</h5>";
-					?>
-
-				</div>
-				
-			</div>
-		</div>
-	</div>
-	<?php endif; ?>
 </div>
 

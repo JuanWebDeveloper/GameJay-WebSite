@@ -195,78 +195,45 @@
 	opacity: 0.8;
 }
 
-/* Error Modal Window Styles */
-.error-modal_container {
-	position: absolute;
+/* SweerAlerts Styles */
+.modal-error_title {
+	color: #c02315;
 }
 
-.modal-content.error-modal_content,
-.modal-content.acceptance-modal_content {
-	height: auto;
-	left: 20%;
-	padding: 0;
-	width: 60vw;
+.modal-success_title {
+	color: #02c23b;
 }
 
-.modal-header_error {
-	display: flex;
-	height: 80px;
-	justify-content: center;
-}
-
-.modal-header_error a i {
-	background: #db4437;
-	font-size: 30px;
-	position: relative;
-	right: 30px;
-}
-
-.title-error {
-	position: absolute;
-}
-
-.modal-header_error a:hover i {
-	background: #db4437;
-}
-
-.modal-header_error h2 {
-	color: #db4437;
-	font-size: 30px;
-	line-height: 40px;
-	text-shadow: 0 0 10px #db443780, 0 0 10px #db443780;
-}
-
-.modal_body_error h5 {
-	color: #2c2c2c;
-	font-size: 17px;
+.modal-error_message {
+	color: #222;
+	margin-top: 20px;
 	text-align: center;
-	text-shadow: 0 0 10px #2c2c2c80, 0 0 10px #2c2c2c80;
 }
 
-/* Acceptance Modal Window Styles */
-.acceptance-modal_header {
-	display: flex;
-	height: 80px;
-	justify-content: center;
+.modal-success_button,
+.modal-error_button {
+	background: #c02315;
+	border: none;
+	color: #fff;
+	outline: none;
+	padding: 10px 20px;
+	transition: all 0.3s ease-in-out;
 }
 
-.acceptance-modal_header h2 {
-	color: #04c92e;
-	font-size: 30px;
-	line-height: 40px;
-	text-shadow: 0 0 10px #04c92e80, 0 0 10px #04c92e80;
+.modal-success_button {
+	background: #02c23b;
 }
 
-.acceptance-modal_header a i {
-	background: #04c92e;
-	font-size: 30px;
-	line-height: 40px;
-	position: absolute;
-	right: 30px;
+.modal-success_button:hover,
+.modal-error_button:hover {
+	opacity: 0.9;
+	transform: scale(1.1);
 }
 
-.acceptance-modal_header a:hover i {
-	background: #04c92e;
+.modal-success_button:focus,
+.modal-error_button:focus {
+	border: none;
+	outline: none;
 }
 
 /*=====================
@@ -306,10 +273,6 @@ Ipad of Ipad Pro
 (SM we check in 768px)
 =====================*/
 @media screen and (max-width: 980px) {
-	.error-modal_content {
-		width: 70vw;
-	}
-
 	.modal-content {
 		width: 70vw;
 	}
@@ -348,12 +311,6 @@ Ipad of Ipad Pro
 (XS we check in 320px)
 =====================*/
 @media screen and (max-width: 600px) {
-	.modal-content.error-modal_content,
-	.modal-content.acceptance-modal_content {
-		left: 5%;
-		width: 90vw;
-	}
-
 	.modal-social_networks ul li {
 		padding: 0 10px;
 	}
@@ -367,21 +324,5 @@ Ipad of Ipad Pro
 		left: 5%;
 		margin: 0;
 		width: 90vw;
-	}
-
-	.modal-header_error a i {
-		right: 0;
-	}
-
-	.acceptance-modal_header a i {
-		right: 5px;
-	}
-
-	.modal-header_error h2 {
-		font-size: 20px;
-	}
-
-	.acceptance-modal_header h2 {
-		font-size: 20px;
 	}
 }

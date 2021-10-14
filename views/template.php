@@ -81,6 +81,8 @@
 	<!-- CSS Plugins And Fonts -->
 	<!--=======================-->
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/plugins/bootstrap.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/plugins/sweetalert2.min.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/plugins/animate.min.css">
 	<!-- Icon -->
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
 	<!-- Fonts -->
@@ -110,7 +112,7 @@
 	<script src="<?php echo $url; ?>accessories/js/plugins/jquery-3.5.1.min.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/plugins/bootstrap.min.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/plugins/popper.min.js"></script>
-	<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+	<script src="<?php echo $url; ?>accessories/js/plugins/sweetalert2.min.js"></script>
 </head>
 <body>
 	<?php 

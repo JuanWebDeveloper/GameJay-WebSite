@@ -39,7 +39,7 @@ class AdminModel {
 		$statement->bindParam(":response", $data["response"], PDO::PARAM_STR);
 
 		if ($statement->execute()) {
-			return "Pregunta Guardada";
+			return "Pregunta Creada";
 		} else {
 			return "No se pudo guardar la pregunta";
 		}

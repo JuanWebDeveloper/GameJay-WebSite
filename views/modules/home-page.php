@@ -153,59 +153,17 @@
 </div>
 
 <!-- Validate If There Are Errors -->
-<?php if(!empty($registrationErrors) || !empty($loginErros)): ?>
-	<!-- Enable Modal -->
-	<script>
-		$( document ).ready(function() {
-			$('#errors').modal('toggle')
-		});
-	</script>
+<?php 
+	if (!empty($registrationErrors)) {
+		errorOccurred($registrationErrors);
 
-	<!-- Modal Where Errors Are Displayed -->
-	<div class="modal error-modal_container" id="errors">
-		<div class="modal-dialog">
-			<div class="modal-content error-modal_content">
-				<div class="modal-header modal-header_error">
-					<div class="title-error"><h2 class="text-center">Surgió Un Error</h2></div>
-					<a class="close" data-dismiss="modal" aria-hidden="true"
-						><i class="fas fa-times-circle"></i>
-					</a>
-				</div>
-				
-				<div class="modal-body modal_body_error">
-					<?php 
-						if (!empty($registrationErrors)) {
-							echo "<h5>$registrationErrors</h5>";
-						} else {
-							echo "<h5>$loginErros</h5>";
-						}
-					?>
+	} elseif (!empty($loginErros)) {
+		errorOccurred($loginErros);
 
-				</div>
-				
-			</div>
-		</div>
-	</div>
-<?php elseif($registration == "Registro exitoso"): ?>
-	<script>
-		$( document ).ready(function() {
-			$('#successful').modal('toggle')
-		});
-	</script>
-
-	<div class="modal fade" id="successful">
-		<div class="modal-dialog">
-			<div class="modal-content acceptance-modal_content">
-				<div class="modal-header acceptance-modal_header">
-					<div class="title-error"><h2><?php echo $registration; ?> </h2></div>
-					<a class="close" data-dismiss="modal" aria-hidden="true"
-						><i class="fas fa-times-circle"></i>
-					</a>
-				</div>
-			</div>
-		</div>
-	</div>
-<?php endif; ?>
+	} elseif ($registration == "Registro exitoso") {
+		successfulQuery($registration);
+	}
+?>
 
 <!--=============-->
 <!-- About    -->
