@@ -21,7 +21,7 @@
 	z-index: -1;
 }
 
-center .btn-cd {
+.btn-cd {
 	display: inline-block;
 	font-size: 24px;
 	letter-spacing: 4px;
@@ -31,19 +31,19 @@ center .btn-cd {
 	transition: 0.2s;
 }
 
-center .btn-cd:hover {
+.btn-cd:hover {
 	background: rgb(0, 119, 255);
 	box-shadow: 0 0 10px rgb(0, 119, 255), 0 0 40px rgb(0, 119, 255), 0 0 80px rgb(0, 119, 255);
 	color: #fff !important;
 	transition-delay: 1s;
 }
 
-center .btn-cd span {
+.btn-cd span {
 	display: block;
 	position: absolute;
 }
 
-center .btn-cd #spanOne {
+.btn-cd #spanOne {
 	background: linear-gradient(90deg, transparent, rgb(0, 119, 255));
 	height: 2px;
 	left: -100%;
@@ -51,12 +51,12 @@ center .btn-cd #spanOne {
 	width: 100%;
 }
 
-center .btn-cd:hover #spanOne {
+.btn-cd:hover #spanOne {
 	left: 100%;
 	transition: 1s;
 }
 
-center .btn-cd #spanTwo {
+.btn-cd #spanTwo {
 	background: linear-gradient(180deg, transparent, rgb(0, 119, 255));
 	height: 100%;
 	top: -100%;
@@ -64,13 +64,13 @@ center .btn-cd #spanTwo {
 	width: 2px;
 }
 
-center .btn-cd:hover #spanTwo {
+.btn-cd:hover #spanTwo {
 	top: 100%;
 	transition: 1s;
 	transition-delay: 0.25s;
 }
 
-center .btn-cd #spanThree {
+.btn-cd #spanThree {
 	background: linear-gradient(270deg, transparent, rgb(0, 119, 255));
 	bottom: 0;
 	height: 2px;
@@ -78,13 +78,13 @@ center .btn-cd #spanThree {
 	width: 100%;
 }
 
-center .btn-cd:hover #spanThree {
+.btn-cd:hover #spanThree {
 	right: 100%;
 	transition: 1s;
 	transition-delay: 0.5s;
 }
 
-center .btn-cd #spanFour {
+.btn-cd #spanFour {
 	background: linear-gradient(360deg, transparent, rgb(0, 119, 255));
 	bottom: -100%;
 	height: 100%;
@@ -92,7 +92,7 @@ center .btn-cd #spanFour {
 	width: 2px;
 }
 
-center .btn-cd:hover #spanFour {
+.btn-cd:hover #spanFour {
 	bottom: 100%;
 	transition: 1s;
 	transition-delay: 0.75s;

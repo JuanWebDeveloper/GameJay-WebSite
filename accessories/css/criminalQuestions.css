@@ -1,0 +1,79 @@
+/* Criminal Questions Styles */
+.criminal-questions {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/homePage.jpg);
+	background-attachment: fixed;
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+}
+
+.criminal-questions_content {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	width: 90vw;
+}
+
+.criminal-questions_content h2 {
+	color: #fff;
+	font-size: 45px;
+	font-weight: 400;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.criminal-questions_buttons a {
+	margin-top: 40px;
+}
+
+.modal-criminal_questions {
+	font-weight: 400;
+	color: #0077ff;
+	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	text-align: center;
+}
+
+.modal-criminal_questions-content {
+	position: relative;
+	width: 100%;
+}
+
+.modal-criminal_questions-content p {
+	color: #222;
+	font-size: 17px;
+}
+
+.modal-criminal_questions-content p span {
+	color: #0077ff;
+}
+
+.modal-criminal_questions-button {
+	background: #0077ff;
+	border: none;
+	color: #fff;
+	outline: none;
+	padding: 10px 20px;
+	transition: all 0.3s ease-in-out;
+}
+
+.modal-criminal_questions-button:hover {
+	opacity: 0.9;
+	transform: scale(1.1);
+}
+
+.modal-criminal_questions-button:focus {
+	border: none;
+	outline: none;
+}
+
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	.criminal-questions_content h2 {
+		font-size: 30px;
+	}
+}

@@ -112,8 +112,8 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/loginAdmin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/admin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/error404.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/welcome-user.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/criminal-questions.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/welcomeUser.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/criminalQuestions.css">
 	
 	<!--====================-->
 	<!-- JavaScript Plugins -->
@@ -182,5 +182,6 @@
 	<script src="<?php echo $url; ?>accessories/js/homePage.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/contact.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/modals.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/criminalQuestions.js"></script>
 </body>
 </html>
