@@ -1,0 +1,42 @@
+/* Welcome User Styles */
+.welcome-user {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/user/welcome.jpg);
+	background-size: cover;
+	background-repeat: no-repeat;
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+}
+
+.welcome-user_content {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	text-align: center;
+}
+
+.welcome-user_content h2 {
+	color: #fff;
+	font-size: 45px;
+	font-weight: 500;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.welcome-user_content P {
+	color: #fff;
+	font-size: 20px;
+	font-weight: 400;
+	padding-top: 10px;
+	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+	text-transform: capitalize;
+}
+
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	.welcome-user_content h2 {
+		font-size: 30px;
+	}
+}

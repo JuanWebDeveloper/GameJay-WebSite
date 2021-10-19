@@ -1,7 +1,7 @@
 <!--=============-->
 <!-- Description -->
 <!--=============-->
-<div class="header-container_sf" id="home">
+<div class="header-container_sf">
 	<div class="content-sf">
 		<h2>San Francisco city</h2>
 		<h3>"La calle de la delincuencia"</h3>
@@ -18,38 +18,8 @@
 </div>
 
 <!--=============-->
-<!-- Navbar     -->
-<!--=============-->
-<div class="navbar-container" id="navbarContainer">
-	<div class="logo-container">
-		<img src="<?php echo $url; ?>accessories/img/logo.svg" alt="Logo de GameJay" width="250px" height="40px" />
-	</div>
-
-	<nav id="navigation">
-		<ul>
-			<li><a href="#home">Inicio</a></li>
-			<li><a href="#problematic">Problematica</a></li>
-			<li><a href="#solution">Solucion</a></li>
-			<li><a href="#game">Juego</a></li>
-			<li><a href="#rules">Reglas</a></li>
-			<li class="login-responsive">
-				<?php 
-					echo "<a href='$url/models/logout.php'>cerrar sesion</a>"
-				?>
-				
-			</li>
-		</ul>
-	</nav>
-
-	<div class="bars-button">
-		<a id="bars"><i class="fas fa-bars"></i></a>
-	</div>
-</div>
-
-<!--=============-->
 <!-- Problematic -->
 <!--=============-->
-<div class="navbar-guide" id="problematic"></div>
 <div class="problem-and_solution">
 	<h1 class="main-titles"><span>problematica</span></h1>
 
@@ -74,7 +44,6 @@
 <!--=============-->
 <!-- Solution    -->
 <!--=============-->
-<div class="navbar-guide" id="solution"></div>
 <div class="problem-and_solution">
 	<h1 class="main-titles"><span>Solucion</span></h1>
 
@@ -99,7 +68,6 @@
 <!--===================-->
 <!-- Parts Of The Game -->
 <!--===================-->
-<div class="navbar-guide" id="game"></div>
 <div class="game-description_container">
 	<h1 class="main-titles"><span>San Francisco city</span></h1>
 
@@ -190,7 +158,6 @@
 <!--===================-->
 <!-- Rules Of The Game -->
 <!--===================-->
-<div class="navbar-guide" id="rules"></div>
 <div class="rules-of_the-game_container">
 	<h1 class="main-titles"><span>Reglas del juego</span></h1>
 	<div class="container-description_rules">

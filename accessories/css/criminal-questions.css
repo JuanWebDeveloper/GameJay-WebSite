@@ -1,0 +1,18 @@
+/* Criminal Questions Styles */
+.criminal-questions {
+	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/user/welcome.jpg);
+	height: 100vh;
+	position: relative;
+	width: 100vw;
+}
+
+.criminal-questions_content {
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.criminal-questions_content h2 {
+	color: #fff;
+}

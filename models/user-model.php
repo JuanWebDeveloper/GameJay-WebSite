@@ -57,7 +57,7 @@ class UserModel {
 
 		// In The Event That The Email And Password Exist And Coincide, We Proceed To Create The Session
 		if ($response !== false) {
-			$_SESSION["user"] = $data["email"];
+			$_SESSION["user"] = $response;
 			echo "<script>location.reload();</script>";
 
 		// In The Event That The Email And Password Do Not Exist Or Do Not Match, We Notify The User

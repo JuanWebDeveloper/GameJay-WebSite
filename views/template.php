@@ -21,11 +21,18 @@
 				if ($routes[0] == "login-admin" || $routes[0] == "create-questions" || $routes[0] == "list-questions" || $routes[0] == "edit-question") {
 					header("Location: $url"); 
 					
+				} elseif ($routes[0] == "san-francisco-city") {
+					echo '<title>San Francisco City</title>';
+
+				} elseif ($routes[0] == "criminal-questions") {
+					echo '<title>Preguntas Criminales</title>';
+
 				} else {
 					echo '<title>!Error 404!</title>';
 				}
 			} else {
-				echo '<title>San Francisco City</title>';
+				$userName = ucwords($_SESSION['user']['name']);
+				echo "<title>Bienvenido $userName</title>";
 			}
 			
 		} 
@@ -34,7 +41,7 @@
 			if (isset($_GET["route"])) {
 				$routes = explode("/", $_GET["route"]);
 
-				if ($routes[0] == "login-admin") {
+				if ($routes[0] == "login-admin" || $routes[0] == "san-francisco-city" || $routes[0] == "criminal-questions") {
 					header("Location: $url"); 
 					
 				} elseif ($routes[0] == "create-questions") {
@@ -64,7 +71,7 @@
 			if ($routes[0] == "login-admin") {
 				echo '<title>Iniciar Como Administrador</title>';
 
-			} elseif ($routes[0] == "create-questions" && !isset($_SESSION["admin"]) || $routes[0] == "list-questions" && !isset($_SESSION["admin"]) || $routes[0] == "edit-question" && !isset($_SESSION["admin"])) {
+			} elseif ($routes[0] == "create-questions" && !isset($_SESSION["admin"]) || $routes[0] == "list-questions" && !isset($_SESSION["admin"]) || $routes[0] == "edit-question" && !isset($_SESSION["admin"]) || $routes[0] == "san-francisco-city" && !isset($_SESSION["user"]) || $routes[0] == "criminal-questions" && !isset($_SESSION["user"])) {
 				header("Location: $url"); 
 
 			} else {
@@ -105,6 +112,8 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/loginAdmin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/admin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/error404.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/welcome-user.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/criminal-questions.css">
 	
 	<!--====================-->
 	<!-- JavaScript Plugins -->
@@ -121,14 +130,20 @@
 			
 			if (isset($_GET["route"])) {
 
-				if ($routes[0] != "login-admin" && $routes[0] != "create-questions" && $routes[0] != "list-questions") {
+				if ($routes[0] != "login-admin" && $routes[0] != "create-questions" && $routes[0] != "list-questions" && $routes[0] != "san-francisco-city" && $routes[0] != "criminal-questions") {
 					require "modules/error-404.php";
-				} 
+
+				} elseif ($routes[0] == "san-francisco-city" || $routes[0] == "criminal-questions") {
+					require "modules/user-navbar.php";
+					require "modules/$routes[0].php";
+					require "modules/footer.php";
+				}
 
 			} else {
-				require "modules/san-francisco.php";
-				require "modules/footer.php";
+				require "modules/user-navbar.php";
+				require "modules/welcome-user.php";
 			}
+			
 
 		} elseif (isset($_SESSION["admin"])) {
 
