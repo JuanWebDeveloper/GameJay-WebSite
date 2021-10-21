@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 16-09-2021 a las 17:28:58
+-- Tiempo de generación: 21-10-2021 a las 21:07:26
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 8.0.9
 
@@ -24,15 +24,49 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Estructura de tabla para la tabla `usuarios`
+-- Estructura de tabla para la tabla `admin`
 --
 
-CREATE TABLE `usuarios` (
+CREATE TABLE `admin` (
   `id` int(11) NOT NULL,
-  `nombre` varchar(50) COLLATE utf8_spanish_ci NOT NULL,
-  `email` varchar(70) COLLATE utf8_spanish_ci NOT NULL,
-  `password` varchar(200) COLLATE utf8_spanish_ci NOT NULL,
-  `terminos` tinyint(1) NOT NULL
+  `email` text COLLATE utf8_spanish_ci NOT NULL,
+  `password` text COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+--
+-- Volcado de datos para la tabla `admin`
+--
+
+INSERT INTO `admin` (`id`, `email`, `password`) VALUES
+(1, 'admin@gamejay.com', '21232f297a57a5a743894a0e4a801fc3');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `questions`
+--
+
+CREATE TABLE `questions` (
+  `id` int(11) NOT NULL,
+  `question` text COLLATE utf8_spanish_ci NOT NULL,
+  `option_a` text COLLATE utf8_spanish_ci NOT NULL,
+  `option_b` text COLLATE utf8_spanish_ci NOT NULL,
+  `option_c` text COLLATE utf8_spanish_ci NOT NULL,
+  `answer` text COLLATE utf8_spanish_ci NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `users`
+--
+
+CREATE TABLE `users` (
+  `id` int(11) NOT NULL,
+  `name` text COLLATE utf8_spanish_ci NOT NULL,
+  `email` text COLLATE utf8_spanish_ci NOT NULL,
+  `password` text COLLATE utf8_spanish_ci NOT NULL,
+  `terms` tinyint(1) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_spanish_ci;
 
 --
@@ -40,9 +74,21 @@ CREATE TABLE `usuarios` (
 --
 
 --
--- Indices de la tabla `usuarios`
+-- Indices de la tabla `admin`
 --
-ALTER TABLE `usuarios`
+ALTER TABLE `admin`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `questions`
+--
+ALTER TABLE `questions`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Indices de la tabla `users`
+--
+ALTER TABLE `users`
   ADD PRIMARY KEY (`id`);
 
 --
@@ -50,10 +96,22 @@ ALTER TABLE `usuarios`
 --
 
 --
--- AUTO_INCREMENT de la tabla `usuarios`
+-- AUTO_INCREMENT de la tabla `admin`
 --
-ALTER TABLE `usuarios`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+ALTER TABLE `admin`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=2;
+
+--
+-- AUTO_INCREMENT de la tabla `questions`
+--
+ALTER TABLE `questions`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT de la tabla `users`
+--
+ALTER TABLE `users`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;

@@ -30,13 +30,13 @@ class AdminModel {
 	// Create Questions
 	public static function mdlCreateQuestions($table, $data){
 		// Query To Register The Question
-		$statement = Connection::connect()->prepare("INSERT INTO $table (question, option_a, option_b, option_c, response) VALUES (:question, :optionA, :optionB, :optionC, :response)");
+		$statement = Connection::connect()->prepare("INSERT INTO $table (question, option_a, option_b, option_c, answer) VALUES (:question, :optionA, :optionB, :optionC, :answer)");
 
 		$statement->bindParam(":question", $data["question"], PDO::PARAM_STR);
 		$statement->bindParam(":optionA", $data["optionA"], PDO::PARAM_STR);
 		$statement->bindParam(":optionB", $data["optionB"], PDO::PARAM_STR);
 		$statement->bindParam(":optionC", $data["optionC"], PDO::PARAM_STR);
-		$statement->bindParam(":response", $data["response"], PDO::PARAM_STR);
+		$statement->bindParam(":answer", $data["response"], PDO::PARAM_STR);
 
 		if ($statement->execute()) {
 			return "Pregunta Creada";
@@ -114,10 +114,10 @@ class AdminModel {
 		$optionA = $data["optionA"];
 		$optionB = $data["optionB"];
 		$optionC = $data["optionC"];
-		$response = $data["response"];
+		$answer = $data["response"];
 		
 		// Query To Edit The Question
-		$statement = Connection::connect()->prepare("UPDATE $table SET question='$question', option_a='$optionA', option_b='$optionB', option_c='$optionC', response='$response' WHERE id='$id'");
+		$statement = Connection::connect()->prepare("UPDATE $table SET question='$question', option_a='$optionA', option_b='$optionB', option_c='$optionC', answer='$answer' WHERE id='$id'");
 		
 
 		if ($statement->execute()) {

@@ -42,7 +42,7 @@ class AdminController {
 				return $errors;
 
 			// Validate That A Valid Response Is Submitted
-			} elseif ($_POST["response"] != "a" && $_POST["response"] != "b" && $_POST["response"] != "c" && $_POST["response"] != "A" && $_POST["response"] != "B" && $_POST["response"] != "C") {
+			} elseif ($_POST["response"] != $_POST["optionA"] && $_POST["response"] != $_POST["optionB"] && $_POST["response"] != $_POST["optionC"]) {
 				$errors = "El campo de opción correcta es inválido";
 
 				return $errors;
@@ -100,7 +100,7 @@ class AdminController {
 
 				return $errors;
 
-			} elseif ($_POST["response"] != "a" && $_POST["response"] != "b" && $_POST["response"] != "c" && $_POST["response"] != "A" && $_POST["response"] != "B" && $_POST["response"] != "C") {
+			} elseif ($_POST["response"] != $_POST["optionA"] && $_POST["response"] != $_POST["optionB"] && $_POST["response"] != $_POST["optionC"]) {
 				$errors = "El campo de opción correcta es inválido";
 
 				return $errors;

@@ -16,7 +16,7 @@
         <input type="text" placeholder="Opcion A" name="optionA" value="<?php echo $data[2]; ?>" class="form-control mt-2" >
         <input type="text" placeholder="Opcion B" name="optionB" value="<?php echo $data[3]; ?>" class="form-control mt-2" >
         <input type="text" placeholder="Opcion C" name="optionC" value="<?php echo $data[4]; ?>" class="form-control mt-2" >
-        <input type="text" placeholder="Opcion Correcta" value="<?php echo $data[5]; ?>" name="response"  maxlength="1" class="form-control mt-2" >
+        <input type="text" placeholder="Opcion Correcta" value="<?php echo $data[5]; ?>" name="response" class="form-control mt-2" >
         <input type="hidden" name="editQuestion" value="editQuestion">
         <button type="submit"  class="btn btn-outline-primary mt-2 px-5 float-right">Editar</button>
     </form>

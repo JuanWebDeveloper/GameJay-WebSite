@@ -9,7 +9,7 @@
         <input type="text" placeholder="Opcion A" name="optionA" class="form-control mt-2" >
         <input type="text" placeholder="Opcion B" name="optionB" class="form-control mt-2" >
         <input type="text" placeholder="Opcion C" name="optionC" class="form-control mt-2" >
-        <input type="text" placeholder="Opcion Correcta" name="response"  maxlength="1" class="form-control mt-2" >
+        <input type="text" placeholder="Opcion Correcta" name="response" class="form-control mt-2" >
         <input type="hidden" name="createQuestions" value="createQuestions">
         <button type="submit"  class="btn btn-outline-primary mt-2 px-5 float-right">Crear</button>
     </form>
