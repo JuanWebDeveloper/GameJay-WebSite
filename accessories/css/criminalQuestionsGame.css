@@ -1,0 +1,63 @@
+/* Particles Styles */
+#particles-js {
+	background: #0077ff;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height: 100%;
+	position: absolute;
+	width: 100%;
+}
+
+/* Button Return Styles */
+#particles-js .button-return.game {
+	background: #fff;
+}
+
+#particles-js .button-return.game i {
+	color: #0077ff;
+}
+
+#particles-js .button-return.game:hover i {
+	background: transparent;
+}
+
+/* Criminal Questions Game Styles */
+.start-game_btn {
+	background: #ffffff50;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	padding: 30px;
+	transform: translate(-50%, -50%);
+	text-align: center;
+	transition: all 0.3s ease-in;
+	z-index: 5;
+}
+
+.start-game_btn h2 {
+	color: #fff;
+	font-size: 35px;
+	padding-bottom: 25px;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
+}
+
+/* Start Game Button Styles */
+.start-game_btn button {
+	background: #fff;
+	border: none;
+	border-radius: 5px;
+	color: #0077ff;
+	cursor: pointer;
+	font-size: 25px;
+	font-weight: 500;
+	outline: none;
+	padding: 15px 30px;
+	transition: all 0.3s ease-in;
+}
+
+.start-game_btn button:hover {
+	opacity: 0.8;
+	transform: scale(1.1);
+}

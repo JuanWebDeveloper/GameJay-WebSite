@@ -12,12 +12,12 @@
 				<span id="spanFour"></span>
 				Descripción
 			</a>
-            <a style="color: #fff" class="btn-cd">
+            <a href="criminal-questions-game" style="color: #fff" class="btn-cd">
 				<span id="spanOne"></span>
 				<span id="spanTwo"></span>
 				<span id="spanThree"></span>
 				<span id="spanFour"></span>
-				Empezar A Jugar
+				Ir Al Juego
 			</a>
         </div>
     </div>
