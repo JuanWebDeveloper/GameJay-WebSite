@@ -25,16 +25,16 @@ function getQuestions() {
                     <span>Opcion C</span>
                     $question[4]
                 </td>
-                <td class='text-uppercase'>
+                <td>
                     <span class='text-capitalize'>Opcion Correcta</span>
                     $question[5]
                 </td>
-                <td class='d-flex justify-content-center'>
+                <td class='d-flex justify-content-center flex-lg-column'>
                     <span>Acciones</span>
                     
-                    <a href='edit-question/$question[0]' class='btn btn-primary'>Editar</a>
+                    <a href='edit-question/$question[0]' class='btn btn-primary my-lg-2'>Editar</a>
 
-                    <form method='POST' class='ml-3'>
+                    <form method='POST' class='ml-3 ml-lg-0'>
                         <input type='hidden' name='delete' value='$question[0]' />
                         <input type='submit' value='Eliminar' class='btn btn-danger' />
                     </form>

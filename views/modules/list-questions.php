@@ -3,7 +3,7 @@
 <!--===============-->
 <div class="list-container">
     <div class="list-content">
-        <h2>Lista de questions</h2>
+        <h2>Lista de preguntas</h2>
             
         <table>
             <thead>
