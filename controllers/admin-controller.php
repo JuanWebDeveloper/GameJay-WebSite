@@ -122,4 +122,12 @@ class AdminController {
 			}
 		}
 	}
+
+	// Convert questions to JSON
+	public static function ctrConvertQuestionsToJSON() {
+		$table = "questions";
+		$response = AdminModel::mdlConvertQuestionsToJSON($table);
+		
+		return $response;
+	}
 }

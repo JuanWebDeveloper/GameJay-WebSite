@@ -1,3 +1,17 @@
+<?php 
+    $questions = convertToJSON();
+    $convertToString = "";
+
+    foreach ($questions as $question) {
+      $convertToString .= $question;
+    }
+
+    echo "
+        <script>
+            let questions = [$convertToString];
+        </script>
+    ";
+ ?>
 <!--=========================-->
 <!-- Criminal Questions Game -->
 <!--=========================-->

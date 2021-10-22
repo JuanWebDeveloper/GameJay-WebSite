@@ -14,6 +14,7 @@ require "./models/admin-model.php";
 require "./functions/error-modal.php";
 require "./functions/successful-modal.php";
 require "./functions/get-questions.php";
+require "./functions/questions-json.php";
 
 $template = new TemplateController();
 $template -> template();

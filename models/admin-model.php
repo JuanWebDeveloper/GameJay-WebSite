@@ -129,4 +129,18 @@ class AdminModel {
 		$statement = null;
 		die();
 	}
+
+	// Convert questions to JSON
+	public static function mdlConvertQuestionsToJSON($table) {
+		// Consultation To Bring Questions
+		$statement = Connection::connect()->prepare("SELECT * FROM $table");
+		$statement->execute();
+
+		$response = $statement->fetchAll();
+
+		return $response;
+
+		$statement = null;
+		die();
+	}
 }
