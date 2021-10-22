@@ -133,7 +133,7 @@ class AdminModel {
 	// Convert questions to JSON
 	public static function mdlConvertQuestionsToJSON($table) {
 		// Consultation To Bring Questions
-		$statement = Connection::connect()->prepare("SELECT * FROM $table");
+		$statement = Connection::connect()->prepare("SELECT * FROM $table ORDER BY RAND() LIMIT 10");
 		$statement->execute();
 
 		$response = $statement->fetchAll();

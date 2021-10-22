@@ -12,6 +12,11 @@
 /* Button Return Styles */
 #particles-js .button-return.game {
 	background: #fff;
+	opacity: 0;
+}
+
+#particles-js .button-return.game.active-return {
+	opacity: 1;
 }
 
 #particles-js .button-return.game i {
@@ -48,8 +53,13 @@
 .start-game_btn {
 	background: #ffffff50;
 	padding: 30px;
+	opacity: 0;
 	text-align: center;
 	z-index: 5;
+}
+
+.start-game_btn.active-start {
+	opacity: 1;
 }
 
 .start-game_btn h2 {
@@ -271,7 +281,7 @@
 	pointer-events: none;
 }
 
-.section-questions .option-list .option .icon {
+.section-questions .option-list .option .icon i {
 	border: 2px solid transparent;
 	border-radius: 50%;
 	font-size: 13px;
@@ -282,13 +292,13 @@
 	transition: all 0.3s ease;
 	width: 26px;
 }
-.option-list .option .icon.tick {
+.option-list .option .icon.tick i {
 	border-color: #23903c;
 	background: #d4edda;
 	color: #23903c;
 }
 
-.option-list .option .icon.cross {
+.option-list .option .icon.cross i {
 	background: #f8d7da;
 	border-color: #a42834;
 	color: #a42834;
@@ -350,12 +360,6 @@
 	transform: translate(-50%, -50%) scale(0.9);
 	transition: all 0.3s ease;
 	width: 70vw;
-}
-
-.result-box .icon {
-	color: #0077ff;
-	font-size: 100px;
-	margin-bottom: 10px;
 }
 
 .result-box .complete-text {

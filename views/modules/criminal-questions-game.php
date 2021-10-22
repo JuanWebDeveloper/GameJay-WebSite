@@ -17,7 +17,7 @@
 <!--=========================-->
 <div id="particles-js">
     <!-- Start Game Button -->
-    <div class="start-game_btn" id="startGame">
+    <div class="start-game_btn active-start" id="startGame">
         <h2>Preguntas Criminales</h2>
         <button>Empezar Juego</button>
     </div>
@@ -46,7 +46,7 @@
             <div class="title">Preguntas Criminales</div>
             <div class="timer">
                 <div class="time-left_text">Tiempo Restante</div>
-                <div class="time-sec">15</div>
+                <div class="time-sec">30</div>
             </div>
             <div class="time-line"></div>
         </div>
@@ -70,9 +70,6 @@
 
     <!-- Result Box -->
     <div class="result-box" id="resultBox">
-        <div class="icon">
-            <i class="fas fa-crown"></i>
-        </div>
         <div class="complete-text">¡Has Completado El Juego!</div>
         <div class="score-text">
             <!-- Here I'Ve Inserted Score Result From JavaScript -->
@@ -85,5 +82,5 @@
             <button class="quit">Salir Del Juego</button>
         </div>
     </div>
-    <a href="<?php echo $url; ?>criminal-questions" class="button-return game" title="Regresar"><i class="fas fa-undo-alt"></i></a>
+    <a href="<?php echo $url; ?>criminal-questions" class="button-return game active-return" id="buttonReturn" title="Regresar"><i class="fas fa-undo-alt"></i></a>
 </div>

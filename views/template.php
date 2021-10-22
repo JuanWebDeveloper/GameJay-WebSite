@@ -188,5 +188,6 @@
 	<script src="<?php echo $url; ?>accessories/js/modals.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/criminalQuestions.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/particles.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/criminalQuestionsGame.js"></script>
 </body>
 </html>
