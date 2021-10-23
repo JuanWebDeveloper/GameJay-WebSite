@@ -11,20 +11,23 @@
 
 /* Button Return Styles */
 #particles-js .button-return.game {
-	background: #fff;
+	background: #00000070;
+	display: none;
 	opacity: 0;
 }
 
 #particles-js .button-return.game.active-return {
+	display: block;
 	opacity: 1;
 }
 
 #particles-js .button-return.game i {
-	color: #0077ff;
+	color: #fff;
 }
 
 #particles-js .button-return.game:hover i {
 	background: transparent;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 }
 
 /* Criminal Questions Game Styles */
@@ -51,9 +54,10 @@
 
 /* Start Game Button Styles */
 .start-game_btn {
-	background: #ffffff50;
+	background: #00000070;
 	padding: 30px;
 	opacity: 0;
+	pointer-events: none;
 	text-align: center;
 	z-index: 5;
 }
@@ -78,17 +82,18 @@
 	font-size: 25px;
 	font-weight: 500;
 	outline: none;
+	pointer-events: all;
 	padding: 15px 30px;
 	transition: all 0.3s ease-in;
 }
 
 .start-game_btn button:hover {
-	opacity: 0.8;
+	text-shadow: 0 0 10px #0077ff80, 0 0 10px #0077ff80;
 	transform: scale(1.1);
 }
 
 .info-box {
-	background: #fff;
+	background: #00000070;
 	border-radius: 5px;
 	opacity: 0;
 	width: 70vw;
@@ -97,12 +102,13 @@
 .info-title {
 	align-items: center;
 	border-bottom: 1px solid #d3d3d3;
-	color: #0077ff;
+	color: #fff;
 	display: flex;
 	font-size: 25px;
 	font-weight: 600;
 	height: 60px;
 	justify-content: center;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	width: 100%;
 }
 
@@ -111,12 +117,13 @@
 }
 
 .info-list .info {
+	color: #fff;
 	font-size: 17px;
 	margin: 5px 0;
 }
 
 .info-list .info span {
-	color: #0077ff;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	font-weight: 600;
 }
 
@@ -152,12 +159,19 @@
 }
 
 .game-buttons button:hover {
-	opacity: 0.8;
 	transform: scale(1.1);
 }
 
+.game-buttons button.restart:hover {
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
+}
+
+.game-buttons button.quit:hover {
+	text-shadow: 0 0 10px #0077ff80, 0 0 10px #0077ff80;
+}
+
 .quiz-box {
-	background: #fff;
+	background: #00000070;
 	border-radius: 5px;
 	opacity: 0;
 	pointer-events: none;
@@ -168,15 +182,16 @@
 
 .quiz-box .header {
 	align-items: center;
-	background: #fff;
+	background: #00000070;
 	border-radius: 5px 5px 0 0;
 	box-shadow: 0px 3px 5px 1px rgba(0, 0, 0, 0.1);
-	color: #0077ff;
+	color: #fff;
 	display: flex;
 	height: 70px;
 	justify-content: space-between;
 	position: relative;
 	padding: 0 30px;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	z-index: 2;
 }
 
@@ -213,6 +228,7 @@
 	line-height: 30px;
 	margin-left: 5px;
 	padding: 0 5px;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	text-align: center;
 	user-select: none;
 }
@@ -227,13 +243,15 @@
 }
 
 .section-questions {
-	background: #fff;
+	background: #00000070;
 	padding: 25px 30px 20px 30px;
 }
 
 .section-questions .que-text {
+	color: #fff;
 	font-size: 25px;
 	font-weight: 600;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 }
 
 .section-questions .option-list {
@@ -243,15 +261,16 @@
 
 .section-questions .option-list .option {
 	align-items: center;
-	background: aliceblue;
-	border: 1px solid #84c5fe;
+	background: #00000060;
 	border-radius: 5px;
+	color: #fff;
 	cursor: pointer;
 	display: flex;
 	font-size: 17px;
 	justify-content: space-between;
 	margin-bottom: 15px;
 	padding: 8px 15px;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	transition: all 0.3s ease;
 }
 
@@ -260,21 +279,15 @@
 }
 
 .section-questions .option-list .option:hover {
-	background: #cce5ff;
-	border: 1px solid #b8daff;
-	color: #004085;
+	background: #00000040;
 }
 
 .section-questions .option-list .option.correct {
-	background: #d4edda;
-	border: 1px solid #c3e6cb;
-	color: #155724;
+	background: #11fc4880;
 }
 
 .section-questions .option-list .option.incorrect {
-	background: #f8d7da;
-	border: 1px solid #f5c6cb;
-	color: #721c24;
+	background: #fc1b2d80;
 }
 
 .section-questions .option-list .option.disabled {
@@ -306,7 +319,8 @@
 
 .footer-game {
 	align-items: center;
-	border-top: 1px solid lightgrey;
+	background: #00000070;
+	border-top: 1px solid #fff;
 	display: flex;
 	height: 60px;
 	justify-content: space-between;
@@ -315,6 +329,8 @@
 
 .footer-game .total-que span {
 	display: flex;
+	color: #fff;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	user-select: none;
 }
 
@@ -343,13 +359,13 @@
 }
 
 .footer-game .next-btn.show:hover {
-	opacity: 0.8;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	transform: scale(1.1);
 }
 
 .result-box {
 	align-items: center;
-	background: #fff;
+	background: #00000070;
 	border-radius: 5px;
 	display: flex;
 	flex-direction: column;
@@ -363,12 +379,15 @@
 }
 
 .result-box .complete-text {
-	font-size: 20px;
+	color: #fff;
+	font-size: 25px;
 	font-weight: 500;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 }
 
 .result-box .score-text span {
 	display: flex;
+	color: #fff;
 	font-size: 18px;
 	font-weight: 500;
 	margin: 10px 0;
@@ -377,26 +396,168 @@
 .result-box .score-text span p {
 	font-weight: 600;
 	padding: 0 4px;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 }
 
 .result-box .result-message h2 {
+	color: #fff;
 	font-size: 25px;
 	font-weight: 500;
 	padding-bottom: 10px;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 	text-align: center;
 }
 
 .result-box .result-message h2.winner {
-	color: #23903c;
-	text-shadow: 0 0 10px #23903c80, 0 0 10px #23903c80;
+	color: #11fc48;
+	text-shadow: 0 0 10px #11fc4880, 0 0 10px #11fc4880;
 }
 
 .result-box .result-message h2.loser {
-	color: #a42834;
-	text-shadow: 0 0 10px #a4283480, 0 0 10px #a4283480;
+	color: #fc1b2d;
+	text-shadow: 0 0 10px #fc1b2d80, 0 0 10px #fc1b2d80;
 }
 
 .result-box .result-message h2.almost {
-	color: #666;
-	text-shadow: 0 0 10px #66666680, 0 0 10px #66666680;
+	color: #fff;
+	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
+}
+
+/*=====================
+(SM we check in 768px)
+=====================*/
+@media screen and (max-width: 980px) {
+	.start-game_btn {
+		width: 80vw;
+	}
+
+	.info-box {
+		width: 80vw;
+	}
+
+	.quiz-box {
+		width: 80vw;
+	}
+
+	.result-box {
+		width: 80vw;
+	}
+}
+/*=====================
+(XS we check in 320px)
+=====================*/
+@media screen and (max-width: 600px) {
+	#particles-js .button-return.game {
+		padding: 5px 20px;
+	}
+
+	.start-game_btn {
+		padding: 15px;
+		width: 90vw;
+	}
+
+	.start-game_btn h2 {
+		font-size: 30px;
+	}
+
+	.info-box {
+		width: 90vw;
+	}
+
+	.info-title {
+		font-size: 20px;
+	}
+
+	.info-list {
+		padding: 10px 10px;
+	}
+
+	.info-list .info {
+		font-size: 15px;
+	}
+
+	.game-buttons {
+		justify-content: center;
+	}
+
+	.quiz-box {
+		width: 90vw;
+	}
+
+	.quiz-box .header {
+		height: auto;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.quiz-box .header .title {
+		font-size: 20px;
+	}
+
+	.quiz-box .header .timer {
+		height: 35px;
+		margin: 10px 0;
+		padding: 0 10px;
+	}
+
+	.section-questions {
+		background: #00000070;
+		padding: 10px 10px 10px 10px;
+	}
+
+	.section-questions .que-text {
+		font-size: 15px;
+	}
+
+	.section-questions .option-list {
+		padding: 15px 0px;
+	}
+
+	.section-questions .option-list .option {
+		font-size: 14px;
+		margin-bottom: 10px;
+		padding: 5px 10px;
+	}
+
+	.section-questions .option-list .option .icon i {
+		font-size: 10px;
+		height: 20px;
+		line-height: 16px;
+		width: 20px;
+	}
+
+	.footer-game {
+		padding: 0 20px;
+	}
+
+	.footer-game .next-btn {
+		font-size: 15px;
+	}
+
+	.result-box {
+		padding: 10px 10px;
+		width: 90vw;
+	}
+
+	.result-box .complete-text {
+		font-size: 20px;
+	}
+
+	.result-box .score-text span {
+		font-size: 10px;
+	}
+
+	.result-box .result-message h2 {
+		font-size: 17px;
+	}
+
+	.result-box .game-buttons-result {
+		flex-wrap: wrap;
+		height: auto;
+		width: 100%;
+	}
+
+	.result-box .game-buttons-result button {
+		margin-top: 10px;
+	}
 }

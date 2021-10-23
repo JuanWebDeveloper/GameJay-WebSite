@@ -19,7 +19,7 @@
     <!-- Start Game Button -->
     <div class="start-game_btn active-start" id="startGame">
         <h2>Preguntas Criminales</h2>
-        <button>Empezar Juego</button>
+        <button id="startGameButton">Empezar Juego</button>
     </div>
 
     <!-- Rules Info Box -->
@@ -35,7 +35,7 @@
             <div class="info">5. Tu puntuación final dependerá de tus respuestas correctas.</div>
         </div>
         <div class="game-buttons">
-            <button class="quit">Salir Del Juego</button>
+            <button class="quit">Salir</button>
             <button class="restart">Continuar</button>
         </div>
     </div>
@@ -77,9 +77,9 @@
         <div class="result-message">
             <!-- Here I'Ve Inserted Result Message From JavaScript -->
         </div>
-        <div class="game-buttons">
+        <div class="game-buttons game-buttons-result">
             <button class="restart">Volver A Jugar</button>
-            <button class="quit">Salir Del Juego</button>
+            <button class="quit">Salir</button>
         </div>
     </div>
     <a href="<?php echo $url; ?>criminal-questions" class="button-return game active-return" id="buttonReturn" title="Regresar"><i class="fas fa-undo-alt"></i></a>

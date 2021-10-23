@@ -1,5 +1,6 @@
 // Getting All Required Elements
 const startGame = document.getElementById('startGame');
+const startGameButton = document.getElementById('startGameButton');
 const infoBox = document.getElementById('infoBox');
 const exitButton = infoBox.querySelector('.game-buttons .quit');
 const continueButton = infoBox.querySelector('.game-buttons .restart');
@@ -174,7 +175,7 @@ const showResultBox = () => {
 /*===============*/
 
 // If Start Quiz Button Clicked
-startGame.addEventListener('click', () => {
+startGameButton.addEventListener('click', () => {
 	infoBox.classList.add('active-info'); // Show The Info Box
 	startGame.classList.remove('active-start'); // Hide The Start Game Button
 });
