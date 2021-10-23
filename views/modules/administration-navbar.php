@@ -10,7 +10,7 @@
 		<ul>
 			<li><a href="<?php echo $url; ?>">Inicio</a></li>
 			<li><a href="<?php echo $url; ?>create-questions">Crear Pregunta</a></li>
-			<li><a href="<?php echo $url; ?>list-questions">Lista De Preguntas</a></li>
+			<li><a href="<?php echo $url; ?>list-questions" id="listQuestiosAdmin">Lista De Preguntas</a></li>
 			<li class="login-responsive">
 				<?php 
 					echo "<a href='$url/models/logout.php'>cerrar sesion</a>"

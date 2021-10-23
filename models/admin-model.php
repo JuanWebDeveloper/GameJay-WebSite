@@ -96,12 +96,8 @@ class AdminModel {
 		if ($response !== false) {
 			return $response;
 		} else {
-			$url = Routes::mainRoute();
-			$redirection = $url."list-questions";
-			
-			header("Location: $redirection");
+			echo "<script>document.getElementById('listQuestiosAdmin').click()</script>";
 		}
-		
 
 		$statement = null;
 		die();
