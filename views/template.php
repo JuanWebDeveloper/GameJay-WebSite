@@ -102,6 +102,7 @@
 	<!--=============-->
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/globals.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/homePage.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/navbar.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/about.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/services.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/products.css">
@@ -183,7 +184,7 @@
 	<!--====================-->
 	<!-- Custom JavaScript  -->
 	<!--====================-->
-	<script src="<?php echo $url; ?>accessories/js/homePage.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/navbar.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/contact.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/modals.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/criminalQuestions.js"></script>

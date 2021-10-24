@@ -25,27 +25,40 @@
 <!--=============-->
 <!-- Navbar      -->
 <!--=============-->
-<div class="navbar-container" id="navbarContainer">
+<div class="navigation-menu" id="navigationMenu">
 	<div class="logo-container">
-		<img src="<?php echo $url; ?>accessories/img/logo.svg" alt="Logo de GameJay" width="250px" height="40px" />
+		<img src="<?php echo $url; ?>accessories/img/logo.svg" alt="Logo de GameJay">
 	</div>
 
-	<nav id="navigation">
-		<ul>
-			<li><a href="#home">Inicio</a></li>
-			<li><a href="#aboutUs">Nosotros</a></li>
-			<li><a href="#services">Servicios</a></li>
-			<li><a href="#products">Productos</a></li>
-			<li><a href="#contact">Contacto</a></li>
-			<li class="login-responsive">
-				<a href="#loginModal" data-toggle="modal">iniciar sesion</a>
-			</li>
-		</ul>
-	</nav>
-
-	<div class="bars-button">
-		<a id="bars"><i class="fas fa-bars"></i></a>
+	<div class="bars" id="btnBars">
+		<input type="checkbox" id="check">
+		<label htmlFor="btnBars">
+			<span id="line1"></span>
+			<span id="line2"></span>
+			<span id="line3"></span>
+		</label>
 	</div>
+
+	<ul class="navigation animate__animated" id="navigation">
+		<li>
+			<a href="#home" class="website-section">Inicio</a>
+		</li>
+		<li>
+			<a href="#aboutUs" class="website-section">Nosotros</a>
+		</li>
+		<li>
+			<a href="#services" class="website-section">Servicios</a>
+		</li>
+		<li>
+			<a href="#products" class="website-section">Productos</a>
+		</li>
+		<li>
+			<a href="#contact" class="website-section">Contacto</a>
+		</li>
+		<li>
+			<a href="#loginModal" data-toggle="modal" class="website-section">iniciar sesion</a>
+		</li>
+	</ul>
 </div>
 
 <!--=============-->
