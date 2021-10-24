@@ -1,3 +1,4 @@
+/* Globals Styles */
 * {
 	box-sizing: border-box;
 	font-family: 'Poppins', sans-serif;
@@ -12,45 +13,88 @@ a:hover {
 	text-decoration: none;
 }
 
-html {
+html,
+body {
+	background: #00001a;
 	overflow-x: hidden;
 	scroll-behavior: smooth;
 }
 
+/* Main Titles Styles */
 .main-titles {
-	color: rgb(0, 119, 255);
+	color: #aaa6ca;
 	font-size: 50px;
 	font-weight: 500;
-	padding-top: 20px;
+	margin-bottom: 50px;
 	text-align: center;
-	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 	text-transform: capitalize;
-	z-index: 2;
-}
-
-.main-titles::after {
-	background: #0077ff;
-	box-shadow: 0 3px 10px #2c2c2ce6;
-	background-position: center;
-	display: inline-block;
-	content: '';
-	height: 5px;
-	opacity: 0.9;
-	position: relative;
-	top: -75px;
-	width: 90%;
-	z-index: 1;
 }
 
 .main-titles span {
-	background: #fff;
-	box-shadow: 0 3px 10px #2c2c2ce6;
-	border-radius: 15px;
+	background: #21213b;
+	border: 5px solid #1a1a33;
+	box-shadow: 0px 1px 10px #aaa6ca80;
+	border-radius: 5px;
 	position: relative;
-	padding: 0 15px;
-	z-index: 5;
+	padding: 0 20px;
 }
 
+/* Buttons Styles */
+.button {
+	align-items: center;
+	background: #1a1a33;
+	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
+	border: none;
+	border-radius: 5px;
+	color: #aaa6ca;
+	cursor: pointer;
+	display: inline-flex;
+	font-size: 20px;
+	font-weight: 500;
+	justify-content: center;
+	overflow: hidden;
+	outline: none;
+	position: relative;
+	padding: 15px 30px;
+	text-transform: capitalize;
+	transition: 0.5s ease all;
+}
+
+.button span {
+	position: relative;
+	z-index: 2;
+}
+
+.button:hover {
+	color: #aaa6ca;
+	transform: scale(1.1);
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
+}
+
+/* Default Buttons Styles */
+.default::after {
+	background: none;
+	border-radius: 50%;
+	border: none;
+	content: '';
+	height: 1px;
+	left: 50%;
+	outline: none;
+	position: absolute;
+	top: 50%;
+	transform-origin: center;
+	transition: all ease-in-out 0.5s;
+	width: 1px;
+	z-index: 1;
+}
+
+.default:hover::after {
+	background: #21213b;
+	transform: scale(200);
+}
+
+/* Navbar Guide Styles */
 .navbar-guide {
 	height: 70px;
 	width: 100%;
@@ -61,11 +105,6 @@ html {
 =====================*/
 @media screen and (max-width: 600px) {
 	.main-titles {
-		font-size: 23px;
-		padding-top: 20px;
-	}
-
-	.main-titles::after {
-		top: -35px;
+		font-size: 30px;
 	}
 }

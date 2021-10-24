@@ -29,6 +29,7 @@ btnBars.addEventListener('click', () => {
 
 // Hide Navbar Responsive
 if (screen.width <= 980) {
+	navigation.classList.add('animate__backOutLeft');
 	for (let i = 0; i < websiteSection.length; i++) {
 		websiteSection[i].addEventListener('click', () => btnBars.click());
 	}
