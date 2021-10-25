@@ -1,39 +1,25 @@
 /* Home Page Styles */
 .home-page_container {
-	background: url(../img/homePage.jpg);
-	background-size: cover;
-	background-position: center;
-	background-attachment: fixed;
-	height: 60vh;
+	background: #0c0c22;
+	height: 100vh;
 	margin-bottom: 30px;
 	position: relative;
 	width: 100vw;
-	z-index: 1;
-}
-
-.home-page_container::after {
-	background: rgba(0, 0, 0, 0.4);
-	content: '';
-	height: 100%;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: -1;
 }
 
 /* Welcome Styles */
 .content-container {
-	height: 45vh;
+	height: 100%;
 	position: absolute;
 	width: 100%;
-	z-index: 1;
 }
 
 .content-container .description {
 	left: 50%;
 	position: absolute;
-	top: calc(50% + 50px);
+	top: 50%;
 	transform: translate(-50%, -50%);
+	text-align: center;
 	width: 90%;
 }
 
@@ -42,12 +28,12 @@
 	font-size: 50px;
 	padding-top: 100px;
 	text-align: center;
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 5px #ffffff80, 0 0 10px #ffffff80;
 }
 
 .content-container .description h1 span {
-	color: #0077ff;
-	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	color: #4e4c6b;
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
 }
 
 .content-container .description p {
@@ -55,84 +41,6 @@
 	font-size: 20px;
 	padding-top: 15px;
 	text-align: center;
-}
-
-/* Button Styles */
-.content-container .description a {
-	color: #fff;
-	display: inline-block;
-	font-size: 24px;
-	letter-spacing: 4px;
-	overflow: hidden;
-	position: relative;
-	padding: 5px 30px;
-	transition: all 0.3s ease-in;
-}
-
-.content-container .description a:hover {
-	background: rgb(0, 119, 255);
-	box-shadow: 0 0 10px rgb(0, 119, 255), 0 0 40px rgb(0, 119, 255), 0 0 80px rgb(0, 119, 255);
-	transition-delay: 1s;
-}
-
-.content-container .description a span {
-	display: block;
-	position: absolute;
-}
-
-.content-container .description a #spanOne {
-	background: linear-gradient(90deg, transparent, rgb(0, 119, 255));
-	height: 2px;
-	left: -100%;
-	top: 0;
-	width: 100%;
-}
-
-.content-container .description a:hover #spanOne {
-	left: 100%;
-	transition: 1s;
-}
-
-.content-container .description a #spanTwo {
-	background: linear-gradient(180deg, transparent, rgb(0, 119, 255));
-	height: 100%;
-	top: -100%;
-	right: 0;
-	width: 2px;
-}
-
-.content-container .description a:hover #spanTwo {
-	top: 100%;
-	transition: 1s;
-	transition-delay: 0.25s;
-}
-
-.content-container .description a #spanThree {
-	background: linear-gradient(270deg, transparent, rgb(0, 119, 255));
-	bottom: 0;
-	height: 2px;
-	right: -100%;
-	width: 100%;
-}
-
-.content-container .description a:hover #spanThree {
-	right: 100%;
-	transition: 1s;
-	transition-delay: 0.5s;
-}
-
-.content-container .description a #spanFour {
-	background: linear-gradient(360deg, transparent, rgb(0, 119, 255));
-	bottom: -100%;
-	height: 100%;
-	left: 0;
-	width: 2px;
-}
-
-.content-container .description a:hover #spanFour {
-	bottom: 100%;
-	transition: 1s;
-	transition-delay: 0.75s;
 }
 
 /*=====================
@@ -152,12 +60,8 @@
 (XS we check in 320px)
 =====================*/
 @media screen and (max-width: 600px) {
-	.home-page_container {
-		height: 55vh;
-	}
-
 	.content-container .description h1 {
-		font-size: 25px;
+		font-size: 30px;
 	}
 
 	.content-container .description p {

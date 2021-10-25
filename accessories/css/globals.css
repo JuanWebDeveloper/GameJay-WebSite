@@ -20,6 +20,16 @@ body {
 	scroll-behavior: smooth;
 }
 
+/* Particles Styles */
+#particles-js {
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 50% 50%;
+	height: 100vh;
+	position: relative;
+	width: 100%;
+}
+
 /* Main Titles Styles */
 .main-titles {
 	color: #aaa6ca;
@@ -44,7 +54,6 @@ body {
 .button {
 	align-items: center;
 	background: #1a1a33;
-	box-shadow: 0px 0px 4px 1px rgba(0, 0, 0, 0.5);
 	border: none;
 	border-radius: 5px;
 	color: #aaa6ca;
@@ -96,7 +105,7 @@ body {
 
 /* Navbar Guide Styles */
 .navbar-guide {
-	height: 70px;
+	height: 100px;
 	width: 100%;
 }
 

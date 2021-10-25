@@ -1,23 +1,18 @@
 <!--=============-->
 <!-- HomePage    -->
 <!--=============-->
-<div class="home-page_container" id="home">
+<div class="navbar-guide" id="home" style="height: 0;"></div>
+<div class="home-page_container" id="particles-js">
 	<!--=============-->
 	<!-- Content     -->
 	<!--=============-->
 	<div class="content-container">
 		<div class="description">
 			<h1>Bienvenido a Game<span>JAY</span></h1>
-			<p>No olvides que para acceder a todo nuestro contenido debes iniciar sesión</p>
-			<center style="margin-top: 5px">
-				<a href="#loginModal" data-toggle="modal">
-					<span id="spanOne"></span>
-					<span id="spanTwo"></span>
-					<span id="spanThree"></span>
-					<span id="spanFour"></span>
-					iniciar sesión
-				</a>
-			</center>
+			<p>No olvides que para acceder a todos nuestros productos debes iniciar sesión.</p>
+			<a href="#loginModal" class="button default" data-toggle="modal">
+				<span>iniciar sesión</span>
+			</a>
 		</div>
 	</div>
 </div>

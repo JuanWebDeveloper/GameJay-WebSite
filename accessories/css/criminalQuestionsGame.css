@@ -1,14 +1,3 @@
-/* Particles Styles */
-#particles-js {
-	background: #0077ff;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: 50% 50%;
-	height: 100%;
-	position: absolute;
-	width: 100%;
-}
-
 /* Button Return Styles */
 #particles-js .button-return.game {
 	background: #00000070;
