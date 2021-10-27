@@ -12,7 +12,7 @@
 		$url = Routes::mainRoute();
 
 		// Favicon
-		echo '<link rel="icon" type="image/png" href="'.$url.'accessories/img/logo.png" />';
+		echo '<link rel="icon" type="image/png" href="'.$url.'accessories/img/favicon.png" />';
 
 		if (isset($_SESSION["user"])) {
 			if (isset($_GET["route"])) {

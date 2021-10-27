@@ -19,8 +19,9 @@
 .logo-container {
 	height: 40px;
 	left: 0;
-	top: 25px;
+	margin-left: 25px;
 	position: relative;
+	top: 25px;
 	width: 250px;
 	transition: all 0.3s ease;
 }
