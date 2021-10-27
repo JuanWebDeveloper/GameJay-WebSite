@@ -185,10 +185,11 @@
 	<!-- Custom JavaScript  -->
 	<!--====================-->
 	<script src="<?php echo $url; ?>accessories/js/navbar.js"></script>
-	<script src="<?php echo $url; ?>accessories/js/contact.js"></script>
-	<script src="<?php echo $url; ?>accessories/js/modals.js"></script>
-	<script src="<?php echo $url; ?>accessories/js/criminalQuestions.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/particles.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/modals.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/about.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/contact.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/criminalQuestions.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/criminalQuestionsGame.js"></script>
 </body>
 </html>

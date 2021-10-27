@@ -178,108 +178,78 @@
 <!--=============-->
 <div class="navbar-guide" id="aboutUs"></div>
 <div class="about-us_container">
-	<h1 class="main-titles"><span>Nosotros</span></h1>
-	<!--=============-->
-	<!-- AboutUs     -->
-	<!--=============-->
-	<div class="description-container">
-		<div class="image-about_container">
-			<img src="<?php echo $url; ?>accessories/img/about/aboutUs.png" alt="Imagen de quienes somos" width="100%" height="100%" />
+	<h2 class="main-titles"><span>Nosotros</span></h2>
+	<div class="about-us_content">
+		<!--==============-->
+		<!-- About Navbar -->
+		<!--==============-->
+		<div class="navbar-about">
+			<ul class="navigation-about">
+				<li><a class="active"><span>¿Quienes Somos?</span></a></li>
+				<li><a><span>¿Para que lo hacemos?</span></a></li>
+				<li><a><span>¿Como lo hacemos?</span></a></li>
+				<li><a><span>Misión</span></a></li>
+				<li><a><span>Visión</span></a></li>
+			</ul>
 		</div>
 
-		<div class="text-container">
-			<h2>¿Quienes Somos?</h2>
-			<p>
-				Somos Game<span style="color: #0077ff">Jay</span> una empresa Colombiana que desarrolla juegos
-				pedagógicos que busca ayudar a la sociedad de una manera divertida y practica con los problemas
-				sociales que se les presentan en sus vidas diarias, pretendemos lograr un impacto en toda Latino
-				América y ser la empresa más reconocida a nivel nacional e internacional por sus juegos
-				pedagógicos y por el impacto logrado, con el fin de ayudar a la sociedad disminuyendo la violencia
-				y la cantidad de jóvenes que siguen malos pasos capacitándolos para que puedan tomar las mejores
-				decisiones para sus vidas.
-			</p>
-		</div>
-	</div>
+		<!--=============-->
+		<!-- Content     -->
+		<!--=============-->
+		<div class="about-us_container-text" id="aboutContainerText">
+			<div class="animate__animated about-us_section-text active">
+				<p>
+					Somos Game<span style="color: #4e4c6b">Jay</span> una empresa Colombiana que desarrolla juegos
+					pedagógicos que busca ayudar a la sociedad de una manera divertida y practica con los problemas
+					sociales que se les presentan en sus vidas diarias, pretendemos lograr un impacto en toda Latino
+					América y ser la empresa más reconocida a nivel nacional e internacional por sus juegos
+					pedagógicos y por el impacto logrado, con el fin de ayudar a la sociedad disminuyendo la violencia
+					y la cantidad de jóvenes que siguen malos pasos capacitándolos para que puedan tomar las mejores
+					decisiones para sus vidas.
+				</p>
+			</div>
 
-	<!--=======================-->
-	<!-- What Do We Do It For? -->
-	<!--=======================-->
-	<div class="description-container">
-		<div class="text-container">
-			<h2>¿Para que lo hacemos?</h2>
-			<p>
-				Para lograr un impacto en toda Latino América, buscamos con nuestros programas y Products
-				disminuir la violencia, la pobreza y ayudar a todas aquellas personas que por algún motivo tomaron
-				malas decisiones en el pasado y que ahora están buscando una manera de corregirlos y darle un giro
-				a sus vidas, así mismo buscamos prevenir a los jóvenes con el fin de que no cometan errores que
-				puedan poner en riesgos sus futuros y vidas, ya que al ellos ver como los errores que estas
-				personas cometieron los perjudicaron y afectaron, estas experiencias los impulse a no seguir los
-				mismos pasos y así no cometer dichos errores.
-			</p>
-		</div>
+			<div class="animate__animated about-us_section-text">
+				<p>
+					Para lograr un impacto en toda Latino América, buscamos con nuestros programas y Products
+					disminuir la violencia, la pobreza y ayudar a todas aquellas personas que por algún motivo tomaron
+					malas decisiones en el pasado y que ahora están buscando una manera de corregirlos y darle un giro
+					a sus vidas, así mismo buscamos prevenir a los jóvenes con el fin de que no cometan errores que
+					puedan poner en riesgos sus futuros y vidas, ya que al ellos ver como los errores que estas
+					personas cometieron los perjudicaron y afectaron, estas experiencias los impulse a no seguir los
+					mismos pasos y así no cometer dichos errores.
+				</p>
+			</div>
 
-		<div class="image-about_container">
-			<img src="<?php echo $url; ?>accessories/img/modals/recover.png" alt="Imagen de para que lo hacemos" width="100%" height="100%" />
-		</div>
-	</div>
+			<div class="animate__animated about-us_section-text">
+				<p>
+					Lo hacemos por medio de juegos, nuestra empresa crea juegos pedagógicos los cuales están enfocados
+					en los problemas sociales mas comunes de Latino América, el objetivo de estos juegos es mostrarle
+					a las personas mientras juegan como el tomar una mala decisión o seguir un mal camino pueden
+					afectar sus vidas y al mismo tiempo enseñarles que tienen que hacer para corregir estas malas
+					decisiones, la razón por la cual hacemos esto por medio de juegos es que así las personas se
+					divierten y logramos que le pongan atención al juego y así mismo al mensaje que les queremos dar.
+				</p>
+			</div>
 
-	<!--==================-->
-	<!-- How Do We Do It? -->
-	<!--==================-->
-	<div class="description-container">
-		<div class="image-about_container">
-			<img src="<?php echo $url; ?>accessories/img/about/howDoWeDoIt.png" alt="Imagen de como lo hacemos" width="100%" height="100%" />
-		</div>
+			<div class="animate__animated about-us_section-text">
+				<p>
+					Fomentar el razonamiento lógico de los jugadores por medio de juegos interactivos que incentiven a
+					un pensamiento auto crítico y reflexivo en los participantes, esto por medio de juegos que tengan
+					como finalidad resolver problemáticas sociales que puedan ser abordadas desde charlas para la
+					concientización de los futuros jugadores y, más importante aún, disminuir el índice de
+					criminalidad en los jóvenes de los barrios.
+				</p>
+			</div>
 
-		<div class="text-container">
-			<h2>¿Como lo hacemos?</h2>
-			<p>
-				Lo hacemos por medio de juegos, nuestra empresa crea juegos pedagógicos los cuales están enfocados
-				en los problemas sociales mas comunes de Latino América, el objetivo de estos juegos es mostrarle
-				a las personas mientras juegan como el tomar una mala decisión o seguir un mal camino pueden
-				afectar sus vidas y al mismo tiempo enseñarles que tienen que hacer para corregir estas malas
-				decisiones, la razón por la cual hacemos esto por medio de juegos es que así las personas se
-				divierten y logramos que le pongan atención al juego y así mismo al mensaje que les queremos dar.
-			</p>
-		</div>
-	</div>
-
-	<!--=============-->
-	<!-- Mission     -->
-	<!--=============-->
-	<div class="description-container">
-		<div class="text-container">
-			<h2>Misión</h2>
-			<p>
-				Fomentar el razonamiento lógico de los jugadores por medio de juegos interactivos que incentiven a
-				un pensamiento auto crítico y reflexivo en los participantes, esto por medio de juegos que tengan
-				como finalidad resolver problemáticas sociales que puedan ser abordadas desde charlas para la
-				concientización de los futuros jugadores y, más importante aún, disminuir el índice de
-				criminalidad en los jóvenes de los barrios.
-			</p>
-		</div>
-
-		<div class="image-about_container">
-			<img src="<?php echo $url; ?>accessories/img/about/mission.png" alt="Imagen de la mision" width="100%" height="100%" />
-		</div>
-	</div>
-
-	<!--=============-->
-	<!-- Vision      -->
-	<!--=============-->
-	<div class="description-container">
-		<div class="image-about_container">
-			<img src="<?php echo $url; ?>accessories/img/about/vision.png" alt="Imagen de la vision" width="100%" height="100%" />
-		</div>
-
-		<div class="text-container">
-			<h2>Visión</h2>
-			<p>
-				Para el año 2022 duplicaremos a las problemáticas establecidas, logrando un acercamiento social,
-				brindando a la comunidad un mejor ambiente. Buscamos la lealtad del consumidor colombiano,
-				posicionando juegos innovadores de GAMES JAY como preferidos en el segmento de educación y ayuda
-				didáctica para con la sociedad
-			</p>
+			<div class="animate__animated about-us_section-text">
+				<p>
+					Para el año 2022 duplicaremos a las problemáticas establecidas, logrando un acercamiento social,
+					brindando a la comunidad un mejor ambiente. Buscamos la lealtad del consumidor colombiano,
+					posicionando juegos innovadores de GAMES JAY como preferidos en el segmento de educación y ayuda
+					didáctica para con la sociedad
+				</p>
+			</div>
 		</div>
 	</div>
 </div>

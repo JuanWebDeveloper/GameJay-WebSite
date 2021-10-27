@@ -1,58 +1,85 @@
 /* Styles AboutUs */
 .about-us_container {
-	height: auto;
+	margin-bottom: 20px;
 	position: relative;
-	margin-bottom: 30px;
 	width: 100%;
 }
 
 /* Description Styles */
-.description-container {
-	display: flex;
-	flex-wrap: wrap;
-	height: auto;
-	justify-content: space-around;
-	margin-left: 5%;
-	margin-bottom: 50px;
+.about-us_content {
+	left: 5%;
+	margin-top: 80px;
+	position: relative;
 	width: 90%;
 }
 
-.image-about_container {
-	height: 400px;
-	margin-top: 20px;
-	width: 45%;
+/* Navbar About Styles */
+.navbar-about {
+	position: relative;
+	width: 100%;
 }
 
-.text-container {
-	margin-top: 20px;
-	width: 45%;
+.navigation-about {
+	display: flex;
+	justify-content: space-between;
+	position: relative;
+	width: 100%;
 }
 
-.text-container h2 {
-	color: #0077ff;
-	font-size: 35px;
-	letter-spacing: 2px;
-	text-align: center;
-	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
-	text-transform: capitalize;
-}
-
-.text-container p {
-	color: #2c2c2c;
+.navigation-about li a {
+	color: #4e4c6b !important;
+	display: block;
 	font-size: 20px;
-	text-align: justify;
-	padding-top: 10px;
+	font-weight: 500;
+	text-transform: capitalize;
+	transition: all 0.3s ease-in;
+}
+
+.navigation-about li a:hover {
+	transform: scale(1.1);
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
+}
+
+.navigation-about li a.active {
+	transform: scale(1.1);
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
+}
+
+/* About Content Styles */
+.about-us_container-text {
+	margin-top: 35px;
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+
+.about-us_section-text {
+	background: rgba(19, 20, 42, 0.702);
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+	border-radius: 5px;
+	display: none;
+	opacity: 0;
+	position: relative;
+	width: 100%;
+}
+
+.about-us_section-text p {
+	color: #fff;
+	font-size: 17px;
+	font-weight: 400;
+	padding: 10px 15px;
+}
+
+.about-us_section-text.active {
+	display: block;
+	opacity: 1;
 }
 
 /*=====================
 (MD we check in 1024px)
 =====================*/
 @media screen and (max-width: 1199px) {
-	.text-container h2 {
-		font-size: 35px;
-	}
-
-	.text-container p {
+	.navigation-about li a {
 		font-size: 17px;
 	}
 }
@@ -61,29 +88,25 @@
 (SM we check in 768px)
 =====================*/
 @media screen and (max-width: 980px) {
-	.image-about_container {
-		order: 1;
-		width: 100%;
+	.navigation-about {
+		flex-direction: column;
 	}
 
-	.text-container {
-		width: 100%;
+	.navigation-about li a {
+		font-size: 20px;
+		padding-bottom: 20px;
 	}
 
-	.text-container h2 {
-		font-size: 50px;
-	}
-}
-
-/*=====================
-(XS we check in 320px)
-=====================*/
-@media screen and (max-width: 600px) {
-	.image-about_container {
-		height: 250px;
+	.navigation-about li a:hover {
+		transform: translateX(10px);
 	}
 
-	.text-container h2 {
-		font-size: 22px;
+	.navigation-about li a.active {
+		transform: translateX(10px);
+	}
+
+	/* About Content Styles */
+	.about-us_container-text {
+		margin-top: 15px;
 	}
 }
