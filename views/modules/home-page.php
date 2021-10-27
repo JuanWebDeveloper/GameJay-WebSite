@@ -259,74 +259,72 @@
 <!--=============-->
 <div class="navbar-guide" id="services"></div>
 <div class="container-services">
-	<h1 class="main-titles"><span>Servicios</span></h1>
-	<div class="container">
-		<div class="row boxes-container">
-			<!--=================-->
-			<!-- Pedagogic Games -->
-			<!--=================-->
-			<div class="col-lg-4 col-md-12">
-				<div class="main main-one">
-					<div class="services">
-						<div class="logo-services">
-							<img src="<?php echo $url; ?>accessories/img/services/games.png" alt="Imagen de control de video juego" />
-						</div>
-						<h4>Juegos pedagógicos</h4>
-						<p>
-							Nuestra empresa se encarga principalmente de la elaboracion de juegos recreacionales
-							(pedagogicos) que se encargan de resolver y concientizar a los jovenes sobre los distiento
-							problemas sociales que hay actualmente en la sociedad.
-						</p>
-					</div>
-					<div class="shadow-one"></div>
-					<div class="shadow-two"></div>
-				</div>
-			</div>
+	<div class="services">
+		<div class="service-area section-padding services-container">
+			<div class="container">
+				<h2 class="main-titles"><span>Servicios</span></h2>
+				<div class="row text-center">
+		  
+            <div class="col-lg-4 col-xs-12">
+              <div class="single-services">
+                <div class="symbol">
+					<i class="fas fa-gamepad"></i>
+                </div>
+                <h3>Juegos pedagógicos</h3>
+                <p>
+					Nuestra empresa se encarga principalmente de la elaboracion de juegos recreacionales
+					(pedagogicos) que se encargan de resolver y concientizar a los jovenes sobre los distiento
+					problemas sociales que hay actualmente en la sociedad.
+                </p>
+              </div>
+            </div>
 
-			<!--=================-->
-			<!-- Web Development -->
-			<!--=================-->
-			<div class="col-lg-4 col-md-12">
-				<div class="main">
-					<div class="services">
-						<div class="logo-services">
-							<img src="<?php echo $url; ?>accessories/img/services/web.png" alt="Imagen de la web" />
-						</div>
-						<h4>Desarrollo Web</h4>
-						<p>
-							Contamos con excelentes desarrolladores webs capaces de dar accesorias y realizar cualquier
-							proyecto planteado por nuestros clientes, el costo variara de el tamaño y dificultad del
-							proyecto, trabajamos con las mejores tecnologías y buenas prácticas, nuestro trabajo es
-							garantizado.
-						</p>
-					</div>
-					<div class="shadow-one"></div>
-					<div class="shadow-two"></div>
-				</div>
-			</div>
+            <div class="col-lg-4 col-xs-12">
+              <div class="single-services">
+                <div class="symbol">
+					<i class="fas fa-laptop-code"></i>
+                </div>
+                <h3>Desarrollo Web</h3>
+                <p>
+					Contamos con excelentes desarrolladores webs capaces de dar accesorias y realizar cualquier
+					proyecto planteado por nuestros clientes, el costo variara de el tamaño y dificultad del
+					proyecto, trabajamos con las mejores tecnologías y buenas prácticas, nuestro trabajo es
+					garantizado.
+                </p>
+              </div>
+            </div>
 
-			<!--======================-->
-			<!-- Optimization And Seo -->
-			<!--======================-->
-			<div class="col-lg-4 col-md-12">
-				<div class="main">
-					<div class="services">
-						<div class="logo-services">
-							<img src="<?php echo $url; ?>accessories/img/services/seo.png" alt="Imagen de seo" />
-						</div>
-						<h4>Optimizacion y Seo</h4>
-						<p>
-							Si cuentas con una web lenta o que esta mal posicionada, nuestro grupo de profesionales
-							especializados en seo y optimización pueden resolverte tu problema, garantizamos que al
-							final del trabajo tu página web será más fluida y fácil de hallar.
-						</p>
-					</div>
-					<div class="shadow-one"></div>
-					<div class="shadow-two"></div>
-				</div>
-			</div>
-		</div>
-	</div>
+            <div class="col-lg-4 col-xs-12">
+              <div class="single-services">
+                <div class="symbol">
+					<i class="fas fa-rocket"></i>
+                </div>
+                <h3>Optimizacion y Seo</h3>
+                <p>
+					Si cuentas con una web lenta o que esta mal posicionada, nuestro grupo de profesionales
+					especializados en seo y optimización pueden resolverte tu problema, garantizamos que al
+					final del trabajo tu página web será más fluida y fácil de hallar.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="animation-area">
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+    </div>
+	
 </div>
 
 <!--=============-->
