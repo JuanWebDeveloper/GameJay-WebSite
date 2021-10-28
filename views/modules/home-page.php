@@ -332,71 +332,123 @@
 <!--=============-->
 <div class="navbar-guide" id="products"></div>
 <div class="products-container">
-	<h1 class="main-titles"><span>Productos</span></h1>
+	<h2 class="main-titles"><span>Productos</span></h2>
 
-	<div class="image-container">
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/sfc/board.jpeg" />
-			<div class="overlay">
-				<h2>San Francisco city</h2>
-			</div>
-		</div>
+	<div class="products-structure">
+    	<section class="product-area">
+			<div class="container">
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/one.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
-			</div>
-		</div>
+				<div class="button-group_products">
+					<button type="button" data-filter="*" class="active">Todo</button>
+					<button type="button" data-filter=".personal">Webs Personales</button>
+					<button type="button" data-filter=".companies">Webs Para Empresas</button>
+					<button type="button" data-filter=".blog">Blogs</button>
+					<button type="button" data-filter=".platform">Plataformas</button>
+				</div>
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/two.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
-			</div>
-		</div>
+				<div class="row grid">
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item companies">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p1.png" alt="products-1" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>Adopt Your Happiness</h4>
+							</div>
+						</div>
+					</div>
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/three.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
-			</div>
-		</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item companies">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p2.png" alt="projects-2" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>J'PEGS</h4>
+							</div>
+						</div>
+					</div>
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/four.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
-			</div>
-		</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item blog">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p3.png" alt="projects-3" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>News blog</h4>
+							</div>
+						</div>
+					</div>
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/five.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
-			</div>
-		</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item blog">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p4.png" alt="projects-4" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>Never Stop Learning</h4>
+							</div>
+						</div>
+					</div>
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/six.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
-			</div>
-		</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item companies">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p5.png" alt="projects-5" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>Colegio latinoamericano</h4>
+							</div>
+						</div>
+					</div>
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/seven.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
-			</div>
-		</div>
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item personal">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p6.png" alt="projects-5" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>Carlos Duque</h4>
+							</div>
+						</div>
+					</div>
 
-		<div class="image">
-			<img src="<?php echo $url; ?>accessories/img/products/eight.jpg" alt="Imagen de pagina web" />
-			<div class="overlay">
-				<h3><a>Ver mas</a></h3>
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item personal">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p7.png" alt="projects-5" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>JuanTec</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item personal">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p8.png" alt="projects-5" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>Juan Web Developer</h4>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-lg-4 col-md-6 col-sm-12 element-item platform">
+						<div class="our-project">
+							<div class="img">
+								<img src="<?php echo $url; ?>accessories/img/products/p9.png" alt="projects-5" class="img-fluid">
+							</div>
+							<div class="title py-4">
+								<h4>Team One</h4>
+							</div>
+						</div>
+					</div>
+
+				</div>
 			</div>
-		</div>
+    	</section>
 	</div>
 </div>
 
