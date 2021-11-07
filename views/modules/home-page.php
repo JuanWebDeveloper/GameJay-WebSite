@@ -299,7 +299,7 @@
                 <div class="symbol">
 					<i class="fas fa-rocket"></i>
                 </div>
-                <h3>Optimizacion y Seo</h3>
+                <h3>Optimización y Seo</h3>
                 <p>
 					Si cuentas con una web lenta o que esta mal posicionada, nuestro grupo de profesionales
 					especializados en seo y optimización pueden resolverte tu problema, garantizamos que al
@@ -457,84 +457,81 @@
 <!--=============-->
 <div class="navbar-guide" id="contact"></div>
 <div class="contact-container">
-	<h1 class="main-titles"><span>Contacto</span></h1>
+	<h2 class="main-titles"><span>Contacto</span></h2>
 
 	<div class="contact-information_container">
-		<div class="contact-information">
-			<h2>Informacion De Contacto</h2>
+		<a href="https://wa.link/xpq33u" target="_BLANK" class="fact">
+			<i class="fab fa-whatsapp"></i>
 
-			<ul class="information">
-				<li>
-					<span><img src="<?php echo $url; ?>accessories/img/contact/location.png" alt="Icono de ubicacion" /></span>
-					<span>97 ##36-38, Medellín, Antioquia</span>
-				</li>
+			<div class="contact-method_name">
+				<h3>WhatsApp</h3>
+			</div>
+		</a>
+		
+		<a class="fact" id="formLocation">
+			<i class="far fa-map"></i>
+				
+			<div class="contact-method_name">
+				<h3>Ubicación</h3>
+			</div>
+		</a>
 
-				<li>
-					<span><img src="<?php echo $url; ?>accessories/img/contact/email.png" alt="Icono de correo" /></span>
-					<span>gamesjay@gmail.com</span>
-				</li>
+		<a href="https://github.com/JuanWebDeveloper" target="_BLANK" class="fact">
+			<i class="fab fa-github"></i>
 
-				<li>
-					<span><img src="<?php echo $url; ?>accessories/img/contact/phone.png" alt="Icono de celular" /></span>
-					<span>5213098</span>
-				</li>
-
-				<li><a onclick="locationContact()">Ver ubicacion</a></li>
-			</ul>
-
-			<ul class="contact-social_networks">
-				<li>
-					<a href="#"><i class="fab fa-facebook"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fab fa-instagram"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fab fa-twitter"></i></a>
-				</li>
-				<li>
-					<a href="#"><i class="fab fa-youtube"></i></a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="form-contact">
-			<h2>Enviar Mensaje</h2>
-
-			<form class="form-box">
-				<div class="input-box width-50">
-					<input type="text" required />
-					<span>Nombre Completo</span>
-				</div>
-
-				<div class="input-box width-50">
-					<input type="text" required />
-					<span>Apellidos Completo</span>
-				</div>
-
-				<div class="input-box width-50">
-					<input type="text" required />
-					<span>Correo Electronico</span>
-				</div>
-
-				<div class="input-box width-50">
-					<input type="text" required />
-					<span>Numero Celular</span>
-				</div>
-
-				<div class="input-box width-100">
-					<textarea required></textarea>
-					<span>Mensaje</span>
-				</div>
-
-				<div class="input-box width-100">
-					<center>
-						<input type="submit" value="Enviar" />
-					</center>
-				</div>
-			</form>
-		</div>
+			<div class="contact-method_name">
+				<h3>GitHub</h3>
+			</div>
+		</a>
 	</div>
+
+	<h2 class="main-titles"><span>Enviar Mensaje</span></h2>
+
+	<div class="form-contact">
+		<form class="form-box">
+			<div class="input-box width-50">
+				<input type="text" required />
+				<span>Nombre Completo</span>
+			</div>
+
+			<div class="input-box width-50">
+				<input type="text" required />
+				<span>Apellidos Completo</span>
+			</div>
+
+			<div class="input-box width-50">
+				<input type="text" required />
+				<span>Correo Electronico</span>
+			</div>
+
+			<div class="input-box width-50">
+				<input type="text" required />
+				<span>Numero Celular</span>
+			</div>
+
+			<div class="input-box width-100">
+				<textarea required></textarea>
+				<span>Mensaje</span>
+			</div>
+
+			<div class="form-button_container">
+				<button type="submit" class="button form-button"><span>Enviar</span></button>
+			</div>
+		</form>
+	</div>
+
+	<div class="bubbles">
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+        <div class="bubble"></div>
+      </div>
 </div>
 
 

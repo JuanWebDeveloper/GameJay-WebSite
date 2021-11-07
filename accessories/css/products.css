@@ -1,6 +1,6 @@
 /* Products Styles */
 .products-container {
-	margin-bottom: 30px;
+	margin-bottom: 20px;
 	position: relative;
 	width: 100%;
 }
@@ -71,7 +71,7 @@
 
 .grid .our-project .img:hover img {
 	opacity: 0.5;
-	transform: scale(1.1, 1.1);
+	transform: scale(1.1);
 }
 
 /*=====================

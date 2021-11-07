@@ -21,7 +21,7 @@
 .single-services {
 	background: #13142a;
 	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
-	border-radius: 15px;
+	border-radius: 5px;
 	height: 65vh;
 	margin: 0 20px;
 	margin-top: 25px;
@@ -33,16 +33,16 @@
 
 .single-services::before {
 	background: #13142a;
-	border-radius: 15px;
+	border-radius: 5px;
 	content: '';
-	height: 100%;
+	height: 95%;
 	left: 50%;
 	opacity: 0;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
 	transition: all 0.5s ease-in;
-	width: 100%;
+	width: 95%;
 	z-index: -1;
 }
 
@@ -63,6 +63,8 @@
 
 .single-services .symbol i {
 	background: none;
+	color: #fff;
+	text-shadow: 0 0 2px #ffffff80, 0 0 2px #ffffff80;
 }
 
 .single-services .symbol::before {
@@ -92,7 +94,6 @@
 
 .single-services:hover .symbol {
 	background: #21213b;
-	color: #e9e9e9;
 	font-size: 25px;
 	top: -10px;
 	transform: scale(1.1);
@@ -146,10 +147,11 @@
 }
 
 .box-area li {
-	animation: animate 20s linear infinite;
+	animation: animate 10s linear infinite;
 	background: #4e4c6bcc;
-	border-radius: 15px;
+	box-shadow: inset -4px -4px 20px 0 #4e4c6bcc, inset 4px 4px 20px 0 rgba(0, 0, 0, 0.8);
 	bottom: -180px;
+	clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
 	display: block;
 	height: 25px;
 	list-style: none;
@@ -204,9 +206,9 @@
 .box-area li:nth-child(7) {
 	animation-duration: 15s;
 	animation-delay: 0s;
-	height: 150px;
+	height: 100px;
 	left: 30%;
-	width: 150px;
+	width: 100px;
 }
 
 .box-area li:nth-child(8) {
@@ -251,10 +253,12 @@ Ipad of Ipad Pro
 		top: 0%;
 		width: 100%;
 	}
+
 	.single-services {
 		height: auto;
-		margin-bottom: 30px;
+		margin: 20px 0;
 		position: relative;
+		width: 100%;
 	}
 
 	.single-services:hover {
@@ -267,5 +271,11 @@ Ipad of Ipad Pro
 
 	.single-services h3 {
 		top: 110px;
+	}
+
+	@keyframes animate {
+		100% {
+			transform: translateY(-2000px) rotate(360deg);
+		}
 	}
 }

@@ -67,18 +67,18 @@ body {
 	position: relative;
 	padding: 15px 30px;
 	text-transform: capitalize;
-	transition: 0.5s ease all;
+	transition: all 700ms cubic-bezier(0.65, -0.5, 0.255, 1.5) 0s;
 }
 
 .button span {
 	position: relative;
+	transition: 0.5s ease-in-out all;
 	z-index: 2;
 }
 
 .button:hover {
 	color: #aaa6ca;
 	transform: scale(1.1);
-	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 /* Default Buttons Styles */
@@ -93,7 +93,7 @@ body {
 	position: absolute;
 	top: 50%;
 	transform-origin: center;
-	transition: all ease-in-out 0.5s;
+	transition: 0.5s ease-in-out all;
 	width: 1px;
 	z-index: 1;
 }
@@ -103,17 +103,117 @@ body {
 	transform: scale(200);
 }
 
+/* Forms Buttons Styles */
+.form-button::after {
+	border-bottom: 60px solid #21213b;
+	border-right: 60px solid transparent;
+	content: '';
+	left: calc(-100% - 60px);
+	position: absolute;
+	top: 0;
+	transition: 0.5s ease-in-out all;
+	width: 150%;
+	z-index: 1;
+}
+
+.form-button:hover::after {
+	left: 0;
+}
+
+/* Forms Styles */
+.form-contact {
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
+	left: 5%;
+	position: relative;
+	padding: 30px;
+	width: 90%;
+	z-index: 2;
+}
+
+.form-box {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	position: relative;
+}
+
+.input-box {
+	margin: 0 0 40px 0;
+	position: relative;
+}
+
+.input-box.width-50 {
+	width: 47%;
+}
+
+.input-box.width-100 {
+	width: 100%;
+}
+
+.input-box input,
+.input-box textarea {
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #aaa6ca;
+	color: #aaa6ca;
+	font-size: 18px;
+	font-weight: 400;
+	outline: none;
+	padding: 5px 0;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
+	resize: none;
+	width: 100%;
+}
+
+.input-box textarea {
+	min-height: 120px;
+}
+
+.input-box span {
+	color: #aaa6ca;
+	font-size: 18px;
+	font-weight: 300;
+	left: 0;
+	position: absolute;
+	padding: 5px 0;
+	pointer-events: none;
+	transition: all 700ms cubic-bezier(0.65, -0.5, 0.255, 1.5) 0s;
+}
+
+.input-box input:focus ~ span,
+.input-box textarea:focus ~ span,
+.input-box input:valid ~ span,
+.input-box textarea:valid ~ span {
+	font-size: 12px;
+	font-weight: 400;
+	letter-spacing: 1px;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
+	transform: translateY(-20px);
+}
+
+.form-button_container {
+	display: flex;
+	justify-content: flex-end;
+	width: 100%;
+}
+
 /* Navbar Guide Styles */
 .navbar-guide {
 	height: 100px;
 	width: 100%;
 }
 
+/* Responsive Styles From Global Styles */
 /*=====================
 (XS we check in 320px)
 =====================*/
 @media screen and (max-width: 600px) {
 	.main-titles {
 		font-size: 30px;
+	}
+
+	/* Forms Styles */
+	.input-box.width-50 {
+		width: 100%;
 	}
 }
