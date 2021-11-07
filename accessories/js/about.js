@@ -1,4 +1,3 @@
-// Getting All Required Elements
 const navbarButtons = document.querySelectorAll('.navigation-about li a');
 const aboutBoxText = document.querySelectorAll('.about-us_section-text');
 

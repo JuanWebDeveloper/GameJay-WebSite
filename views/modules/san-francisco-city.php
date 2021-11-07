@@ -1,6 +1,3 @@
-<!--=============-->
-<!-- Description -->
-<!--=============-->
 <div class="header-container_sf">
 	<div class="content-sf">
 		<h2>San Francisco city</h2>
@@ -17,9 +14,6 @@
 	</div>
 </div>
 
-<!--=============-->
-<!-- Problematic -->
-<!--=============-->
 <div class="problem-and_solution">
 	<h1 class="main-titles"><span>problematica</span></h1>
 
@@ -41,9 +35,6 @@
 	</div>
 </div>
 
-<!--=============-->
-<!-- Solution    -->
-<!--=============-->
 <div class="problem-and_solution">
 	<h1 class="main-titles"><span>Solucion</span></h1>
 
@@ -65,9 +56,6 @@
 	</div>
 </div>
 
-<!--===================-->
-<!-- Parts Of The Game -->
-<!--===================-->
 <div class="game-description_container">
 	<h1 class="main-titles"><span>San Francisco city</span></h1>
 
@@ -155,9 +143,6 @@
 	</div>
 </div>
 
-<!--===================-->
-<!-- Rules Of The Game -->
-<!--===================-->
 <div class="rules-of_the-game_container">
 	<h1 class="main-titles"><span>Reglas del juego</span></h1>
 	<div class="container-description_rules">

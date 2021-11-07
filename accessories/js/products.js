@@ -1,4 +1,3 @@
-// Getting All Required Elements
 const activeEffectbutton = document.querySelectorAll('.product-area .button-group_products button');
 
 const filterItems = (e) => {

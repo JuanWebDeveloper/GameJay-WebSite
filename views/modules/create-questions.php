@@ -1,6 +1,3 @@
-<!--======================-->
-<!-- Create Question Form -->
-<!--======================-->
 <div class="admin-home-content">
     <h2><span>Crear Pregunta</span></h2>
 

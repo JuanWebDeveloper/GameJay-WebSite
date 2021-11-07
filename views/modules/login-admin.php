@@ -1,6 +1,3 @@
-<!--=============-->
-<!-- Login Admin -->
-<!--=============-->
 <div class="login-admin">
 	<div class="login-admin-content">
 		<h2 class="main-titles"><span>Administrador</span></h2>

@@ -32,9 +32,6 @@
 	text-transform: capitalize;
 }
 
-/*=====================
-(XS we check in 320px)
-=====================*/
 @media screen and (max-width: 600px) {
 	.welcome-user_content {
 		width: 90vw;

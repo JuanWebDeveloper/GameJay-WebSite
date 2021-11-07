@@ -46,9 +46,6 @@
 	opacity: 1;
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.error-404 {
 		width: 80%;

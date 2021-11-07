@@ -203,10 +203,6 @@ body {
 	width: 100%;
 }
 
-/* Responsive Styles From Global Styles */
-/*=====================
-(XS we check in 320px)
-=====================*/
 @media screen and (max-width: 600px) {
 	.main-titles {
 		font-size: 30px;

@@ -1,6 +1,3 @@
-<!--=============-->
-<!-- User Navbar -->
-<!--=============-->
 <div class="navigation-menu" id="navigationMenu">
 	<div class="logo-container">
 		<img src="<?php echo $url; ?>accessories/img/logo.png" alt="Logo de GameJay">

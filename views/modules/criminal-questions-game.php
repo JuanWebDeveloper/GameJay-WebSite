@@ -12,9 +12,7 @@
         </script>
     ";
  ?>
-<!--=========================-->
-<!-- Criminal Questions Game -->
-<!--=========================-->
+
 <div id="particles-js">
     <!-- Start Game Button -->
     <div class="start-game_btn active-start" id="startGame">

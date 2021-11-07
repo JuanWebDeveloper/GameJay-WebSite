@@ -227,9 +227,6 @@
 	}
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.fact {
 		height: 150px;
@@ -243,9 +240,7 @@
 		width: 140%;
 	}
 }
-/*=====================
-(XS we check in 320px)
-=====================*/
+
 @media screen and (max-width: 600px) {
 	.contact-information_container {
 		margin: 60px 0;

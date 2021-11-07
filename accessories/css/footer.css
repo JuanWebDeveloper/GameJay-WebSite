@@ -196,9 +196,6 @@ footer::after {
 	text-decoration: underline;
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.main-content {
 		flex-wrap: wrap;

@@ -1,4 +1,3 @@
-// Description Modal
 let criminalQuestionsDescription = document.getElementById('criminalQuestionsDescription');
 
 const descriptionModal = () => {

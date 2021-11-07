@@ -119,18 +119,12 @@
 	width: 80px;
 }
 
-/*=====================
-Ipad of Ipad Pro
-=====================*/
 @media (min-height: 900px) {
 	.list-content {
 		max-height: 80vh;
 	}
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media (max-width: 980px) {
 	.list-content {
 		max-height: 80vh;
@@ -159,9 +153,6 @@ Ipad of Ipad Pro
 	}
 }
 
-/*=====================
-(XS we check in 320px)
-=====================*/
 @media screen and (max-width: 600px) {
 	.admin-home-content {
 		width: 90vw;

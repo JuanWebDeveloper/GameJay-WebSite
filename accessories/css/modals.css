@@ -236,9 +236,6 @@
 	outline: none;
 }
 
-/*=====================
-Ipad of Ipad Pro
-=====================*/
 @media screen and (min-height: 900px) {
 	.modal-input_group {
 		top: 15%;
@@ -252,9 +249,6 @@ Ipad of Ipad Pro
 	}
 }
 
-/*=====================
-(MD we check in 1024px)
-=====================*/
 @media screen and (max-width: 1199px) {
 	.modal-content {
 		height: 90vh;
@@ -269,9 +263,6 @@ Ipad of Ipad Pro
 	}
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.modal-content {
 		width: 70vw;
@@ -307,9 +298,6 @@ Ipad of Ipad Pro
 	}
 }
 
-/*=====================
-(XS we check in 320px)
-=====================*/
 @media screen and (max-width: 600px) {
 	.modal-social_networks ul li {
 		padding: 0 10px;

@@ -1,6 +1,3 @@
-<!--===============-->
-<!-- Error 404     -->
-<!--===============-->
 <div class="error-404">
 	<div class="image-error-404">
 		<img src="<?php echo $url; ?>accessories/img/error404.svg" alt="Imagen de error 404">

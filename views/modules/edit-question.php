@@ -5,9 +5,6 @@
 
 ?>
 
-<!--====================-->
-<!-- Edit Question Form -->
-<!--====================-->
 <div class="admin-home-content">
     <h2><span>Editar Pregunta</span></h2>
 

@@ -29,10 +29,6 @@ let userScore = 0;
 let tickIcon = '<div class="icon tick"><i class="fas fa-check"></i></div>';
 let crossIcon = '<div class="icon cross"><i class="fas fa-times"></i></div>';
 
-/*===============*/
-/* Functions     */
-/*===============*/
-
 // Getting Questions And Options From Array
 const showQuestions = (index) => {
 	const questionText = document.getElementById('questionText');
@@ -169,10 +165,6 @@ const showResultBox = () => {
 		resultMessage.innerHTML = messageTag;
 	}
 };
-
-/*===============*/
-/* Events        */
-/*===============*/
 
 // If Start Quiz Button Clicked
 startGameButton.addEventListener('click', () => {

@@ -1,6 +1,3 @@
-<!--===============-->
-<!-- Footer        -->
-<!--===============-->
 <footer class="footer">
 	<div class="main-content">
 		<div class="left box">

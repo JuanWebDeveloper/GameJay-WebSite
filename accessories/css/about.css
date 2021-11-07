@@ -75,18 +75,12 @@
 	opacity: 1;
 }
 
-/*=====================
-(MD we check in 1024px)
-=====================*/
 @media screen and (max-width: 1199px) {
 	.navigation-about li a {
 		font-size: 17px;
 	}
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.navigation-about {
 		flex-direction: column;

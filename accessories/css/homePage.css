@@ -43,9 +43,6 @@
 	text-align: center;
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.content-container .description h1 {
 		padding-top: 40px;
@@ -56,9 +53,6 @@
 	}
 }
 
-/*=====================
-(XS we check in 320px)
-=====================*/
 @media screen and (max-width: 600px) {
 	.content-container .description h1 {
 		font-size: 30px;

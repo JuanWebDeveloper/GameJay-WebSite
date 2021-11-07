@@ -1,6 +1,3 @@
-<!--===============-->
-<!-- List Question -->
-<!--===============-->
 <div class="list-container">
     <div class="list-content">
         <h2>Lista de preguntas</h2>

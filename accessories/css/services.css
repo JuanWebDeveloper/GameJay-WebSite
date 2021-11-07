@@ -236,16 +236,12 @@
 	}
 }
 
-/*=====================
-Ipad of Ipad Pro
-=====================*/
 @media screen and (min-height: 900px) {
 	.single-services {
 		height: 35vh;
 	}
 }
 
-/*<|-Responsive Design Start-|>*/
 @media screen and (max-width: 991px) {
 	.services {
 		left: 0%;

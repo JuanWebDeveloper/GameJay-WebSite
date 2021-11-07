@@ -50,9 +50,6 @@
 	opacity: 0.8;
 }
 
-/*=====================
-(XS we check in 320px)
-=====================*/
 @media screen and (max-width: 600px) {
 	.form-admin {
 		width: 90%;

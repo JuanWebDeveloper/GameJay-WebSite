@@ -1,11 +1,5 @@
-<!--=============-->
-<!-- HomePage    -->
-<!--=============-->
 <div class="navbar-guide" id="home" style="height: 0;"></div>
 <div class="home-page_container" id="particles-js">
-	<!--=============-->
-	<!-- Content     -->
-	<!--=============-->
 	<div class="content-container">
 		<div class="description">
 			<h1>Bienvenido a Game<span>JAY</span></h1>
@@ -17,9 +11,6 @@
 	</div>
 </div>
 
-<!--=============-->
-<!-- Navbar      -->
-<!--=============-->
 <div class="navigation-menu" id="navigationMenu">
 	<div class="logo-container">
 		<img src="<?php echo $url; ?>accessories/img/logo.png" alt="Logo de GameJay">
@@ -56,16 +47,10 @@
 	</ul>
 </div>
 
-<!--=============-->
-<!-- Modals      -->
-<!--=============-->
 <div class="modal fade modal-container" id="loginModal">
 	<div class="modal-dialog">
 		<div class="modal-content">
 
-			<!--=============-->
-			<!-- Header      -->
-			<!--=============-->
 			<div class="modal-header modal-header_lrr">
 				<div id="chooseModal" class="choose-modal">
 					<div id="cm"></div>
@@ -91,9 +76,6 @@
 				</div>
 			</div>
 
-			<!--=============-->
-			<!-- Content     -->
-			<!--=============-->
 			<div class="modal-body modal-body_lrr">
 				<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="login" class="modal-input_group">
 					<div class="modal-logo">
@@ -173,16 +155,11 @@
 	}
 ?>
 
-<!--=============-->
-<!-- About    -->
-<!--=============-->
 <div class="navbar-guide" id="aboutUs"></div>
 <div class="about-us_container">
 	<h2 class="main-titles"><span>Nosotros</span></h2>
+
 	<div class="about-us_content">
-		<!--==============-->
-		<!-- About Navbar -->
-		<!--==============-->
 		<div class="navbar-about">
 			<ul class="navigation-about">
 				<li><a class="active"><span>¿Quienes Somos?</span></a></li>
@@ -193,9 +170,6 @@
 			</ul>
 		</div>
 
-		<!--=============-->
-		<!-- Content     -->
-		<!--=============-->
 		<div class="about-us_container-text" id="aboutContainerText">
 			<div class="animate__animated about-us_section-text active">
 				<p>
@@ -254,9 +228,6 @@
 	</div>
 </div>
 
-<!--=============-->
-<!-- Services    -->
-<!--=============-->
 <div class="navbar-guide" id="services"></div>
 <div class="container-services">
 	<div class="services">
@@ -327,9 +298,6 @@
 	
 </div>
 
-<!--=============-->
-<!-- Products    -->
-<!--=============-->
 <div class="navbar-guide" id="products"></div>
 <div class="products-container">
 	<h2 class="main-titles"><span>Productos</span></h2>
@@ -452,9 +420,6 @@
 	</div>
 </div>
 
-<!--=============-->
-<!-- Contact     -->
-<!--=============-->
 <div class="navbar-guide" id="contact"></div>
 <div class="contact-container">
 	<h2 class="main-titles"><span>Contacto</span></h2>

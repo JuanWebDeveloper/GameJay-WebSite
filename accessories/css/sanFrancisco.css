@@ -286,9 +286,6 @@
 	padding-top: 10px;
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.container-problematic_image_and-solution {
 		margin-top: 20px;
@@ -321,9 +318,6 @@
 	}
 }
 
-/*=====================
-(XS we check in 320px)
-=====================*/
 @media screen and (max-width: 600px) {
 	.content-sf h2 {
 		font-size: 20px;

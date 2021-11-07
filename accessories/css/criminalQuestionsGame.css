@@ -412,9 +412,6 @@
 	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
 }
 
-/*=====================
-(SM we check in 768px)
-=====================*/
 @media screen and (max-width: 980px) {
 	.start-game_btn {
 		width: 80vw;
@@ -432,9 +429,7 @@
 		width: 80vw;
 	}
 }
-/*=====================
-(XS we check in 320px)
-=====================*/
+
 @media screen and (max-width: 600px) {
 	#particles-js .button-return.game {
 		padding: 5px 20px;
