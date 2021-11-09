@@ -50,6 +50,39 @@ body {
 	padding: 0 20px;
 }
 
+/* Main Titles Popupts Styles */
+.main-titles.popupt-error {
+	color: #f17474;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	text-shadow: 0 0 2px #f1747480, 0 0 2px #f1747480;
+}
+
+.main-titles.popupt-error span {
+	border: 5px solid #f17474;
+	box-shadow: 0px 1px 10px #f1747480;
+}
+
+.main-titles.popupt-success {
+	color: #a4db85;
+	margin-top: 10px;
+	margin-bottom: 25px;
+	text-shadow: 0 0 2px #a4db8580, 0 0 2px #a4db8580;
+}
+
+.main-titles.popupt-success span {
+	border: 5px solid #a4db85;
+	box-shadow: 0px 1px 10px #a4db85;
+}
+
+.text-popupt_error {
+	color: #aaa6ca;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
+}
+
 /* Buttons Styles */
 .button {
 	align-items: center;
@@ -101,6 +134,25 @@ body {
 .default:hover::after {
 	background: #21213b;
 	transform: scale(200);
+}
+
+/* Default Buttons Popupts */
+.button.success-button_popupt,
+.button.error-button_popupt {
+	transition: all 0.1s ease;
+}
+
+.button.success-button_popupt:hover,
+.button.error-button_popupt:hover {
+	color: #fff;
+}
+
+.default.error-button_popupt:hover::after {
+	background: #f17474;
+}
+
+.default.success-button_popupt:hover::after {
+	background: #a4db85;
 }
 
 /* Forms Buttons Styles */
@@ -234,6 +286,23 @@ body {
 @media screen and (max-width: 600px) {
 	.main-titles {
 		font-size: 30px;
+	}
+
+	.main-titles.popupt-success,
+	.main-titles.popupt-error {
+		font-size: 18px;
+	}
+
+	.main-titles.popupt-success span {
+		border: 3px solid #a4db85;
+	}
+
+	.main-titles.popupt-error span {
+		border: 3px solid #f17474;
+	}
+
+	.text-popupt_error {
+		font-size: 17px;
 	}
 
 	/* Forms Styles */

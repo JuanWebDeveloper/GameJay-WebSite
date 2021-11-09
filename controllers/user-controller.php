@@ -8,25 +8,25 @@ class UserController {
 
 			// Validate That The Fields Are Not Empty
 			if (empty($_POST["name"]) || empty($_POST["email"]) || empty($_POST["password"]) || empty($_POST["passwordTwo"])) {
-				$errors = "Por favor rellene todos los campos";
+				$errors = "Por favor rellene todos los campos.";
 
 				return $errors;
 			
 			// Validate That A Valid Email Is Sent
 			} elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-				 $errors = "Por favor escriba un correo valido";
+				 $errors = "Por favor escriba un correo valido.";
 
 				return $errors;
 			
 			// Validate That Passwords Are The Same
 			} elseif (md5($_POST["password"]) != md5($_POST["passwordTwo"])) {
-				$errors = "Las contraseñas no coinciden";
+				$errors = "Las contraseñas no coinciden.";
 
 				return $errors;
 				
 			// Validate That Terms And Conditions Are Accepted	
 			} elseif (empty($_POST["terms"])) {
-				$errors = "Debe aceptar los términos y condiciones";
+				$errors = "Debe aceptar los términos y condiciones.";
 
 				return $errors;
 				
@@ -65,12 +65,12 @@ class UserController {
 			$errors = "";
 
 			if (empty($_POST["email"]) || empty($_POST["password"])) {
-				$errors = "Por favor rellene todos los campos";
+				$errors = "Por favor rellene todos los campos.";
 
 				return $errors;
 
 			} elseif (!filter_var($_POST["email"], FILTER_VALIDATE_EMAIL)) {
-				$errors = "Por favor escriba un correo valido";
+				$errors = "Por favor escriba un correo valido.";
 
 				return $errors;
 

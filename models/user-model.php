@@ -16,7 +16,7 @@ class UserModel {
 		
 		// In Case The Mail Is Registered Notify The User
 		if ($response != false) {
-			return "El correo de $data[email] ya esta registrado";
+			return "El correo de $data[email] ya esta registrado.";
 		
 		// If The Email Is Not Registered, We Proceed With The Registration
 		} else {
@@ -32,7 +32,7 @@ class UserModel {
 			if ($query->execute()) {
 				return "Successful";
 			} else {
-				return "No Se Pudo Completar El Registro";
+				return "No se pudo completar el registro.";
 			}
 
 			$query = null;
@@ -62,7 +62,7 @@ class UserModel {
 
 		// In The Event That The Email And Password Do Not Exist Or Do Not Match, We Notify The User
 		} else {
-			return "Datos Incorrectos";
+			return "Datos incorrectos.";
 		}
 
 		$statement = null;

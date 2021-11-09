@@ -5,7 +5,7 @@ function successfulQuery($successMessage) {
         <script>
             const successAlert = Swal.mixin({
                 customClass: {
-                    confirmButton: 'modal-success_button',
+                    confirmButton: 'button default success-button_popupt',
                 },
                 buttonsStyling: false,
                 showClass: {
@@ -19,9 +19,10 @@ function successfulQuery($successMessage) {
             successAlert.fire({
                 icon: 'success',
                 width: 700,
-                title: `<h2 class='modal-success_title'>$successMessage</h2>`,
+                title: `<h2 class='main-titles popupt-success'><span>$successMessage</span></h2>`,
+                background: '#13142a',
                 allowOutsideClick: false,
-                confirmButtonText: 'Entendido',
+                confirmButtonText: '<span>Entendido</span>',
                 focusConfirm: false
             });
         </script>
@@ -33,7 +34,7 @@ function successfulQueryRedirection($successMessage, $redirection) {
         <script>
             const successAlert = Swal.mixin({
                 customClass: {
-                    confirmButton: 'modal-success_button',
+                    confirmButton: 'button default success-button_popupt',
                 },
                 buttonsStyling: false,
                 showClass: {
@@ -47,9 +48,10 @@ function successfulQueryRedirection($successMessage, $redirection) {
             successAlert.fire({
                 icon: 'success',
                 width: 700,
-                title: `<h2 class='modal-success_title'>$successMessage</h2>`,
+                title: `<h2 class='main-titles popupt-success'><span>$successMessage</span></h2>`,
+                background: '#13142a',
                 allowOutsideClick: false,
-                confirmButtonText: 'Entendido',
+                confirmButtonText: '<span>Entendido</span>',
                 focusConfirm: false
             }).then((result) => {
                 if (result.isConfirmed) { 

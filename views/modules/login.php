@@ -4,56 +4,92 @@
     <div class="login-and_register-content">
         <div class="forms-container">
             <div class="login-and_register-forms">
-                <form class="shared-styles login-form" id="loginForm">
+                <form method="POST" class="shared-styles login-form" id="loginForm">
                     <h2 class="main-titles"><span>iniciar sesión</span></h2>
                     
                     <div class="input-box width-100">
-                        <input type="text" id="loginEmail" required />
+                        <input type="text" name="email" required />
                         <span>Correo</span>
                     </div>
                     <div class="input-box width-100">
-                        <input type="password" id="loginPassword" required />
+                        <input type="password" name="password" required />
                         <span>Contraseña</span>
                     </div>
-                    <input type="hidden" id="login" value="login" />
+                    <input type="hidden" name="login" value="login" />
 
                     <div class="form-button_container">
                         <button type="submit" class="button form-button"><span>Iniciar Sesión</span></button>
                     </div>
                 </form>
 
-                <form class="form-box shared-styles register-form" id="registerForm">
+                <?php 
+					$loginErros = "";
+
+					if (isset($_POST["login"])) {
+						$login = UserController::ctrLogin();
+						
+						$loginErros = $login;
+					}
+				?>
+
+                <form class="form-box shared-styles register-form" method="POST" id="registerForm">
                     <h2 class="main-titles d-flex justify-content-center w-100"><span>Registrarse</span></h2>
 
                     <div class="input-box width-100">
-                        <input type="text" id="registerName" required />
+                        <input type="text" name="name" required />
                         <span>Nombre</span>
                     </div>
                     <div class="input-box width-100">
-                        <input type="text" id="registerEmail" required />
+                        <input type="text" name="email" required />
                         <span>Correo</span>
                     </div>
                     <div class="input-box width-50">
-                        <input type="text" id="registerPassword" required />
+                        <input type="password" name="password" required />
                         <span>Contraseña</span>
                     </div>
                     <div class="input-box width-50">
-                        <input type="text" id="registerPasswordTwo" required />
+                        <input type="password" name="passwordTwo" required />
                         <span>Repite la contraseña</span>
                     </div>
                     <div class="register-terms">
-                        <input type="checkbox" id="registerTerms" />
+                        <input type="checkbox" name="terms" />
                         <a>Acepto los términos y condiciones.</a>
                     </div>
 
-                    <input type="hidden" id="register" value="register" />
+                    <input type="hidden" name="registration" value="registration" />
                     
                     <div class="form-button_container">
                         <button type="submit" class="button form-button"><span>Registrarse</span></button>
                     </div>
                 </form>
+
+                <?php 
+					$registration = "";
+					$registrationErrors = "";
+
+					if (isset($_POST["registration"])) {
+						$registration = UserController::ctrUserRegistration();
+
+						if ($registration != "Registro exitoso") {
+							$registrationErrors = $registration;
+						}
+					}
+				?>
+
             </div>
         </div>
+        <!-- Validate If There Are Errors -->
+        <?php 
+            if (!empty($registrationErrors)) {
+                errorOccurred($registrationErrors);
+
+            } elseif (!empty($loginErros)) {
+                errorOccurred($loginErros);
+
+            } elseif ($registration == "Registro exitoso") {
+                successfulQuery($registration);
+            }
+        ?>
 
         <div class="panels-container">
             <div class="panel left-panel">
