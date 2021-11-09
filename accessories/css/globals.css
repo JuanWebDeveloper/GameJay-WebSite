@@ -108,7 +108,7 @@ body {
 	border-bottom: 60px solid #21213b;
 	border-right: 60px solid transparent;
 	content: '';
-	left: calc(-100% - 60px);
+	left: -150%;
 	position: absolute;
 	top: 0;
 	transition: 0.5s ease-in-out all;
@@ -118,6 +118,34 @@ body {
 
 .form-button:hover::after {
 	left: 0;
+}
+
+/* Return Button Styles */
+.button-return {
+	background: #1a1a33;
+	border-radius: 5px;
+	left: 2%;
+	position: absolute;
+	padding: 10px 20px;
+	top: 2%;
+	transition: all 0.3s ease-in;
+	z-index: 100;
+}
+
+.button-return i {
+	color: #aaa6ca;
+	background: transparent;
+	opacity: 1;
+	transition: all 0.3s ease-in;
+}
+
+.button-return:hover {
+	opacity: 0.8;
+	transform: scale(1.1);
+}
+
+.button-return:hover i {
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 /* Forms Styles */

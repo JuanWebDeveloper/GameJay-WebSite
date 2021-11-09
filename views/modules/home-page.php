@@ -4,9 +4,7 @@
 		<div class="description">
 			<h1>Bienvenido a Game<span>JAY</span></h1>
 			<p>No olvides que para acceder a todos nuestros productos debes iniciar sesión.</p>
-			<a href="#loginModal" class="button default" data-toggle="modal">
-				<span>iniciar sesión</span>
-			</a>
+			<a href="<?php echo $url; ?>login" class="button default"><span>iniciar sesión</span></a>
 		</div>
 	</div>
 </div>
@@ -42,118 +40,10 @@
 			<a href="#contact" class="website-section">Contacto</a>
 		</li>
 		<li>
-			<a href="#loginModal" data-toggle="modal" class="website-section">iniciar sesion</a>
+			<a href="<?php echo $url; ?>login" class="website-section">iniciar Sesión</a>
 		</li>
 	</ul>
 </div>
-
-<div class="modal fade modal-container" id="loginModal">
-	<div class="modal-dialog">
-		<div class="modal-content">
-
-			<div class="modal-header modal-header_lrr">
-				<div id="chooseModal" class="choose-modal">
-					<div id="cm"></div>
-					<button type="button" id="modalLogin" class="toggle-btn">Iniciar sesión</button>
-					<button type="button" id="modalRegistration" class="toggle-btn">Registrar</button>
-					<a class="close" data-dismiss="modal" aria-hidden="true"
-						><i class="fas fa-times-circle"></i
-					></a>
-				</div>
-
-				<div class="modal-social_networks">
-					<ul>
-						<li>
-							<a href="#"><i class="fab fa-facebook"></i></a>
-						</li>
-						<li>
-							<a href="#"><i class="fab fa-google-plus"></i></a>
-						</li>
-						<li>
-							<a href=""><i class="fab fa-github"></i></a>
-						</li>
-					</ul>
-				</div>
-			</div>
-
-			<div class="modal-body modal-body_lrr">
-				<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="login" class="modal-input_group">
-					<div class="modal-logo">
-						<img src="<?php echo $url; ?>accessories/img/modals/login.svg" width="100%" height="100%" alt="Imagen de inicio de sesion" />
-						<p>Inicio de sesión seguro</p>
-					</div>
-					<input type="text" class="modal-input_field" name="email" placeholder="Correo" />
-					<input type="password" class="modal-input_field" name="password" placeholder="Contarseña" />
-					<input type="checkbox" class="modal-checkbox" /><label>Recordar contraseña.</label>
-					<a type="button" id="recoverPasswordLink">¿Olvido su contraseña?</a>
-					<input type="hidden" name="login" value="login">
-					<button type="submit" class="modal-submit_button">Acceder</button>
-				</form>
-
-				<?php 
-					$loginErros = "";
-
-					if (isset($_POST["login"])) {
-						$login = UserController::ctrLogin();
-						
-						$loginErros = $login;
-					}
-
-				?>
-				
-				<form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="POST" id="registration" class="modal-input_group">
-					<input type="text" class="modal-input_field" name="name" placeholder="Nombre Completo" />
-					<input type="text" class="modal-input_field" name="email" placeholder="Correo" />
-					<input type="password" class="modal-input_field" name="password" placeholder="Contarseña" />
-					<input type="password" class="modal-input_field" name="passwordTwo" placeholder="Repita la contarseña" />
-					<input type="checkbox" name="terms" class="modal-checkbox" /><label
-						><a href="#" style="color: #0077ff; font-size: 15px"
-							>Acepto los términos y condiciones.</a
-						></label
-					>
-					<input type="hidden" name="registration" value="registration">
-					<button type="submit" class="modal-submit_button" id="send">Registrarse</button>
-				</form>
-				
-				<?php 
-					$registration = "";
-					$registrationErrors = "";
-
-					if (isset($_POST["registration"])) {
-						$registration = UserController::ctrUserRegistration();
-
-						if ($registration != "Registro exitoso") {
-							$registrationErrors = $registration;
-						}
-					}
-				?>
-
-				<form id="recoverPassword" class="modal-input_group">
-					<div class="modal-logo" style="margin-bottom: 40px">
-						<img src="<?php echo $url; ?>accessories/img/modals/recover.svg" alt="Imagen de recuperacion de contraseña" width="100%" height="100%" />
-						<p style="font-size: 15px">Correo y la última contraseña que recuerdes</p>
-					</div>
-					<input type="text" name="email" class="modal-input_field" placeholder="Correo" />
-					<input type="password" name="password" class="modal-input_field" placeholder="¿Cual Es La Ultima Contarseña Que Recuerda?" />
-					<button type="submit" style="margin-top: 20px" class="modal-submit_button">Continuar</button>
-				</form>
-			</div>
-		</div>
-	</div>
-</div>
-
-<!-- Validate If There Are Errors -->
-<?php 
-	if (!empty($registrationErrors)) {
-		errorOccurred($registrationErrors);
-
-	} elseif (!empty($loginErros)) {
-		errorOccurred($loginErros);
-
-	} elseif ($registration == "Registro exitoso") {
-		successfulQuery($registration);
-	}
-?>
 
 <div class="navbar-guide" id="aboutUs"></div>
 <div class="about-us_container">

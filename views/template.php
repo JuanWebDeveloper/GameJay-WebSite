@@ -18,7 +18,7 @@
 			if (isset($_GET["route"])) {
 				$routes = explode("/", $_GET["route"]);
 
-				if ($routes[0] == "login-admin" || $routes[0] == "create-questions" || $routes[0] == "list-questions" || $routes[0] == "edit-question") {
+				if ($routes[0] == "login" || $routes[0] == "login-admin" || $routes[0] == "create-questions" || $routes[0] == "list-questions" || $routes[0] == "edit-question") {
 					header("Location: $url"); 
 					
 				} elseif ($routes[0] == "san-francisco-city") {
@@ -41,7 +41,7 @@
 			if (isset($_GET["route"])) {
 				$routes = explode("/", $_GET["route"]);
 
-				if ($routes[0] == "login-admin" || $routes[0] == "san-francisco-city" || $routes[0] == "criminal-questions" || $routes[0] == "criminal-questions-game") {
+				if ($routes[0] == "login" || $routes[0] == "login-admin" || $routes[0] == "san-francisco-city" || $routes[0] == "criminal-questions" || $routes[0] == "criminal-questions-game") {
 					header("Location: $url"); 
 					
 				} elseif ($routes[0] == "create-questions") {
@@ -68,11 +68,14 @@
 		if (isset($_GET["route"])) {
 			$routes = explode("/", $_GET["route"]);
 			
-			if ($routes[0] == "login-admin") {
-				echo '<title>Iniciar Como Administrador</title>';
-
-			} elseif ($routes[0] == "create-questions" && !isset($_SESSION["admin"]) || $routes[0] == "list-questions" && !isset($_SESSION["admin"]) || $routes[0] == "edit-question" && !isset($_SESSION["admin"]) || $routes[0] == "san-francisco-city" && !isset($_SESSION["user"]) || $routes[0] == "criminal-questions" && !isset($_SESSION["user"]) || $routes[0] == "criminal-questions-game" && !isset($_SESSION["user"])) {
+			if ($routes[0] == "create-questions" && !isset($_SESSION["admin"]) || $routes[0] == "list-questions" && !isset($_SESSION["admin"]) || $routes[0] == "edit-question" && !isset($_SESSION["admin"]) || $routes[0] == "san-francisco-city" && !isset($_SESSION["user"]) || $routes[0] == "criminal-questions" && !isset($_SESSION["user"]) || $routes[0] == "criminal-questions-game" && !isset($_SESSION["user"])) {
 				header("Location: $url"); 
+
+			} elseif ($routes[0] == "login") {
+				echo '<title>Iniciar Sesión</title>';
+
+			} elseif ($routes[0] == "login-admin") {
+				echo '<title>Iniciar Sesión Como Administrador</title>';
 
 			} else {
 				echo '<title>!Error 404!</title>';
@@ -108,7 +111,7 @@
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/products.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/contact.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/footer.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/modals.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/login.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/sanFrancisco.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/loginAdmin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/admin.css">
@@ -155,7 +158,7 @@
 
 			if (isset($_GET["route"])) {
 
-				if ($routes[0] != "login-admin" && $routes[0] != "create-questions" && $routes[0] != "list-questions" && $routes[0] != "edit-question") {
+				if ($routes[0] != "create-questions" && $routes[0] != "list-questions" && $routes[0] != "edit-question") {
 					require "modules/error-404.php";
 
 				} else {
@@ -169,7 +172,7 @@
 			}
 
 		} elseif (isset($_GET["route"])) {
-			if ($routes[0] == "login-admin") {
+			if ($routes[0] == "login" || $routes[0] == "login-admin") {
 				require "modules/$routes[0].php";
 			} else {
 				require "modules/error-404.php";
@@ -187,10 +190,10 @@
 	<!--====================-->
 	<script src="<?php echo $url; ?>accessories/js/navbar.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/particles.js"></script>
-	<script src="<?php echo $url; ?>accessories/js/modals.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/about.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/products.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/contact.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/formsAnimations.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/criminalQuestions.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/criminalQuestionsGame.js"></script>
 </body>

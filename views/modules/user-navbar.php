@@ -17,15 +17,13 @@
 			<a href="<?php echo $url; ?>" class="website-section">Inicio</a>
 		</li>
 		<li>
-			<a href="san-francisco-city" class="website-section">San Francisco City</a>
+			<a href="<?php echo $url; ?>san-francisco-city" class="website-section">San Francisco City</a>
 		</li>
 		<li>
-			<a href="criminal-questions" class="website-section">Preguntas Criminales</a>
+			<a href="<?php echo $url; ?>criminal-questions" class="website-section">Preguntas Criminales</a>
 		</li>
 		<li>
-			<?php 
-				echo "<a href='$url/models/logout.php' class='website-section'>cerrar sesion</a>"
-			?>
+			<a href="<?php echo $url; ?>models/logout.php" class="website-section">Cerrar Sesión</a>
 		</li>
 	</ul>
 </div>

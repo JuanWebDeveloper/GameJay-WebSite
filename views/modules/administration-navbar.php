@@ -23,9 +23,7 @@
 			<a href="<?php echo $url; ?>list-questions" class="website-section" id="listQuestiosAdmin">Lista De Preguntas</a>
 		</li>
 		<li>
-			<?php 
-				echo "<a href='$url/models/logout.php' class='website-section'>cerrar sesion</a>"
-			?>
+			<a href="<?php echo $url; ?>models/logout.php" class="website-section">Cerrar Sesión</a>
 		</li>
 	</ul>
 </div>
