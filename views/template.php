@@ -87,9 +87,7 @@
 		
 	?>
 
-	<!--=======================-->
 	<!-- CSS Plugins And Fonts -->
-	<!--=======================-->
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/plugins/bootstrap.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/plugins/sweetalert2.min.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/plugins/animate.min.css">
@@ -100,29 +98,25 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
-	<!--=============-->
-	<!-- Custom CSS  -->
-	<!--=============-->
+	<!-- Custom CSS -->
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/globals.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/homePage.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/navbar.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/homePage.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/about.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/services.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/products.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/contact.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/footer.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/login.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/welcomeUser.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/sanFrancisco.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/criminalQuestions.css">
+	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/criminalQuestionsGame.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/loginAdmin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/admin.css">
 	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/error404.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/welcomeUser.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/criminalQuestions.css">
-	<link rel="stylesheet" href="<?php echo $url; ?>accessories/css/criminalQuestionsGame.css">
 	
-	<!--====================-->
 	<!-- JavaScript Plugins -->
-	<!--====================-->
 	<script src="<?php echo $url; ?>accessories/js/plugins/jquery-3.5.1.min.js"></script> 
 	<script src="<?php echo $url; ?>accessories/js/plugins/bootstrap.min.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/plugins/popper.min.js"></script>
@@ -185,9 +179,7 @@
 		
 	?>
 
-	<!--====================-->
 	<!-- Custom JavaScript  -->
-	<!--====================-->
 	<script src="<?php echo $url; ?>accessories/js/navbar.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/particles.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/about.js"></script>

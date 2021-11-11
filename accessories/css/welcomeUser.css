@@ -1,35 +1,29 @@
 /* Welcome User Styles */
 .welcome-user {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/homePage.jpg);
-	background-size: cover;
-	background-repeat: no-repeat;
 	height: 100vh;
 	position: relative;
 	width: 100vw;
 }
 
 .welcome-user_content {
+	color: #aaa6ca;
+	font-weight: 400;
 	left: 50%;
 	position: absolute;
 	top: 50%;
 	transform: translate(-50%, -50%);
+	text-transform: capitalize;
 	text-align: center;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 .welcome-user_content h2 {
-	color: #fff;
 	font-size: 45px;
-	font-weight: 400;
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
 .welcome-user_content P {
-	color: #fff;
 	font-size: 20px;
-	font-weight: 400;
 	padding-top: 10px;
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
-	text-transform: capitalize;
 }
 
 @media screen and (max-width: 600px) {
