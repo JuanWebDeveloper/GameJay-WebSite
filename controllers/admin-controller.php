@@ -101,7 +101,7 @@ class AdminController {
 				return $errors;
 
 			} elseif ($_POST["response"] != $_POST["optionA"] && $_POST["response"] != $_POST["optionB"] && $_POST["response"] != $_POST["optionC"]) {
-				$errors = "El campo de opción correcta es inválido";
+				$errors = "El campo de respuesta es inválido";
 
 				return $errors;
 

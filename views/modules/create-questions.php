@@ -20,7 +20,7 @@
             </div>
             <div class="input-box width-50">
             <input type="text" name="response" required autocomplete="nope" />
-                <span>Opción Correcta</span>
+                <span>Respuesta</span>
             </div>
             <input type="hidden" name="createQuestions" value="createQuestions">
             <div class="form-button_container">
