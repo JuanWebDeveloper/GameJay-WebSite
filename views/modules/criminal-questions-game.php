@@ -13,11 +13,11 @@
     ";
  ?>
 
-<div id="particles-js">
+<div class="criminal-questions_game" id="particles-js">
     <!-- Start Game Button -->
     <div class="start-game_btn active-start" id="startGame">
         <h2>Preguntas Criminales</h2>
-        <button id="startGameButton">Empezar Juego</button>
+        <button class="button default" id="startGameButton"><span>Empezar Juego</span></button>
     </div>
 
     <!-- Rules Info Box -->
@@ -33,8 +33,8 @@
             <div class="info">5. Tu puntuación final dependerá de tus respuestas correctas.</div>
         </div>
         <div class="game-buttons">
-            <button class="quit">Salir</button>
-            <button class="restart">Continuar</button>
+            <button class="button default quit"><span>Salir</span></button>
+            <button class="button form-button restart"><span>Continuar</span></button>
         </div>
     </div>
 
@@ -62,7 +62,7 @@
             <div class="total-que">
                 <!-- Here I'Ve Inserted Question Count Number From JavaScript -->
             </div>
-            <button class="next-btn">Siguiente Pregunta</button>
+            <button class="button form-button next-btn"><span>Siguiente Pregunta</span></button>
         </div>
     </div>
 
@@ -76,8 +76,8 @@
             <!-- Here I'Ve Inserted Result Message From JavaScript -->
         </div>
         <div class="game-buttons game-buttons-result">
-            <button class="restart">Volver A Jugar</button>
-            <button class="quit">Salir</button>
+            <button class="button default restart"><span>Volver A Jugar</span></button>
+            <button class="button form-button quit"><span>Salir</span></button>
         </div>
     </div>
     <a href="<?php echo $url; ?>criminal-questions" class="button-return game active-return" id="buttonReturn" title="Regresar"><i class="fas fa-undo-alt"></i></a>
