@@ -1,6 +1,6 @@
 <div class="navigation-menu navbar-container_scroll" id="navigationMenu">
 	<div class="logo-container">
-		<img src="<?php echo $url; ?>accessories/img/logo.png" alt="Logo de GameJay">
+		<img src="<?php echo $url; ?>accessories/img/logo.svg" alt="Logo de GameJay">
 	</div>
 
 	<div class="bars" id="btnBars">

@@ -1,7 +1,7 @@
 <footer class="footer">
 	<div class="footer-content">
 		<div class="footer-logo_container">
-			<img src="<?php echo $url; ?>accessories/img/logo.png" alt="Logo de GameJay">
+			<img src="<?php echo $url; ?>accessories/img/logo.svg" alt="Logo de GameJay">
 		</div>
 
 		<div class="social-media">

@@ -1,21 +1,25 @@
 <div class="header-container_sf">
 	<div class="content-sf">
 		<h2>San Francisco city</h2>
-		<h3>"La calle de la delincuencia"</h3>
-		<center style="margin-top: 30px">
-			<a style="color: #fff" class="btn-cd">
-				<span id="spanOne"></span>
-				<span id="spanTwo"></span>
-				<span id="spanThree"></span>
-				<span id="spanFour"></span>
-				Comprar Juego
-			</a>
-		</center>
+		<h3>"El camino de la delincuencia"</h3>
+		<a class="button default" id="buyGame"><span>Comprar juego</span></a>
 	</div>
+	<div class="animation-area_twp">
+		<div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+    </div>
 </div>
 
 <div class="problem-and_solution">
-	<h1 class="main-titles"><span>problematica</span></h1>
+	<h2 class="main-titles"><span>problematica</span></h2>
 
 	<div class="problem-and_solution-container">
 		<div class="container-problematic_image_and-solution">
@@ -36,7 +40,7 @@
 </div>
 
 <div class="problem-and_solution">
-	<h1 class="main-titles"><span>Solucion</span></h1>
+	<h2 class="main-titles"><span>Solucion</span></h2>
 
 	<div class="problem-and_solution-container">
 		<div class="description-of_problem-and_solution">
@@ -57,11 +61,11 @@
 </div>
 
 <div class="game-description_container">
-	<h1 class="main-titles"><span>San Francisco city</span></h1>
+	<h2 class="main-titles"><span>San Francisco city</span></h2>
 
 	<div class="parts-game_container">
 		<div class="image-container_sf">
-			<img src="<?php echo $url; ?>accessories/img/products/sfc/board.jpeg" alt="Imagen del tablero del juego San Fransisco City" width="100%" height="100%" />
+			<img src="<?php echo $url; ?>accessories/img/products/sfc/board.png" alt="Imagen del tablero del juego San Fransisco City" width="100%" height="100%" />
 		</div>
 
 		<div class="specifications-container">
@@ -112,13 +116,13 @@
 		</div>
 
 		<div class="image-container_sf">
-			<img src="<?php echo $url; ?>accessories/img/products/sfc/personages.jpeg" alt="Imagen de los personajes del juego San Fransisco City" width="100%" height="100%" />
+			<img src="<?php echo $url; ?>accessories/img/products/sfc/personages.png" alt="Imagen de los personajes del juego San Fransisco City" width="100%" height="100%" />
 		</div>
 	</div>
 
 	<div class="parts-game_container">
 		<div class="image-container_sf">
-			<img src="<?php echo $url; ?>accessories/img/products/sfc/dices.jpeg" alt="Imagen de los dados del juego San Fransisco City" width="100%" height="100%" />
+			<img src="<?php echo $url; ?>accessories/img/products/sfc/dices.png" alt="Imagen de los dados del juego San Fransisco City" width="100%" height="100%" />
 		</div>
 
 		<div class="specifications-container">
@@ -130,17 +134,22 @@
 				de que el jugador pierda sus dados físicos, puedes acceder a los dados virtuales presionando el
 				botón de abajo.
 			</p>
-			<center style="margin: 30px 0">
-				<a style="color: #333" class="btnCD">
-					<span id="span1"></span>
-					<span id="span2"></span>
-					<span id="span3"></span>
-					<span id="span4"></span>
-					Dados virtuales
-				</a>
-			</center>
+			<a class="button default" id="diceVirtual"><span>Dados virtuales</span></a>
 		</div>
 	</div>
+	<div class="animation-area">
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+    </div>
 </div>
 
 <div class="rules-of_the-game_container">

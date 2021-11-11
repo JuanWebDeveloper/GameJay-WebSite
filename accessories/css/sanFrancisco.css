@@ -1,158 +1,69 @@
 /* San Francisco City  Styles  */
 .header-container_sf {
-	background: url(../img/products/sfc/board.jpeg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-position: center;
+	background: #0c0c22;
 	height: 70vh;
-	margin-bottom: 30px;
+	margin-bottom: 100px;
 	position: relative;
 	width: 100vw;
-	z-index: 1;
 }
 
-.header-container_sf::after {
-	background: rgba(0, 0, 0, 0.8);
-	content: '';
-	height: 100%;
-	position: absolute;
-	top: 0;
-	width: 100%;
-	z-index: -1;
-}
-
-.btn-cd {
-	display: inline-block;
-	font-size: 24px;
-	letter-spacing: 4px;
-	overflow: hidden;
-	position: relative;
-	padding: 5px 30px;
-	transition: 0.2s;
-}
-
-.btn-cd:hover {
-	background: rgb(0, 119, 255);
-	box-shadow: 0 0 10px rgb(0, 119, 255), 0 0 40px rgb(0, 119, 255), 0 0 80px rgb(0, 119, 255);
-	color: #fff !important;
-	transition-delay: 1s;
-}
-
-.btn-cd span {
-	display: block;
-	position: absolute;
-}
-
-.btn-cd #spanOne {
-	background: linear-gradient(90deg, transparent, rgb(0, 119, 255));
-	height: 2px;
-	left: -100%;
-	top: 0;
-	width: 100%;
-}
-
-.btn-cd:hover #spanOne {
-	left: 100%;
-	transition: 1s;
-}
-
-.btn-cd #spanTwo {
-	background: linear-gradient(180deg, transparent, rgb(0, 119, 255));
-	height: 100%;
-	top: -100%;
-	right: 0;
-	width: 2px;
-}
-
-.btn-cd:hover #spanTwo {
-	top: 100%;
-	transition: 1s;
-	transition-delay: 0.25s;
-}
-
-.btn-cd #spanThree {
-	background: linear-gradient(270deg, transparent, rgb(0, 119, 255));
-	bottom: 0;
-	height: 2px;
-	right: -100%;
-	width: 100%;
-}
-
-.btn-cd:hover #spanThree {
-	right: 100%;
-	transition: 1s;
-	transition-delay: 0.5s;
-}
-
-.btn-cd #spanFour {
-	background: linear-gradient(360deg, transparent, rgb(0, 119, 255));
-	bottom: -100%;
-	height: 100%;
-	left: 0;
-	width: 2px;
-}
-
-.btn-cd:hover #spanFour {
-	bottom: 100%;
-	transition: 1s;
-	transition-delay: 0.75s;
+.header-container_sf .box-area_two {
+	clip-path: polygon(50% 0%, 90% 20%, 100% 60%, 75% 100%, 25% 100%, 0% 60%, 10% 20%);
 }
 
 /* Content Styles */
 .content-sf {
+	color: #aaa6ca;
 	left: 50%;
 	position: absolute;
 	top: calc(50% + 50px);
 	transform: translate(-50%, -50%);
+	text-align: center;
+	text-transform: capitalize;
 	width: 90%;
+	z-index: 1;
 }
 
 .content-sf h2 {
-	color: #fff;
 	font-size: 50px;
-	text-align: center;
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 .content-sf h3 {
-	color: #fff;
 	font-size: 40px;
-	padding-top: 20px;
-	text-align: center;
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+	font-weight: 400;
+	padding: 20px 0;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 /* Problematic And Solution Styles */
 .problem-and_solution {
-	height: auto;
-	margin-bottom: 30px;
+	margin-bottom: 100px;
 	position: relative;
 	width: 100%;
 }
 
 .problem-and_solution-container {
+	align-items: center;
 	display: flex;
 	flex-wrap: wrap;
-	height: auto;
 	justify-content: space-around;
 	margin-left: 5%;
-	margin-bottom: 50px;
+	margin-top: 70px;
 	width: 90%;
 }
 
 .container-problematic_image_and-solution {
 	height: 300px;
-	margin-top: 20px;
 	width: 45%;
 }
 
 .description-of_problem-and_solution {
-	margin-top: 20px;
 	width: 45%;
 }
 
 .description-of_problem-and_solution p {
-	color: #2c2c2c;
+	color: #aaa6ca;
 	font-size: 20px;
 	padding-top: 10px;
 	text-align: justify;
@@ -160,48 +71,78 @@
 
 /* Parts Game Styles */
 .game-description_container {
-	height: auto;
-	margin-bottom: 30px;
+	background: #0c0c22;
+	margin-bottom: 100px;
 	position: relative;
+	padding: 40px 0;
 	width: 100%;
 }
 
+.game-description_container .box-area li {
+	animation: animate-sfc 20s linear infinite;
+	clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+}
+
+@keyframes animate-sfc {
+	0% {
+		opacity: 1;
+		transform: translateY(0) rotate(0deg);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-2000px) rotate(360deg);
+	}
+}
+
+.game-description_container .main-titles {
+	padding-top: 15px;
+}
+
+.game-description_container .main-titles span {
+	z-index: 2;
+}
+
 .parts-game_container {
+	align-items: center;
+	background: #13142a;
+	box-shadow: 5px 10px 10px rgba(0, 0, 0, 0.5);
 	display: flex;
 	flex-wrap: wrap;
-	height: auto;
 	justify-content: space-around;
 	margin-left: 5%;
-	margin-bottom: 80px;
+	margin-top: 80px;
+	padding: 20px 0;
+	position: relative;
 	width: 90%;
+	z-index: 5;
 }
 
 .image-container_sf {
 	height: 300px;
-	margin-top: 20px;
 	width: 45%;
+	z-index: 1;
 }
 
 .specifications-container {
 	height: 300px;
-	margin-top: 20px;
 	overflow: hidden;
 	overflow-y: scroll;
+	text-align: center;
 	transition: 0.5s all ease-in-out;
 	width: 45%;
+	z-index: 2;
 }
 
 .specifications-container h2 {
-	color: #0077ff;
+	color: #4e4c6b;
 	font-size: 50px;
 	letter-spacing: 2px;
-	text-align: center;
-	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
 	text-transform: capitalize;
 }
 
 .specifications-container p {
-	color: #2c2c2c;
+	color: #aaa6ca;
 	font-size: 20px;
 	padding-top: 10px;
 	padding-right: 15px;
@@ -209,8 +150,9 @@
 }
 
 .specifications-container p span {
-	color: #0077ff;
+	color: #4e4c6b;
 	text-transform: capitalize;
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
 }
 
 /* Rules Of The Game Styles */
@@ -224,8 +166,9 @@
 	display: flex;
 	flex-wrap: wrap;
 	justify-content: space-around;
-	margin-left: 5%;
-	margin-bottom: 80px;
+	left: 5%;
+	margin: 80px 0;
+	position: relative;
 	width: 90%;
 }
 
@@ -238,16 +181,17 @@
 }
 
 .rules-container ul li {
+	color: #aaa6ca;
 	font-size: 20px;
 	margin-bottom: 10px;
 }
 
 .rules-container ul li i {
-	color: #0077ff;
+	color: #4e4c6b;
 	background: transparent;
 	opacity: 1;
 	padding-right: 5px;
-	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
 }
 
 .rules-container ul li i:hover {
@@ -255,12 +199,13 @@
 }
 
 .rules-container ul li hr {
-	background: #0077ff;
+	background: #4e4c6b;
 	height: 2px;
 }
 
 .rules-container ul li span {
-	color: #0077ff;
+	color: #4e4c6b;
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
 }
 
 .rules-container ul li ul {
@@ -269,6 +214,14 @@
 
 .rules-container ul li ul {
 	padding-top: 10px;
+}
+
+.text-popups_sfc {
+	color: #aaa6ca;
+	font-size: 20px;
+	font-weight: 500;
+	text-align: center;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 @media screen and (max-width: 980px) {
@@ -282,6 +235,16 @@
 		width: 100%;
 	}
 
+	@keyframes animate-sfc {
+		100% {
+			transform: translateY(-3500px) rotate(360deg);
+		}
+	}
+
+	.parts-game_container {
+		padding: 20px 10px;
+	}
+
 	.image-container_sf {
 		margin-top: 30px;
 		order: 2;
@@ -291,6 +254,10 @@
 	.specifications-container {
 		margin-top: 10px;
 		width: 100%;
+	}
+
+	.specifications-container p {
+		padding-right: 0px;
 	}
 
 	.rules-container {
@@ -304,6 +271,11 @@
 }
 
 @media screen and (max-width: 600px) {
+	@keyframes animate-sfc {
+		100% {
+			transform: translateY(-6000px) rotate(360deg);
+		}
+	}
 	.content-sf h2 {
 		font-size: 20px;
 	}
@@ -323,5 +295,17 @@
 		margin-top: 10px;
 		overflow-y: none;
 		width: 100%;
+	}
+
+	.main-titles.title-popups_sfc {
+		font-size: 17px;
+	}
+
+	.main-titles.title-popups_sfc span {
+		border: 3px solid #13142a;
+	}
+
+	.text-popups_sfc {
+		font-size: 17px;
 	}
 }

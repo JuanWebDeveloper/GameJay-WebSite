@@ -186,6 +186,7 @@
 	<script src="<?php echo $url; ?>accessories/js/products.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/contact.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/formsAnimations.js"></script>
+	<script src="<?php echo $url; ?>accessories/js/sanFranciscoCity.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/criminalQuestions.js"></script>
 	<script src="<?php echo $url; ?>accessories/js/criminalQuestionsGame.js"></script>
 </body>
