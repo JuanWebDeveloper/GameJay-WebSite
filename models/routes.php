@@ -3,7 +3,7 @@
 class Routes {
     // Main Route
     public static function mainRoute(){
-        return "http://localhost/practices/GameJay/";
+        return "http://192.168.18.8/practices/GameJay/";
     }
 
 }

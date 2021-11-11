@@ -8,7 +8,7 @@
                     <h2 class="main-titles"><span>iniciar sesión</span></h2>
                     
                     <div class="input-box width-100">
-                        <input type="text" name="email" required />
+                        <input type="text" name="email" required autocomplete="nope" />
                         <span>Correo</span>
                     </div>
                     <div class="input-box width-100">
@@ -36,11 +36,11 @@
                     <h2 class="main-titles d-flex justify-content-center w-100"><span>Registrarse</span></h2>
 
                     <div class="input-box width-100">
-                        <input type="text" name="name" required />
+                        <input type="text" name="name" required autocomplete="nope" />
                         <span>Nombre</span>
                     </div>
                     <div class="input-box width-100">
-                        <input type="text" name="email" required />
+                        <input type="text" name="email" required autocomplete="nope" />
                         <span>Correo</span>
                     </div>
                     <div class="input-box width-50">

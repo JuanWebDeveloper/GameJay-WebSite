@@ -191,21 +191,6 @@
 	width: 45%;
 }
 
-.specifications-container::-webkit-scrollbar {
-	transition: 0.5s all ease-in-out;
-	width: 5px;
-}
-
-.specifications-container::-webkit-scrollbar-thumb {
-	background: transparent;
-	border-radius: 15px;
-	transition: 0.5s all ease-in-out;
-}
-
-.specifications-container:hover::-webkit-scrollbar-thumb {
-	background: #0077ff;
-}
-
 .specifications-container h2 {
 	color: #0077ff;
 	font-size: 50px;
