@@ -51,6 +51,225 @@ body {
 	width: 100%;
 }
 
+/* Animation Styles One */
+.animation-area {
+	height: 100%;
+	width: 100%;
+}
+
+.box-area {
+	height: 100%;
+	left: 0;
+	overflow: hidden;
+	position: absolute;
+	top: 0;
+	width: 100%;
+}
+
+.box-area li {
+	animation: animate 10s linear infinite;
+	background: #4e4c6bcc;
+	box-shadow: inset -4px -4px 20px 0 #4e4c6bcc, inset 4px 4px 20px 0 rgba(0, 0, 0, 0.8);
+	bottom: -180px;
+	display: block;
+	height: 25px;
+	list-style: none;
+	position: absolute;
+	width: 25px;
+}
+
+.box-area li:nth-child(1) {
+	animation-delay: 0s;
+	height: 80px;
+	left: 2%;
+	width: 80px;
+}
+
+.box-area li:nth-child(2) {
+	animation-duration: 10s;
+	animation-delay: 1.5s;
+	height: 30px;
+	left: 12%;
+	width: 30px;
+}
+
+.box-area li:nth-child(3) {
+	animation-delay: 5.5s;
+	height: 100px;
+	left: 90%;
+	width: 100px;
+}
+
+.box-area li:nth-child(4) {
+	animation-duration: 15s;
+	animation-delay: 0s;
+	height: 150px;
+	left: 42%;
+	width: 150px;
+}
+
+.box-area li:nth-child(5) {
+	animation-delay: 0s;
+	height: 40px;
+	left: 65%;
+	width: 40px;
+}
+
+.box-area li:nth-child(6) {
+	animation-delay: 3.5s;
+	height: 110px;
+	left: 15%;
+	width: 110px;
+}
+
+.box-area li:nth-child(7) {
+	animation-duration: 15s;
+	animation-delay: 0s;
+	height: 100px;
+	left: 30%;
+	width: 100px;
+}
+
+.box-area li:nth-child(8) {
+	animation-delay: 0s;
+	height: 40px;
+	left: 55%;
+	width: 40px;
+}
+
+.box-area li:nth-child(9) {
+	animation-delay: 3.5s;
+	height: 110px;
+	left: 75%;
+	width: 110px;
+}
+
+@keyframes animate {
+	0% {
+		opacity: 1;
+		transform: translateY(0) rotate(0deg);
+	}
+	100% {
+		opacity: 0;
+		transform: translateY(-800px) rotate(360deg);
+	}
+}
+
+/* Animation Styles Two */
+.animation-area_two {
+	position: relative;
+	width: 145%;
+}
+
+.box-area_two {
+	animation: animate-two 3s linear infinite;
+	background: radial-gradient(circle at center, #13142a 0%, #0c0c22, #21213b 100%);
+	bottom: 0;
+	opacity: 1;
+	position: absolute;
+	z-index: 1;
+}
+
+.box-area_two:nth-child(1) {
+	animation-duration: 10s;
+	animation-delay: 3s;
+	height: 80px;
+	left: 0;
+	width: 80px;
+}
+
+.box-area_two:nth-child(2) {
+	animation-duration: 14s;
+	animation-delay: 5s;
+	height: 100px;
+	left: 20%;
+	width: 100px;
+}
+
+.box-area_two:nth-child(3) {
+	animation-duration: 8s;
+	animation-delay: 7s;
+	height: 45px;
+	left: 10%;
+	width: 45px;
+}
+
+.box-area_two:nth-child(4) {
+	animation-duration: 12s;
+	animation-delay: 3s;
+	height: 50px;
+	left: 100%;
+	width: 50px;
+}
+
+.box-area_two:nth-child(5) {
+	animation-duration: 8s;
+	animation-delay: 1s;
+	height: 70px;
+	left: 65%;
+	width: 70px;
+}
+
+.box-area_two:nth-child(6) {
+	animation-duration: 10s;
+	animation-delay: 5s;
+	height: 65px;
+	left: 35%;
+	width: 65px;
+}
+
+.box-area_two:nth-child(7) {
+	animation-duration: 12s;
+	animation-delay: 5s;
+	height: 65px;
+	left: 50%;
+	width: 65px;
+}
+
+.box-area_two:nth-child(8) {
+	animation-duration: 16s;
+	animation-delay: 5s;
+	height: 100px;
+	left: 35%;
+	width: 100px;
+}
+
+.box-area_two:nth-child(9) {
+	animation-duration: 8s;
+	animation-delay: 2s;
+	height: 65px;
+	left: 45%;
+	width: 65px;
+}
+
+.box-area_two:nth-child(10) {
+	animation-duration: 12s;
+	animation-delay: 4s;
+	height: 40px;
+	left: 85%;
+	width: 40px;
+}
+
+@keyframes animate-two {
+	0% {
+		bottom: 0;
+		transform: translateX(0px) rotate(0deg);
+	}
+	25% {
+		transform: translateX(10px) rotate(100deg);
+	}
+	50% {
+		transform: translateX(20px) rotate(200deg);
+	}
+	75% {
+		transform: translateX(30px) rotate(300deg);
+	}
+	100% {
+		bottom: 250vh;
+		transform: rotate(360deg);
+	}
+}
+
 /* Main Titles Styles */
 .main-titles {
 	color: #aaa6ca;
@@ -71,32 +290,32 @@ body {
 	padding: 0 20px;
 }
 
-/* Main Titles Popupts Styles */
-.main-titles.popupt-error {
+/* Pop Ups Main Titles Styles */
+.main-titles.popups-error {
 	color: #f17474;
 	margin-top: 10px;
 	margin-bottom: 25px;
 	text-shadow: 0 0 2px #f1747480, 0 0 2px #f1747480;
 }
 
-.main-titles.popupt-error span {
+.main-titles.popups-error span {
 	border: 5px solid #f17474;
 	box-shadow: 0px 1px 10px #f1747480;
 }
 
-.main-titles.popupt-success {
+.main-titles.popups-success {
 	color: #a4db85;
 	margin-top: 10px;
 	margin-bottom: 25px;
 	text-shadow: 0 0 2px #a4db8580, 0 0 2px #a4db8580;
 }
 
-.main-titles.popupt-success span {
+.main-titles.popups-success span {
 	border: 5px solid #a4db85;
 	box-shadow: 0px 1px 10px #a4db85;
 }
 
-.text-popupt_error {
+.text-popups_error {
 	color: #aaa6ca;
 	font-size: 20px;
 	font-weight: 500;
@@ -131,7 +350,7 @@ body {
 
 .button span {
 	position: relative;
-	transition: 0.5s ease-in-out all;
+	transition: all 700ms cubic-bezier(0.65, -0.5, 0.255, 1.5) 0s;
 	z-index: 2;
 }
 
@@ -152,32 +371,32 @@ body {
 	position: absolute;
 	top: 50%;
 	transform-origin: center;
-	transition: 0.5s ease-in-out all;
+	transition: 0.8s ease-in-out all;
 	width: 1px;
 	z-index: 1;
 }
 
 .default:hover::after {
 	background: #21213b;
-	transform: scale(200);
+	transform: scale(300);
 }
 
-/* Default Buttons Popupts */
-.button.success-button_popupt,
-.button.error-button_popupt {
+/* Default Button Styles For Pop Ups */
+.button.success-button_popups,
+.button.error-button_popups {
 	transition: all 0.1s ease;
 }
 
-.button.success-button_popupt:hover,
-.button.error-button_popupt:hover {
+.button.success-button_popups:hover,
+.button.error-button_popups:hover {
 	color: #fff;
 }
 
-.default.error-button_popupt:hover::after {
+.default.error-button_popups:hover::after {
 	background: #f17474;
 }
 
-.default.success-button_popupt:hover::after {
+.default.success-button_popups:hover::after {
 	background: #a4db85;
 }
 
@@ -309,21 +528,38 @@ body {
 	width: 100%;
 }
 
+@media screen and (max-width: 980px) {
+	@keyframes animate {
+		100% {
+			transform: translateY(-2000px) rotate(360deg);
+		}
+	}
+
+	.animation-area_two {
+		width: 140%;
+	}
+}
+
 @media screen and (max-width: 600px) {
+	.animation-area_two {
+		width: 120%;
+	}
+
+	/* Main Titles Styles */
 	.main-titles {
 		font-size: 30px;
 	}
 
-	.main-titles.popupt-success,
-	.main-titles.popupt-error {
+	.main-titles.popups-success,
+	.main-titles.popups-error {
 		font-size: 18px;
 	}
 
-	.main-titles.popupt-success span {
+	.main-titles.popups-success span {
 		border: 3px solid #a4db85;
 	}
 
-	.main-titles.popupt-error span {
+	.main-titles.popups-error span {
 		border: 3px solid #f17474;
 	}
 

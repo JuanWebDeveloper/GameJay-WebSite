@@ -5,7 +5,7 @@ function errorOccurred($errorMessage) {
         <script>
             const errorAlert = Swal.mixin({
                 customClass: {
-                    confirmButton: 'button default error-button_popupt',
+                    confirmButton: 'button default error-button_popups',
                 },
                 buttonsStyling: false,
                 showClass: {
@@ -19,8 +19,8 @@ function errorOccurred($errorMessage) {
             errorAlert.fire({
                 icon: 'error',
                 width: 700,
-                title: `<h2 class='main-titles popupt-error'><span>Oops... Surgio Un Error</span></h2>`,
-                html: `<p class='text-popupt_error'>$errorMessage</p>`,
+                title: `<h2 class='main-titles popups-error'><span>Oops... Surgio Un Error</span></h2>`,
+                html: `<p class='text-popups_error'>$errorMessage</p>`,
                 background: '#13142a',
                 allowOutsideClick: false,
                 confirmButtonText: '<span>Entendido</span>',

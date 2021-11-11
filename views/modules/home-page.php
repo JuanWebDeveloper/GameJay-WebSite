@@ -375,17 +375,17 @@
 		</form>
 	</div>
 
-	<div class="bubbles">
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
-        <div class="bubble"></div>
+	<div class="animation-area_two">
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
+        <div class="box-area_two"></div>
       </div>
 </div>
 

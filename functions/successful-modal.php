@@ -5,7 +5,7 @@ function successfulQuery($successMessage) {
         <script>
             const successAlert = Swal.mixin({
                 customClass: {
-                    confirmButton: 'button default success-button_popupt',
+                    confirmButton: 'button default success-button_popups',
                 },
                 buttonsStyling: false,
                 showClass: {
@@ -19,7 +19,7 @@ function successfulQuery($successMessage) {
             successAlert.fire({
                 icon: 'success',
                 width: 700,
-                title: `<h2 class='main-titles popupt-success'><span>$successMessage</span></h2>`,
+                title: `<h2 class='main-titles popups-success'><span>$successMessage</span></h2>`,
                 background: '#13142a',
                 allowOutsideClick: false,
                 confirmButtonText: '<span>Entendido</span>',
@@ -34,7 +34,7 @@ function successfulQueryRedirection($successMessage, $redirection) {
         <script>
             const successAlert = Swal.mixin({
                 customClass: {
-                    confirmButton: 'button default success-button_popupt',
+                    confirmButton: 'button default success-button_popups',
                 },
                 buttonsStyling: false,
                 showClass: {
@@ -48,7 +48,7 @@ function successfulQueryRedirection($successMessage, $redirection) {
             successAlert.fire({
                 icon: 'success',
                 width: 700,
-                title: `<h2 class='main-titles popupt-success'><span>$successMessage</span></h2>`,
+                title: `<h2 class='main-titles popups-success'><span>$successMessage</span></h2>`,
                 background: '#13142a',
                 allowOutsideClick: false,
                 confirmButtonText: '<span>Entendido</span>',

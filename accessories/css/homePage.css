@@ -24,11 +24,11 @@
 }
 
 .content-container .description h1 {
-	color: #fff;
+	color: #aaa6ca;
 	font-size: 50px;
 	padding-top: 100px;
 	text-align: center;
-	text-shadow: 0 0 5px #ffffff80, 0 0 10px #ffffff80;
+	text-shadow: 0 0 5px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 .content-container .description h1 span {
@@ -37,7 +37,7 @@
 }
 
 .content-container .description p {
-	color: #fff;
+	color: #aaa6ca;
 	font-size: 20px;
 	padding-top: 15px;
 	text-align: center;
