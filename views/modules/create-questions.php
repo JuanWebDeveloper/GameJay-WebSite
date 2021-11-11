@@ -1,16 +1,33 @@
-<div class="admin-home-content">
-    <h2><span>Crear Pregunta</span></h2>
-
-    <form method="POST" class="mt-3">
-        <input type="text" placeholder="Pregunta" name="question" class="form-control" >
-        <input type="text" placeholder="Opcion A" name="optionA" class="form-control mt-2" >
-        <input type="text" placeholder="Opcion B" name="optionB" class="form-control mt-2" >
-        <input type="text" placeholder="Opcion C" name="optionC" class="form-control mt-2" >
-        <input type="text" placeholder="Opcion Correcta" name="response" class="form-control mt-2" >
-        <input type="hidden" name="createQuestions" value="createQuestions">
-        <button type="submit"  class="btn btn-outline-primary mt-2 px-5 float-right">Crear</button>
-    </form>
-
+<div class="admin-home-content admin-forms">
+    <h2 class="main-titles"><span>Crear Pregunta</span></h2>
+    <div class="form-contact">
+        <form method="POST" class="form-box">
+            <div class="input-box width-100">
+                <input type="text" name="question" required autocomplete="nope" />
+                <span>Pregunta</span>
+            </div>
+            <div class="input-box width-50">
+                <input type="text" name="optionA" required autocomplete="nope" />
+                <span>Opción A</span>
+            </div>
+            <div class="input-box width-50">
+                <input type="text" name="optionB" required autocomplete="nope" />
+                <span>Opción B</span>
+            </div>
+            <div class="input-box width-50">
+                <input type="text" name="optionC" required autocomplete="nope" />
+                <span>Opción C</span>
+            </div>
+            <div class="input-box width-50">
+            <input type="text" name="response" required autocomplete="nope" />
+                <span>Opción Correcta</span>
+            </div>
+            <input type="hidden" name="createQuestions" value="createQuestions">
+            <div class="form-button_container">
+                <button type="submit" class="button form-button"><span>Crear</span></button>
+            </div>
+        </form>
+    </div>
 </div>
 
 <?php 

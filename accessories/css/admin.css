@@ -18,6 +18,10 @@
 	z-index: 1;
 }
 
+.admin-home-content .form-contact {
+	background: #0c0c22;
+}
+
 .admin-home-content h2 {
 	font-size: 40px;
 	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
@@ -163,7 +167,15 @@
 
 @media screen and (max-width: 600px) {
 	.admin-home-content {
-		width: 90vw;
+		width: 100vw;
+	}
+
+	.admin-home-content.admin-forms {
+		position: relative;
+		top: 0%;
+		transform: translate(-50%, 10%);
+		padding: 40px 0;
+		margin-bottom: 40px;
 	}
 
 	.admin-home-content h2 {

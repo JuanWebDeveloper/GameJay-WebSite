@@ -1,4 +1,5 @@
 <div class="login-admin">
+	<a href="<?php echo $url; ?>" class="button-return" title="Regresar"><i class="fas fa-undo-alt"></i></a>
 	<div class="login-admin-content">
 		<h2 class="main-titles"><span>Administrador</span></h2>
 		<div class="form-contact">
