@@ -10,33 +10,33 @@ function getQuestions() {
     foreach($questions as $question) {
         echo "<tr>
                 <td>
-                    <span>Pregunta</span>
+                    <span class='field-question'>Pregunta</span>
                     $question[1]
                 </td>
                 <td>
-                    <span>Opcion A</span>
+                    <span class='field-question'>Opcion A</span>
                     $question[2]
                 </td>
                 <td>
-                    <span>Opcion B</span>
+                    <span class='field-question'>Opcion B</span>
                     $question[3]
                 </td>
                 <td>
-                    <span>Opcion C</span>
+                    <span class='field-question'>Opcion C</span>
                     $question[4]
                 </td>
                 <td>
-                    <span class='text-capitalize'>Opcion Correcta</span>
+                    <span class='field-question'>Respuesta</span>
                     $question[5]
                 </td>
                 <td class='d-flex justify-content-center flex-lg-column'>
-                    <span>Acciones</span>
+                    <span class='field-question'>Acciones</span>
                     
-                    <a href='edit-question/$question[0]' class='btn btn-primary my-lg-2'>Editar</a>
+                    <a href='edit-question/$question[0]' class='button default my-lg-3'><span>Editar</span></a>
 
                     <form method='POST' class='ml-3 ml-lg-0'>
                         <input type='hidden' name='delete' value='$question[0]' />
-                        <input type='submit' value='Eliminar' class='btn btn-danger' />
+                        <button type='submit' class='button form-button'><span>Eliminar</span></button>
                     </form>
                 </td>
              </tr>";

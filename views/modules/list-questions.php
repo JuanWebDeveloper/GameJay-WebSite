@@ -1,7 +1,6 @@
 <div class="list-container">
     <div class="list-content">
-        <h2>Lista de preguntas</h2>
-            
+        <h2 class="main-titles"><span>Preguntas</span></h2>
         <table>
             <thead>
                 <tr>
@@ -9,7 +8,7 @@
                     <th>Opción A</th>
                     <th>Opción B</th>
                     <th>Opción C</th>
-                    <th>Opción Correcta</th>
+                    <th>Respuesta</th>
                     <th>Acciones</th>
                 </tr>
             </thead>

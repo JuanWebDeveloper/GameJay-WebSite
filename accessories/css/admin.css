@@ -27,7 +27,7 @@
 	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
-.admin-home-content h2 span {
+.admin-home-content h2 .jay-admin {
 	color: #4e4c6b;
 	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
 }
@@ -39,7 +39,6 @@
 }
 
 .list-content {
-	box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 	border-radius: 5px;
 	left: 50%;
 	max-height: 500px;
@@ -47,29 +46,30 @@
 	overflow-y: scroll;
 	position: relative;
 	padding: 15px;
-	top: calc(50% + 25px);
+	top: 55%;
 	transform: translate(-50%, -50%);
 	width: 95vw;
 }
 
-.list-content::-webkit-scrollbar {
-	width: 5px;
+.list-content .button {
+	color: #fff;
+	padding: 10px 20px;
 }
 
-.list-content::-webkit-scrollbar-thumb {
-	background: transparent;
-	border-radius: 5px;
+.list-content .button.form-button {
+	background: #fc1b2d80;
 }
 
-.list-content:hover::-webkit-scrollbar-thumb {
-	background: #0077ff;
+.list-content .button.default {
+	background: #115bfc80;
 }
 
-.list-content h2 {
-	color: #0077ff;
-	margin: 0;
-	text-transform: capitalize;
-	text-align: center;
+.list-content .button.form-button::after {
+	border-bottom: 60px solid #fc1b2d;
+}
+
+.list-content .button.default:hover::after {
+	background: #115bfc;
 }
 
 .list-content table {
@@ -79,45 +79,49 @@
 }
 
 .list-content thead tr th {
-	color: #ffffff;
-	background: linear-gradient(to top, #60a5fa, #3b82f6, #1d4ed8);
-	border-left: 1px solid #ffffff;
+	color: #aaa6ca;
+	background: #1a1a33;
+	border-right: 1px solid #21213b;
 	display: table-cell;
 	padding: 0.75rem;
 	font-weight: 600;
 	text-transform: capitalize;
 	text-align: center;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
+}
+
+.list-content thead tr th:nth-child(1) {
+	border-left: 1px solid #21213b;
 }
 
 .list-content tbody tr {
-	background: #fff;
+	background: #0c0c22;
 	display: table-row;
 	transition: all 0.3s ease-out;
 	width: 100%;
 }
 
 .list-content tbody tr:hover {
-	background-color: #0077ff70;
+	background-color: #21213b;
 }
 
 .list-content tbody tr td {
-	color: rgba(31, 41, 55);
+	color: #aaa6ca;
 	display: table-cell;
 	position: static;
 	padding: 0.75rem;
-	text-align: center;
 	transition: all 0.3s ease-out;
 }
 
 .list-content tbody tr:hover td {
-	color: #fff;
-	text-shadow: 0 0 10px #ffffff80, 0 0 10px #ffffff80;
+	color: #aaa6ca;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
-.list-content tbody tr td span {
+.list-content tbody tr td .field-question {
 	align-items: center;
-	background: linear-gradient(to top, #60a5fa, #3b82f6, #1d4ed8);
-	color: #ffffff;
+	background: #1a1a33;
+	color: #aaa6ca;
 	display: none;
 	font-size: 0.75rem;
 	font-weight: 700;
@@ -126,6 +130,7 @@
 	left: 0px;
 	line-height: 1rem;
 	position: absolute;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 	text-transform: uppercase;
 	top: 0px;
 	width: 80px;
@@ -153,14 +158,14 @@
 	}
 
 	.list-content tbody tr td {
-		border-bottom: 1px solid #0077ff;
+		border-bottom: 1px solid #21213b;
 		display: block;
 		position: relative;
 		padding-left: 5.75rem;
 		width: 100%;
 	}
 
-	.list-content tbody tr td span {
+	.list-content tbody tr td .field-question {
 		display: flex;
 	}
 }
@@ -180,5 +185,10 @@
 
 	.admin-home-content h2 {
 		font-size: 30px;
+	}
+
+	.list-content .button {
+		font-size: 15px;
+		padding: 10px 15px;
 	}
 }
