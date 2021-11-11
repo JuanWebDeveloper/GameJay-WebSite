@@ -2,20 +2,21 @@
     <div class="criminal-questions_content">
         <h2>Preguntas Criminales</h2>
         <div class="criminal-questions_buttons">
-            <a style="color: #fff" class="btn-cd" id="criminalQuestionsDescription">
-				<span id="spanOne"></span>
-				<span id="spanTwo"></span>
-				<span id="spanThree"></span>
-				<span id="spanFour"></span>
-				Descripción
-			</a>
-            <a href="criminal-questions-game" style="color: #fff" class="btn-cd">
-				<span id="spanOne"></span>
-				<span id="spanTwo"></span>
-				<span id="spanThree"></span>
-				<span id="spanFour"></span>
-				Ir Al Juego
-			</a>
+            <a class="button default" id="criminalQuestionsDescription"><span>Descripción</span></a>
+            <a href="<?php echo $url; ?>criminal-questions-game" class="button default"><span>Ir Al Juego</span></a>
         </div>
     </div>
+	<div class="animation-area">
+        <ul class="box-area">
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
 </div>

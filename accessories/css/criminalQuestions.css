@@ -1,76 +1,54 @@
 /* Criminal Questions Styles */
 .criminal-questions {
-	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(../img/homePage.jpg);
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
+	background: #0c0c22;
 	height: 100vh;
 	position: relative;
 	width: 100vw;
 }
 
+.criminal-questions .box-area li {
+	clip-path: polygon(20% 0%, 0% 20%, 30% 50%, 0% 80%, 20% 100%, 50% 70%, 80% 100%, 100% 80%, 70% 50%, 100% 20%, 80% 0%, 50% 30%);
+}
+
 .criminal-questions_content {
 	left: 50%;
 	position: absolute;
-	top: 50%;
+	top: calc(50% + 25px);
 	transform: translate(-50%, -50%);
 	text-align: center;
 	width: 90vw;
+	z-index: 1;
 }
 
 .criminal-questions_content h2 {
-	color: #fff;
-	font-size: 45px;
-	font-weight: 400;
-	text-shadow: 0 0 10px rgba(255, 255, 255, 0.5), 0 0 10px rgba(255, 255, 255, 0.5);
+	color: #aaa6ca;
+	font-size: 50px;
+	text-shadow: 0 0 10px #aaa6ca80, 0 0 10px #aaa6ca80;
 }
 
 .criminal-questions_buttons a {
+	margin: 0 15px;
 	margin-top: 40px;
 }
 
-.modal-criminal_questions {
-	font-weight: 400;
-	color: #0077ff;
-	text-shadow: 0 0 10px rgba(0, 119, 255, 0.5), 0 0 10px rgba(0, 119, 255, 0.5);
-	text-align: center;
+.text-popups_cq {
+	color: #aaa6ca;
+	font-size: 20px;
+	font-weight: 500;
 }
 
-.modal-criminal_questions-content {
-	position: relative;
-	width: 100%;
-}
-
-.modal-criminal_questions-content p {
-	color: #222;
-	font-size: 17px;
-}
-
-.modal-criminal_questions-content p span {
-	color: #0077ff;
-}
-
-.modal-criminal_questions-button {
-	background: #0077ff;
-	border: none;
-	color: #fff;
-	outline: none;
-	padding: 10px 20px;
-	transition: all 0.3s ease-in-out;
-}
-
-.modal-criminal_questions-button:hover {
-	opacity: 0.9;
-	transform: scale(1.1);
-}
-
-.modal-criminal_questions-button:focus {
-	border: none;
-	outline: none;
+.text-popups_cq span {
+	color: #4e4c6b;
+	text-transform: capitalize;
+	text-shadow: 0 0 10px #4e4c6b80, 0 0 10px #4e4c6b80;
 }
 
 @media screen and (max-width: 600px) {
 	.criminal-questions_content h2 {
 		font-size: 30px;
+	}
+
+	.text-popups_cq {
+		font-size: 17px;
 	}
 }
